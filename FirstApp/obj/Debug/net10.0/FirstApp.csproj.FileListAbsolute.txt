@@ -1,0 +1,15 @@
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\FirstApp\bin\Debug\net10.0\FirstApp.exe
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\FirstApp\bin\Debug\net10.0\FirstApp.deps.json
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\FirstApp\bin\Debug\net10.0\FirstApp.runtimeconfig.json
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\FirstApp\bin\Debug\net10.0\FirstApp.dll
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\FirstApp\bin\Debug\net10.0\FirstApp.pdb
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\FirstApp\obj\Debug\net10.0\FirstApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\FirstApp\obj\Debug\net10.0\FirstApp.AssemblyInfoInputs.cache
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\FirstApp\obj\Debug\net10.0\FirstApp.AssemblyInfo.cs
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\FirstApp\obj\Debug\net10.0\FirstApp.csproj.CoreCompileInputs.cache
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\FirstApp\obj\Debug\net10.0\FirstApp.sourcelink.json
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\FirstApp\obj\Debug\net10.0\FirstApp.dll
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\FirstApp\obj\Debug\net10.0\refint\FirstApp.dll
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\FirstApp\obj\Debug\net10.0\FirstApp.pdb
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\FirstApp\obj\Debug\net10.0\FirstApp.genruntimeconfig.cache
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\FirstApp\obj\Debug\net10.0\ref\FirstApp.dll
