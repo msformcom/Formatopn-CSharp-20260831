@@ -135,7 +135,7 @@ namespace MonCode
         public void DeclarationClass()
         {
 
-            Produit p = new Produit() { Prix = 12.0M, NbStock = 4 };
+            Produit p = new Produit(10) { Prix = 12.0M, NbStock = 4 };
             p.Prix = 1;
             // Ce code créé 10000 instances de Produit => 10000 objets en mémoire
             GC.AddMemoryPressure(1000000); // Indique au GC qu'on va créer beaucoup d'objets => optimisation du GC
@@ -146,7 +146,7 @@ namespace MonCode
                 {
                     GC.Collect(); // Force le GC à libérer la mémoire
                 }
-                p = new Produit();
+                p = new Produit(10);
             }
         }
     }

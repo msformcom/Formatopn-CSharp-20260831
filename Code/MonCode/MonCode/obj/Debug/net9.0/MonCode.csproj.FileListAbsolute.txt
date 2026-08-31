@@ -171,3 +171,4 @@ C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260
 C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\MonCode\MonCode\obj\Debug\net9.0\ref\MonCode.dll
 C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\MonCode\MonCode\bin\Debug\net9.0\BoutiqueClasses.dll
 C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\MonCode\MonCode\bin\Debug\net9.0\BoutiqueClasses.pdb
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\MonCode\MonCode\bin\Debug\net9.0\.msCoverageSourceRootsMapping_MonCode
