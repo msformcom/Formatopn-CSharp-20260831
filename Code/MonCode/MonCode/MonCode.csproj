@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net9.0</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
     <LangVersion>latest</LangVersion>
 	  <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
@@ -22,14 +22,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BoutiqueClasses\BoutiqueClasses.csproj" />
-  </ItemGroup>
-
-
-
-  <ItemGroup>
-    <Reference Include="BoutiqueClasses">
-      <HintPath>..\BoutiqueClasses\bin\Debug\net9.0\BoutiqueClasses.dll</HintPath>
-    </Reference>
   </ItemGroup>
 
   <ItemGroup>

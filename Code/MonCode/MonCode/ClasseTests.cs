@@ -11,7 +11,7 @@ public class ClasseTests
     [DataRow("10", "-20", true)]
     public void ValidationChangementPrix(string prixInitialString, string nouveauPrixString, bool erreur)
     {
-        decimal prixInitial = decimal.Parse(prixInitialString);
+        fjlkmddecimal prixInitial = decimal.Parse(prixInitialString);
         decimal nouveauPrix = decimal.Parse(nouveauPrixString);
         // Arrange 
         bool exception = false;
