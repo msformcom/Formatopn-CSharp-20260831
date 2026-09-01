@@ -56,9 +56,30 @@ public class ClasseTests
             exception = true;
  
         }
-        Assert.IsTrue(exception, "Le nom du produit est incorrect");
+        Assert.IsTrue(exception, "Le nom du produit incorrect passe");
 
-        var ex=Assert.ThrowsException<ArgumentException>(() =>
+        // Vérifie qu'une fonction f déclenche une Exeption
+        T ThrowsException<T>(Action f , string message) where T:Exception
+        {
+            try
+            {
+                f();
+                Assert.Fail(message);
+                return null;
+            }
+            catch (Exception ex)
+            {
+                if(!(ex is T))
+                {
+                    Assert.Fail(message);
+                }
+                return (T)ex;
+            }
+         
+        }
+
+
+        var ex=ThrowsException<ArgumentException>(() =>
         {
             // Sensé renvoyer une exception
             p = new Produit("Toto", 1000);
