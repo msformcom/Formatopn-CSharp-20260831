@@ -11,11 +11,11 @@ public class ClasseTests
     [DataRow("10", "-20", true)]
     public void ValidationChangementPrix(string prixInitialString, string nouveauPrixString, bool erreur)
     {
-        fjlkmddecimal prixInitial = decimal.Parse(prixInitialString);
+        decimal prixInitial = decimal.Parse(prixInitialString);
         decimal nouveauPrix = decimal.Parse(nouveauPrixString);
         // Arrange 
         bool exception = false;
-        var p = new Produit(prixInitial);
+        var p = new Produit("TOTO",prixInitial);
 
         try
         {
@@ -38,10 +38,42 @@ public class ClasseTests
     }
 
     [TestMethod]
+    public void ValidationNom()
+    {
+        // Arrange
+        Produit p = null;
+        Boolean exception = false;
+
+        // Act
+        try
+        {
+            // Sensé renvoyer une exception
+             p = new Produit("Toto", 1000);
+           
+        }
+        catch (Exception)
+        {
+            exception = true;
+ 
+        }
+        Assert.IsTrue(exception, "Le nom du produit est incorrect");
+
+        var ex=Assert.ThrowsException<ArgumentException>(() =>
+        {
+            // Sensé renvoyer une exception
+            p = new Produit("Toto", 1000);
+        },"Le nom du produit incorrect passe");
+        Assert.AreEqual(ex.Message, "Le nom n'est pas correct","Le message d'erreur n'est pas correct");
+    }
+
+
+
+
+    [TestMethod]
     public void ValidationTest()
     {
         // Arrange
-        Produit produit = new Produit(1000);
+        Produit produit = new Produit("TOTO", 1000M);
         bool exceptionPrixNegatif = false;
         // Act : une instance doit avoir un prix par défaut supérieur à 0
         Assert.IsTrue(produit.Prix > 0, "La valeur par défaut ne convient pas");

@@ -1,12 +1,120 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\MonCode\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A660E874-D1C8-4C36-9382-0A46F00B6883}|MonCode\\MonCode.csproj|c:\\users\\dom\\desktop\\formations\\formatopn csharp 20260831\\formatopn csharp 20260831\\code\\moncode\\moncode\\classetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A660E874-D1C8-4C36-9382-0A46F00B6883}|MonCode\\MonCode.csproj|solutionrelative:moncode\\classetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7BFA0B2-50D2-414D-B2FD-E01FCA5A4C6B}|BoutiqueClasses\\BoutiqueClasses.csproj|c:\\users\\dom\\desktop\\formations\\formatopn csharp 20260831\\formatopn csharp 20260831\\code\\moncode\\boutiqueclasses\\produit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7BFA0B2-50D2-414D-B2FD-E01FCA5A4C6B}|BoutiqueClasses\\BoutiqueClasses.csproj|solutionrelative:boutiqueclasses\\produit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7BFA0B2-50D2-414D-B2FD-E01FCA5A4C6B}|BoutiqueClasses\\BoutiqueClasses.csproj|c:\\users\\dom\\desktop\\formations\\formatopn csharp 20260831\\formatopn csharp 20260831\\code\\moncode\\boutiqueclasses\\produit-vente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7BFA0B2-50D2-414D-B2FD-E01FCA5A4C6B}|BoutiqueClasses\\BoutiqueClasses.csproj|solutionrelative:boutiqueclasses\\produit-vente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7BFA0B2-50D2-414D-B2FD-E01FCA5A4C6B}|BoutiqueClasses\\BoutiqueClasses.csproj|c:\\users\\dom\\desktop\\formations\\formatopn csharp 20260831\\formatopn csharp 20260831\\code\\moncode\\boutiqueclasses\\produit-stock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7BFA0B2-50D2-414D-B2FD-E01FCA5A4C6B}|BoutiqueClasses\\BoutiqueClasses.csproj|solutionrelative:boutiqueclasses\\produit-stock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7BFA0B2-50D2-414D-B2FD-E01FCA5A4C6B}|BoutiqueClasses\\BoutiqueClasses.csproj|c:\\users\\dom\\desktop\\formations\\formatopn csharp 20260831\\formatopn csharp 20260831\\code\\moncode\\boutiqueclasses\\boutiqueclasses.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C7BFA0B2-50D2-414D-B2FD-E01FCA5A4C6B}|BoutiqueClasses\\BoutiqueClasses.csproj|solutionrelative:boutiqueclasses\\boutiqueclasses.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dom\\Documents\\Visual Studio 18\\Code Snippets\\Visual C#\\My Code Snippets\\myprop.snippet||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Produit.cs",
+              "DocumentMoniker": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\MonCode\\BoutiqueClasses\\Produit.cs",
+              "RelativeDocumentMoniker": "BoutiqueClasses\\Produit.cs",
+              "ToolTip": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\MonCode\\BoutiqueClasses\\Produit.cs",
+              "RelativeToolTip": "BoutiqueClasses\\Produit.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAowDUAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-01T08:53:43.478Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BoutiqueClasses",
+              "DocumentMoniker": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\MonCode\\BoutiqueClasses\\BoutiqueClasses.csproj",
+              "RelativeDocumentMoniker": "BoutiqueClasses\\BoutiqueClasses.csproj",
+              "ToolTip": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\MonCode\\BoutiqueClasses\\BoutiqueClasses.csproj",
+              "RelativeToolTip": "BoutiqueClasses\\BoutiqueClasses.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-09-01T07:45:35.875Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Produit-stock.cs",
+              "DocumentMoniker": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\MonCode\\BoutiqueClasses\\Produit-stock.cs",
+              "RelativeDocumentMoniker": "BoutiqueClasses\\Produit-stock.cs",
+              "ToolTip": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\MonCode\\BoutiqueClasses\\Produit-stock.cs",
+              "RelativeToolTip": "BoutiqueClasses\\Produit-stock.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-01T07:40:04.011Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ClasseTests.cs",
+              "DocumentMoniker": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\MonCode\\MonCode\\ClasseTests.cs",
+              "RelativeDocumentMoniker": "MonCode\\ClasseTests.cs",
+              "ToolTip": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\MonCode\\MonCode\\ClasseTests.cs",
+              "RelativeToolTip": "MonCode\\ClasseTests.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAowEQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-01T07:37:19.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "myprop.snippet",
+              "DocumentMoniker": "C:\\Users\\Dom\\Documents\\Visual Studio 18\\Code Snippets\\Visual C#\\My Code Snippets\\myprop.snippet",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Documents\\Visual Studio 18\\Code Snippets\\Visual C#\\My Code Snippets\\myprop.snippet",
+              "ToolTip": "C:\\Users\\Dom\\Documents\\Visual Studio 18\\Code Snippets\\Visual C#\\My Code Snippets\\myprop.snippet",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Documents\\Visual Studio 18\\Code Snippets\\Visual C#\\My Code Snippets\\myprop.snippet",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAB0AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002852|",
+              "WhenOpened": "2026-09-01T07:18:49.204Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Produit-vente.cs",
+              "DocumentMoniker": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\MonCode\\BoutiqueClasses\\Produit-vente.cs",
+              "RelativeDocumentMoniker": "BoutiqueClasses\\Produit-vente.cs",
+              "ToolTip": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\MonCode\\BoutiqueClasses\\Produit-vente.cs",
+              "RelativeToolTip": "BoutiqueClasses\\Produit-vente.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwBsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-01T06:50:47.7Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

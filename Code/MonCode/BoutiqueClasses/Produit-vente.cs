@@ -11,7 +11,9 @@ namespace Boutique
         // Par défaut il existe un constructeur sans paramètre
 
         // On veut forcer l'initialisation du prix à la création de l'instance
-        public Produit(decimal prix)
+        // On crée un constructeur avec un paramètre prix
+        // Qui passe le nom au constructeur privé qui gère l'initialisation du nom
+        public Produit(string nom, decimal prix) : this(nom)
         {
 
             // On utilise la propriété Prix pour valider la valeur
