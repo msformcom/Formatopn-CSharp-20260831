@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MonCode")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e7e797cdcd43d9ae49e6a875760367d5f7625f85")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+34dabc582e1abe80217ce5355770ab25b1665d46")]
 [assembly: System.Reflection.AssemblyProductAttribute("MonCode")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MonCode")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

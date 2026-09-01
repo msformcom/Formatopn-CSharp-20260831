@@ -79,7 +79,7 @@ public class ClasseTests
         }
 
 
-        var ex=ThrowsException<ArgumentException>(() =>
+        var ex=Assert.ThrowsException<ArgumentException>(() =>
         {
             // Sensé renvoyer une exception
             p = new Produit("Toto", 1000);
