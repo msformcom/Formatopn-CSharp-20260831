@@ -11,9 +11,9 @@ namespace Boutique
     // public => visible dans tous les projets
     // partial => permet de scinder la définition d'une classe sur plusieurs fichiers
    
-    internal  partial class Produit
+    public  partial class Produit
     {
 
-        public int  NbStock;
+        public int NbStock {  get; internal set; }
     }
 }

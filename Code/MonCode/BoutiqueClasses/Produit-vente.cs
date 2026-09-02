@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Boutique
 {
-    internal partial class Produit
+    public partial class Produit
     {
         // Par défaut il existe un constructeur sans paramètre
 
@@ -34,7 +34,8 @@ namespace Boutique
             get {
                 // Permet de lire la valeur stockée dans le champ _Prix
                 return _Prix; }
-            set
+            // Visible dans le projet et dans les classes dérivées (héritage)
+            internal protected set
             {
                 // permet de modifier la valeur stockée dans le champ _Prix
                 // avant d'affecter _Prix, on valide la nouvelle valeur = value

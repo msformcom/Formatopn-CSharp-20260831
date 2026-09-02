@@ -8,10 +8,10 @@ namespace Boutique
 	/// <summary>
 	/// Décrit un Produit dans l'entreprise
 	/// </summary>
-    internal partial class Produit
+    public partial class Produit
     {
         #region Constructeurs
-        internal Produit(string nom)
+        public Produit(string nom)
         {
             this.Nom = nom;
         }
@@ -34,7 +34,7 @@ namespace Boutique
 		{
 
 			get { return _Nom; }
-			set
+			internal set
 			{
 
 
