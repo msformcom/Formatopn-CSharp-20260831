@@ -32,14 +32,15 @@ namespace Boutique
         /// </summary>
         /// <param name="produit">Le produit à ajouter</param>
         /// <exception cref="ArgumentException"></exception>
-        public void AddProduit(Produit produit)
+        public void AddProduit(Produit produit, int nbStock = 1)
         {
             if (produit == null)
             {
                 throw new ArgumentNullException("Le produit est null");
             }
+
             if (this._ListeProduits.Any(p => p.Nom == produit.Nom))
-            { 
+            {
                 throw new ArgumentException($"Le produit {produit.Nom} existe déjà dans le catalogue.");
             }
             if (produit.Prix < this.PrixMinimum)
@@ -49,9 +50,69 @@ namespace Boutique
 #endif
                 throw new ArgumentException($"Le prix du produit {produit.Nom} est inférieur au prix minimum du catalogue {this.PrixMinimum:C}.");
             }
+            produit.NbStock = nbStock;
             this._ListeProduits.Add(produit);
         }
 
+        public decimal VendreProduit(Produit produit, int qte)
+        {
+            // Vérification de la validité des paramètres
+            if (qte < 0)
+            {
+                throw new ArgumentException("La quantité vendue ne peut pas être négative");
+            }
+            if (produit == null)
+            {
+                throw new ArgumentException("Le produit est null");
+            }
+            // Existence du produit dans le catalogue
+            var p = this._ListeProduits.FirstOrDefault(p => p.Nom == produit.Nom);
+            // Si le produit n'existe pas dans le catalogue, on lève une exception
+            if (p == null)
+            {
+                throw new ArgumentException("Le produit n'est pas dans le catalogue");
+            }
+            // Vérification de la quantité vendue par rapport au stock disponible
+            if (qte > p.NbStock)
+            {
+                throw new ArgumentException("La quantité vendue dépasse le stock disponible");
+            }
+            // 
+            p.NbStock -= qte;
+            // Avertir les abonnés que le produit a été vendu
+            // En passant les informations utiles aux gestionnaires
+            // Test pour savoir si l'évènement a des abonnés
+            OnProduitVendu(qte,p, p.Prix * qte);
+            return p.Prix * qte;
+        }
+        #region Evènements
+
+        #region Evènement ProduitVendu
+
+        // protected => visible dans le projet et dans les classes dérivées (héritage)
+        // virtual => peut être surchargée dans les classes dérivées (héritage)
+        protected virtual void OnProduitVendu(int qte, Produit produit, decimal montantVente)
+        {             // Avertir les abonnés que le produit a été vendu
+            // Test pour savoir si l'évènement a des abonnés
+            if (ProduitVendu != null)
+            {
+                // Execution de l'évènement ProduitVendu pour exécuter les gestionnaires de l'évènement
+                // Peut ëtre bloquant
+                // Couplage faible : le catalogue ne sait pas ce que font les abonnés à l'évènement
+                ProduitVendu(this, new ProduitVenduEventArgs(qte, produit, montantVente));
+            }
+        }
+
+        // Cet évènement va servir à avertir les abonnés que le produit a été vendu
+        // Des fonctions de type EventHandler peuvent s'abonner à cet évènement pour être exécutées lorsqu'un produit est vendu
+        // EventHandler void EnvoiMail(objet o, EventArgs e)
+        // EventHandler<ProduitVenduEventArgs> void EnvoiMail(objet o, ProduitVenduEventArgs e)
+        // o => l'objet qui a déclenché l'évènement (ici le catalogue)
+        // e=> les arguments de l'évènement (ici aucun)
+        public event EventHandler<ProduitVenduEventArgs> ProduitVendu;
+        #endregion
+
+        #endregion
 
         #region Propriété PrixMinimum
 
