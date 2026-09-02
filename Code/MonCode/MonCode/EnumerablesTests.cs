@@ -1,7 +1,9 @@
+using System.Diagnostics;
+
 namespace MonCode;
 
 [TestClass]
-public class Enumerables
+public class EnumerablesTests
 {
     [TestMethod]
     // Ne pas utiliser pour les ensemble dont ne nombre change
@@ -135,4 +137,58 @@ public class Enumerables
 
     }
 
+
+
+    [TestMethod]
+    public void GeneratorIterator()
+    {
+        IEnumerable<int> liste = new List<int>() { 1, 7, 9, 3 };
+        
+        var iterator = liste.GetEnumerator(); // Position -1
+        while (iterator.MoveNext())
+        {
+            var e = iterator.Current;
+        }
+
+        foreach(var e in liste)
+        {
+
+        }
+
+
+        IEnumerable<Int64> GetAllEntiers()
+        {
+           var listeDesEntiers = new List<Int64>();
+            for(Int64 i = 0; i <= Int64.MaxValue; i++)
+            {
+                listeDesEntiers.Add(i);
+            }
+            return listeDesEntiers;
+        }
+
+        IEnumerable<Int64> GetAAEntiers2()
+        {
+            var i = 0;
+            while (true)
+            {
+                yield return i;
+                i++;
+            }
+        }
+
+        var liste2 = GetAAEntiers2();
+        foreach(var e in liste2.Take(12))
+        {
+            var a = e;
+            if (e > 1000)
+            {
+                break;
+            }
+        }
+ 
+
+       
+
+
+    }
 }

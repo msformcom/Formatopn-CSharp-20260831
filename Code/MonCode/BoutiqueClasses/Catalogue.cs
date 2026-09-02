@@ -17,6 +17,8 @@ namespace Boutique
             //this._ListeProduits = new();
         }
 
+        public int LimiteEpuisementProduit { get; set; } = 10;
+
         protected List<Produit> _ListeProduits = new(); // Au lieu de new List<Produit>()
 
         public IEnumerable<Produit> ListeProduits
@@ -78,14 +80,52 @@ namespace Boutique
                 throw new ArgumentException("La quantité vendue dépasse le stock disponible");
             }
             // 
+
             p.NbStock -= qte;
             // Avertir les abonnés que le produit a été vendu
             // En passant les informations utiles aux gestionnaires
             // Test pour savoir si l'évènement a des abonnés
             OnProduitVendu(qte,p, p.Prix * qte);
+            if(
+                p.NbStock+qte>this.LimiteEpuisementProduit
+                && 
+                p.NbStock < this.LimiteEpuisementProduit)
+            {
+                OnProduitPresqueEpuise(new ProduitPresqueEpuiseEventArgs() { 
+                    Limite=this.LimiteEpuisementProduit,
+                    Produit=p,
+                    StockActualise=p.NbStock,
+                    Date=DateTime.Now
+                });
+            }
+           
             return p.Prix * qte;
         }
         #region Evènements
+
+
+        #region Evènement ProduitPresqueEpuise
+        public event EventHandler<ProduitPresqueEpuiseEventArgs> ProduitPresqueEpuise;
+
+        protected virtual void OnProduitPresqueEpuise(ProduitPresqueEpuiseEventArgs e)
+        {
+            var handler = ProduitPresqueEpuise;
+            if (handler == null) return;
+
+            foreach (Delegate singleHandler in handler.GetInvocationList())
+            {
+                try
+                {
+                    ((EventHandler<ProduitPresqueEpuiseEventArgs>)singleHandler)(this, e);
+                }
+                catch (Exception ex)
+                {
+                    System.Diagnostics.Debug.WriteLine($"Erreur lors de l'exécution d'un gestionnaire pour {nameof(ProduitPresqueEpuise)}: {ex.Message}");
+                }
+            }
+        }
+        #endregion
+
 
         #region Evènement ProduitVendu
 

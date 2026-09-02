@@ -77,8 +77,35 @@ public class CatalogueTests
         // Assert que l'événement ProduitVendu a été déclenché après la vente du produit
         Assert.IsTrue(evenementDeclenche, "L'événement ProduitVendu n'a pas été déclenché après la vente du produit.");
     }
+    [TestMethod]
+    public void ProduitEpuiseTest()
+    {
+        var c = new Catalogue(10);
+        c.LimiteEpuisementProduit = 20;
+        var p = new Produit("TEST", 20);
+        c.AddProduit(p, 25);
+
+        Boolean eventExecuted = false;
+        c.ProduitPresqueEpuise += (o, e) =>
+        {
+            eventExecuted = true;
+            throw new Exception();
+
+        };
 
 
+        c.VendreProduit(p, 2); // Stock 25 => 23
+        Assert.IsFalse(eventExecuted, "L'évènement est exécuté sans épuisement");
+        c.VendreProduit(p, 5); // Stock 23 => 18
+        Assert.IsTrue(eventExecuted, "L'évènement est exécuté sans épuisement");
+
+        eventExecuted = false;
+        c.VendreProduit(p, 5); // Stock 18 => 13
+        Assert.IsFalse(eventExecuted, "L'évènement est exécuté sans épuisement");
+
+    }
+
+   
 }
 
 
