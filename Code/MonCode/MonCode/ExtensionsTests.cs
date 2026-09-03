@@ -6,8 +6,23 @@ using System.Text;
 
 namespace MonCode
 {
+    [TestClass]
     public class ExtensionsTests
     {
+        [TestMethod]
+        public void ShuffleTests()
+        {
+            var l = Enumerable.Range(1, 100);
+
+            var r= l.MyShuffle().ToList();
+        }
+
+        [TestMethod]
+        public void SampleTests()
+        {
+            var liste = Enumerable.Range(1, 1000);
+            var sample=liste.Sample(4);
+        }
 
         [TestMethod]
         public void EnfOfMonthTests()

@@ -5,6 +5,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <RootNamespace>Boutique</RootNamespace>
+    <Configurations>Debug;Release;VersionLimitee</Configurations>
   </PropertyGroup>
 
 	<ItemGroup>

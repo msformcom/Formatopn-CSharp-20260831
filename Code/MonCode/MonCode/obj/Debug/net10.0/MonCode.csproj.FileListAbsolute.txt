@@ -172,3 +172,5 @@ C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260
 C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\MonCode\MonCode\obj\Debug\net10.0\MonCode.pdb
 C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\MonCode\MonCode\obj\Debug\net10.0\MonCode.genruntimeconfig.cache
 C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\MonCode\MonCode\obj\Debug\net10.0\ref\MonCode.dll
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\MonCode\MonCode\bin\Debug\net10.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\MonCode\MonCode\bin\Debug\net10.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll

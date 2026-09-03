@@ -1,6 +1,7 @@
 namespace MonCode;
 
 using Boutique;
+using Microsoft.Extensions.DependencyInjection;
 
 [TestClass]
 [STATestClass]
@@ -13,7 +14,8 @@ public class CatalogueTests
 
     public void AjoutProduitTest(string inputPrix, bool erreurExpected)
     {
-        var c = new Catalogue(10);
+        var c = App.Services.GetRequiredService<ICatalogue>();
+        var p = App.Services.GetRequiredKeyedService<IProduit>("Random");
         Action action = () => c.AddProduit(new Produit("PRODUITTEST", decimal.Parse(inputPrix)));
         if (erreurExpected)
         {
@@ -42,10 +44,10 @@ public class CatalogueTests
     {
         // Arrange
 
-        // Création du catalohue
-        var c = new Catalogue(10);
-        var p = new Produit("FOURCHETTE", 20);
-        c.AddProduit(p, 5);
+        // Création du catalogue
+        var c = App.Services.GetRequiredService<ICatalogue>();
+        var p = App.Services.GetRequiredKeyedService<IProduit>("Random");
+
 
         // Vérification du stock du produit
         Assert.AreEqual(p.NbStock, 5, "Le stock initial du produit n'est pas correct");
@@ -80,7 +82,7 @@ public class CatalogueTests
     [TestMethod]
     public void ProduitEpuiseTest()
     {
-        var c = new Catalogue(10);
+        var c = App.Services.GetRequiredService<ICatalogue>();
         c.LimiteEpuisementProduit = 20;
         var p = new Produit("TEST", 20);
         c.AddProduit(p, 25);

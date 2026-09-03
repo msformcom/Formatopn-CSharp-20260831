@@ -3,39 +3,51 @@
   "WorkspaceRootPath": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\MonCode\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A660E874-D1C8-4C36-9382-0A46F00B6883}|MonCode\\MonCode.csproj|c:\\users\\dom\\desktop\\formations\\formatopn csharp 20260831\\formatopn csharp 20260831\\code\\moncode\\moncode\\extensionstests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A660E874-D1C8-4C36-9382-0A46F00B6883}|MonCode\\MonCode.csproj|solutionrelative:moncode\\extensionstests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A660E874-D1C8-4C36-9382-0A46F00B6883}|MonCode\\MonCode.csproj|c:\\users\\dom\\desktop\\formations\\formatopn csharp 20260831\\formatopn csharp 20260831\\code\\moncode\\moncode\\cataloguetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A660E874-D1C8-4C36-9382-0A46F00B6883}|MonCode\\MonCode.csproj|solutionrelative:moncode\\cataloguetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A660E874-D1C8-4C36-9382-0A46F00B6883}|MonCode\\MonCode.csproj|c:\\users\\dom\\desktop\\formations\\formatopn csharp 20260831\\formatopn csharp 20260831\\code\\moncode\\moncode\\enumerablestests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A660E874-D1C8-4C36-9382-0A46F00B6883}|MonCode\\MonCode.csproj|solutionrelative:moncode\\enumerablestests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A660E874-D1C8-4C36-9382-0A46F00B6883}|MonCode\\MonCode.csproj|c:\\users\\dom\\desktop\\formations\\formatopn csharp 20260831\\formatopn csharp 20260831\\code\\moncode\\moncode\\app.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A660E874-D1C8-4C36-9382-0A46F00B6883}|MonCode\\MonCode.csproj|solutionrelative:moncode\\app.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A660E874-D1C8-4C36-9382-0A46F00B6883}|MonCode\\MonCode.csproj|c:\\users\\dom\\desktop\\formations\\formatopn csharp 20260831\\formatopn csharp 20260831\\code\\moncode\\moncode\\ditests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A660E874-D1C8-4C36-9382-0A46F00B6883}|MonCode\\MonCode.csproj|solutionrelative:moncode\\ditests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C7BFA0B2-50D2-414D-B2FD-E01FCA5A4C6B}|BoutiqueClasses\\BoutiqueClasses.csproj|c:\\users\\dom\\desktop\\formations\\formatopn csharp 20260831\\formatopn csharp 20260831\\code\\moncode\\boutiqueclasses\\catalogue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C7BFA0B2-50D2-414D-B2FD-E01FCA5A4C6B}|BoutiqueClasses\\BoutiqueClasses.csproj|solutionrelative:boutiqueclasses\\catalogue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A660E874-D1C8-4C36-9382-0A46F00B6883}|MonCode\\MonCode.csproj|c:\\users\\dom\\desktop\\formations\\formatopn csharp 20260831\\formatopn csharp 20260831\\code\\moncode\\moncode\\cataloguetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A660E874-D1C8-4C36-9382-0A46F00B6883}|MonCode\\MonCode.csproj|solutionrelative:moncode\\cataloguetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dom\\Documents\\Visual Studio 18\\Code Snippets\\Visual C#\\My Code Snippets\\event.snippet||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C7BFA0B2-50D2-414D-B2FD-E01FCA5A4C6B}|BoutiqueClasses\\BoutiqueClasses.csproj|c:\\users\\dom\\desktop\\formations\\formatopn csharp 20260831\\formatopn csharp 20260831\\code\\moncode\\boutiqueclasses\\produitvendueventargs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C7BFA0B2-50D2-414D-B2FD-E01FCA5A4C6B}|BoutiqueClasses\\BoutiqueClasses.csproj|solutionrelative:boutiqueclasses\\produitvendueventargs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C7BFA0B2-50D2-414D-B2FD-E01FCA5A4C6B}|BoutiqueClasses\\BoutiqueClasses.csproj|c:\\users\\dom\\desktop\\formations\\formatopn csharp 20260831\\formatopn csharp 20260831\\code\\moncode\\boutiqueclasses\\produit-vente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C7BFA0B2-50D2-414D-B2FD-E01FCA5A4C6B}|BoutiqueClasses\\BoutiqueClasses.csproj|solutionrelative:boutiqueclasses\\produit-vente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C7BFA0B2-50D2-414D-B2FD-E01FCA5A4C6B}|BoutiqueClasses\\BoutiqueClasses.csproj|c:\\users\\dom\\desktop\\formations\\formatopn csharp 20260831\\formatopn csharp 20260831\\code\\moncode\\boutiqueclasses\\icatalogue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7BFA0B2-50D2-414D-B2FD-E01FCA5A4C6B}|BoutiqueClasses\\BoutiqueClasses.csproj|solutionrelative:boutiqueclasses\\icatalogue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C7BFA0B2-50D2-414D-B2FD-E01FCA5A4C6B}|BoutiqueClasses\\BoutiqueClasses.csproj|c:\\users\\dom\\desktop\\formations\\formatopn csharp 20260831\\formatopn csharp 20260831\\code\\moncode\\boutiqueclasses\\produit-stock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C7BFA0B2-50D2-414D-B2FD-E01FCA5A4C6B}|BoutiqueClasses\\BoutiqueClasses.csproj|solutionrelative:boutiqueclasses\\produit-stock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C7BFA0B2-50D2-414D-B2FD-E01FCA5A4C6B}|BoutiqueClasses\\BoutiqueClasses.csproj|c:\\users\\dom\\desktop\\formations\\formatopn csharp 20260831\\formatopn csharp 20260831\\code\\moncode\\boutiqueclasses\\produit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C7BFA0B2-50D2-414D-B2FD-E01FCA5A4C6B}|BoutiqueClasses\\BoutiqueClasses.csproj|solutionrelative:boutiqueclasses\\produit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A660E874-D1C8-4C36-9382-0A46F00B6883}|MonCode\\MonCode.csproj|c:\\users\\dom\\desktop\\formations\\formatopn csharp 20260831\\formatopn csharp 20260831\\code\\moncode\\moncode\\extensionstests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A660E874-D1C8-4C36-9382-0A46F00B6883}|MonCode\\MonCode.csproj|solutionrelative:moncode\\extensionstests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A660E874-D1C8-4C36-9382-0A46F00B6883}|MonCode\\MonCode.csproj|c:\\users\\dom\\desktop\\formations\\formatopn csharp 20260831\\formatopn csharp 20260831\\code\\moncode\\moncode\\myextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A660E874-D1C8-4C36-9382-0A46F00B6883}|MonCode\\MonCode.csproj|solutionrelative:moncode\\myextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A660E874-D1C8-4C36-9382-0A46F00B6883}|MonCode\\MonCode.csproj|c:\\users\\dom\\desktop\\formations\\formatopn csharp 20260831\\formatopn csharp 20260831\\code\\moncode\\moncode\\enumerablestests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A660E874-D1C8-4C36-9382-0A46F00B6883}|MonCode\\MonCode.csproj|solutionrelative:moncode\\enumerablestests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dom\\Documents\\Visual Studio 18\\Code Snippets\\Visual C#\\My Code Snippets\\event.snippet||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7BFA0B2-50D2-414D-B2FD-E01FCA5A4C6B}|BoutiqueClasses\\BoutiqueClasses.csproj|c:\\users\\dom\\desktop\\formations\\formatopn csharp 20260831\\formatopn csharp 20260831\\code\\moncode\\boutiqueclasses\\produit-vente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7BFA0B2-50D2-414D-B2FD-E01FCA5A4C6B}|BoutiqueClasses\\BoutiqueClasses.csproj|solutionrelative:boutiqueclasses\\produit-vente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A660E874-D1C8-4C36-9382-0A46F00B6883}|MonCode\\MonCode.csproj|c:\\users\\dom\\desktop\\formations\\formatopn csharp 20260831\\formatopn csharp 20260831\\code\\moncode\\moncode\\delegates.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -52,89 +64,141 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "App.cs",
+              "DocumentMoniker": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\MonCode\\MonCode\\App.cs",
+              "RelativeDocumentMoniker": "MonCode\\App.cs",
+              "ToolTip": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\MonCode\\MonCode\\App.cs",
+              "RelativeToolTip": "MonCode\\App.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAYwCIAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-03T09:51:03.8Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Catalogue.cs",
+              "DocumentMoniker": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\MonCode\\BoutiqueClasses\\Catalogue.cs",
+              "RelativeDocumentMoniker": "BoutiqueClasses\\Catalogue.cs",
+              "ToolTip": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\MonCode\\BoutiqueClasses\\Catalogue.cs",
+              "RelativeToolTip": "BoutiqueClasses\\Catalogue.cs",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAwwGcAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-03T09:22:42.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ICatalogue.cs",
+              "DocumentMoniker": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\MonCode\\BoutiqueClasses\\ICatalogue.cs",
+              "RelativeDocumentMoniker": "BoutiqueClasses\\ICatalogue.cs",
+              "ToolTip": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\MonCode\\BoutiqueClasses\\ICatalogue.cs",
+              "RelativeToolTip": "BoutiqueClasses\\ICatalogue.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAkAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-03T09:17:42.085Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DITests.cs",
+              "DocumentMoniker": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\MonCode\\MonCode\\DITests.cs",
+              "RelativeDocumentMoniker": "MonCode\\DITests.cs",
+              "ToolTip": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\MonCode\\MonCode\\DITests.cs",
+              "RelativeToolTip": "MonCode\\DITests.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAYwCEAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-03T08:11:53.114Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MyExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\MonCode\\MonCode\\MyExtensions.cs",
+              "RelativeDocumentMoniker": "MonCode\\MyExtensions.cs",
+              "ToolTip": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\MonCode\\MonCode\\MyExtensions.cs",
+              "RelativeToolTip": "MonCode\\MyExtensions.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAAACwAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-02T13:45:36.815Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "ExtensionsTests.cs",
               "DocumentMoniker": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\MonCode\\MonCode\\ExtensionsTests.cs",
               "RelativeDocumentMoniker": "MonCode\\ExtensionsTests.cs",
               "ToolTip": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\MonCode\\MonCode\\ExtensionsTests.cs",
               "RelativeToolTip": "MonCode\\ExtensionsTests.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAUwBkAAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-02T13:02:00.524Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "event.snippet",
               "DocumentMoniker": "C:\\Users\\Dom\\Documents\\Visual Studio 18\\Code Snippets\\Visual C#\\My Code Snippets\\event.snippet",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Documents\\Visual Studio 18\\Code Snippets\\Visual C#\\My Code Snippets\\event.snippet",
               "ToolTip": "C:\\Users\\Dom\\Documents\\Visual Studio 18\\Code Snippets\\Visual C#\\My Code Snippets\\event.snippet",
               "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Documents\\Visual Studio 18\\Code Snippets\\Visual C#\\My Code Snippets\\event.snippet",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAACcAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAABBwCcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002852|",
               "WhenOpened": "2026-09-02T12:03:51.258Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "ProduitVenduEventArgs.cs",
               "DocumentMoniker": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\MonCode\\BoutiqueClasses\\ProduitVenduEventArgs.cs",
               "RelativeDocumentMoniker": "BoutiqueClasses\\ProduitVenduEventArgs.cs",
               "ToolTip": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\MonCode\\BoutiqueClasses\\ProduitVenduEventArgs.cs",
               "RelativeToolTip": "BoutiqueClasses\\ProduitVenduEventArgs.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAWwA8AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-02T09:51:24.542Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "CatalogueTests.cs",
               "DocumentMoniker": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\MonCode\\MonCode\\CatalogueTests.cs",
               "RelativeDocumentMoniker": "MonCode\\CatalogueTests.cs",
               "ToolTip": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\MonCode\\MonCode\\CatalogueTests.cs",
               "RelativeToolTip": "MonCode\\CatalogueTests.cs",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAlwGIAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAlwBMAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-01T14:57:20.688Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Catalogue.cs",
-              "DocumentMoniker": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\MonCode\\BoutiqueClasses\\Catalogue.cs",
-              "RelativeDocumentMoniker": "BoutiqueClasses\\Catalogue.cs",
-              "ToolTip": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\MonCode\\BoutiqueClasses\\Catalogue.cs",
-              "RelativeToolTip": "BoutiqueClasses\\Catalogue.cs",
-              "ViewState": "AgIAAFIAAAAAAAAAAADwv2EAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-01T14:28:36.122Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 9,
               "Title": "EnumerablesTests.cs",
               "DocumentMoniker": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\MonCode\\MonCode\\EnumerablesTests.cs",
               "RelativeDocumentMoniker": "MonCode\\EnumerablesTests.cs",
               "ToolTip": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\MonCode\\MonCode\\EnumerablesTests.cs",
               "RelativeToolTip": "MonCode\\EnumerablesTests.cs",
-              "ViewState": "AgIAAKUAAAAAAAAAAAAswLkAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAALEAAAAAAAAAAAAswLwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-01T11:10:14.293Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "Delegates.cs",
               "DocumentMoniker": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\MonCode\\MonCode\\Delegates.cs",
               "RelativeDocumentMoniker": "MonCode\\Delegates.cs",
@@ -142,47 +206,38 @@
               "RelativeToolTip": "MonCode\\Delegates.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAQwBgAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-01T09:20:08.143Z"
+              "WhenOpened": "2026-09-01T09:20:08.143Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Produit.cs",
-              "DocumentMoniker": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\MonCode\\BoutiqueClasses\\Produit.cs",
-              "RelativeDocumentMoniker": "BoutiqueClasses\\Produit.cs",
-              "ToolTip": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\MonCode\\BoutiqueClasses\\Produit.cs",
-              "RelativeToolTip": "BoutiqueClasses\\Produit.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-01T08:53:43.478Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "Produit-stock.cs",
               "DocumentMoniker": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\MonCode\\BoutiqueClasses\\Produit-stock.cs",
               "RelativeDocumentMoniker": "BoutiqueClasses\\Produit-stock.cs",
               "ToolTip": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\MonCode\\BoutiqueClasses\\Produit-stock.cs",
               "RelativeToolTip": "BoutiqueClasses\\Produit-stock.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA0AAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABAAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-01T07:40:04.011Z"
+              "WhenOpened": "2026-09-01T07:40:04.011Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "myprop.snippet",
               "DocumentMoniker": "C:\\Users\\Dom\\Documents\\Visual Studio 18\\Code Snippets\\Visual C#\\My Code Snippets\\myprop.snippet",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Documents\\Visual Studio 18\\Code Snippets\\Visual C#\\My Code Snippets\\myprop.snippet",
               "ToolTip": "C:\\Users\\Dom\\Documents\\Visual Studio 18\\Code Snippets\\Visual C#\\My Code Snippets\\myprop.snippet",
               "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Documents\\Visual Studio 18\\Code Snippets\\Visual C#\\My Code Snippets\\myprop.snippet",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAB0AAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAABBwB0AAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002852|",
-              "WhenOpened": "2026-09-01T07:18:49.204Z"
+              "WhenOpened": "2026-09-01T07:18:49.204Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "Produit-vente.cs",
               "DocumentMoniker": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\MonCode\\BoutiqueClasses\\Produit-vente.cs",
               "RelativeDocumentMoniker": "BoutiqueClasses\\Produit-vente.cs",
@@ -190,7 +245,8 @@
               "RelativeToolTip": "BoutiqueClasses\\Produit-vente.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAAmwBQAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-01T06:50:47.7Z"
+              "WhenOpened": "2026-09-01T06:50:47.7Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -5,10 +5,10 @@ using System.Text.RegularExpressions;
 
 namespace Boutique
 {
-	/// <summary>
-	/// Décrit un Produit dans l'entreprise
-	/// </summary>
-    public partial class Produit
+    /// <summary>
+    /// Décrit un Produit dans l'entreprise
+    /// </summary>
+    public partial class Produit : IProduit
     {
         #region Constructeurs
         public Produit(string nom)
@@ -27,15 +27,15 @@ namespace Boutique
 
         private string _Nom;
 
-		/// <summary>
-		/// Le nom du produit affiché dans les UI
-		/// </summary>
-		public string Nom
-		{
+        /// <summary>
+        /// Le nom du produit affiché dans les UI
+        /// </summary>
+        public string Nom
+        {
 
-			get { return _Nom; }
-			internal set
-			{
+            get { return _Nom; }
+            internal set
+            {
 
 
 
@@ -44,24 +44,24 @@ namespace Boutique
 
 
                 if (string.IsNullOrWhiteSpace(value))
-				{
-					throw new ArgumentException("Le nom ne doit pas être vide");
-				}
+                {
+                    throw new ArgumentException("Le nom ne doit pas être vide");
+                }
                 // var path = @"c:\temp"; @ devant une chaine => permet d'échapper les caractères spéciaux
-                var reg =new Regex(@"^[A-Z][A-Z ]{0,49}$");
+                var reg = new Regex(@"^[A-Z \-0-9]{1,49}$");
                 if (!reg.IsMatch(value))
                 {
                     throw new ArgumentException("Le nom n'est pas correct");
                 }
                 _Nom = value;
-			}
-		}
-		#endregion
+            }
+        }
+        #endregion
 
 
 
 
 
 
-	}
+    }
 }

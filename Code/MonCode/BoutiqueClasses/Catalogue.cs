@@ -5,8 +5,12 @@ using System.Text;
 
 namespace Boutique
 {
-    public class Catalogue
+    public class Catalogue : ICatalogue
     {
+        internal Catalogue()
+        {
+            
+        }
         /// <summary>
 		/// Construit un Catalogue
 		/// </summary>
@@ -19,9 +23,9 @@ namespace Boutique
 
         public int LimiteEpuisementProduit { get; set; } = 10;
 
-        protected List<Produit> _ListeProduits = new(); // Au lieu de new List<Produit>()
+        protected List<IProduit> _ListeProduits = new(); // Au lieu de new List<Produit>()
 
-        public IEnumerable<Produit> ListeProduits
+        public IEnumerable<IProduit> ListeProduits
         {
             get
             {
@@ -34,8 +38,9 @@ namespace Boutique
         /// </summary>
         /// <param name="produit">Le produit à ajouter</param>
         /// <exception cref="ArgumentException"></exception>
-        public void AddProduit(Produit produit, int nbStock = 1)
+        public void AddProduit(IProduit produit, int nbStock = 1)
         {
+
             if (produit == null)
             {
                 throw new ArgumentNullException("Le produit est null");
@@ -52,11 +57,11 @@ namespace Boutique
 #endif
                 throw new ArgumentException($"Le prix du produit {produit.Nom} est inférieur au prix minimum du catalogue {this.PrixMinimum:C}.");
             }
-            produit.NbStock = nbStock;
-            this._ListeProduits.Add(produit);
+            ((Produit)produit).NbStock = nbStock;
+            this._ListeProduits.Add((Produit)produit);
         }
 
-        public decimal VendreProduit(Produit produit, int qte)
+        public decimal VendreProduit(IProduit produit, int qte)
         {
             // Vérification de la validité des paramètres
             if (qte < 0)
@@ -81,24 +86,25 @@ namespace Boutique
             }
             // 
 
-            p.NbStock -= qte;
+            ((Produit)p).NbStock -= qte;
             // Avertir les abonnés que le produit a été vendu
             // En passant les informations utiles aux gestionnaires
             // Test pour savoir si l'évènement a des abonnés
-            OnProduitVendu(qte,p, p.Prix * qte);
-            if(
-                p.NbStock+qte>this.LimiteEpuisementProduit
-                && 
+            OnProduitVendu(qte, p, p.Prix * qte);
+            if (
+                p.NbStock + qte > this.LimiteEpuisementProduit
+                &&
                 p.NbStock < this.LimiteEpuisementProduit)
             {
-                OnProduitPresqueEpuise(new ProduitPresqueEpuiseEventArgs() { 
-                    Limite=this.LimiteEpuisementProduit,
-                    Produit=p,
-                    StockActualise=p.NbStock,
-                    Date=DateTime.Now
+                OnProduitPresqueEpuise(new ProduitPresqueEpuiseEventArgs()
+                {
+                    Limite = this.LimiteEpuisementProduit,
+                    Produit = p,
+                    StockActualise = p.NbStock,
+                    Date = DateTime.Now
                 });
             }
-           
+
             return p.Prix * qte;
         }
         #region Evènements
@@ -131,7 +137,7 @@ namespace Boutique
 
         // protected => visible dans le projet et dans les classes dérivées (héritage)
         // virtual => peut être surchargée dans les classes dérivées (héritage)
-        protected virtual void OnProduitVendu(int qte, Produit produit, decimal montantVente)
+        protected virtual void OnProduitVendu(int qte, IProduit produit, decimal montantVente)
         {             // Avertir les abonnés que le produit a été vendu
             // Test pour savoir si l'évènement a des abonnés
             if (ProduitVendu != null)

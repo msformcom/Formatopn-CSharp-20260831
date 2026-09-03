@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.14.37502.11 d17.14
+# Visual Studio Version 18
+VisualStudioVersion = 18.9.12120.119 stable
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonCode", "MonCode\MonCode.csproj", "{A660E874-D1C8-4C36-9382-0A46F00B6883}"
 EndProject
@@ -13,20 +13,27 @@ Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+		VersionLimitee|Any CPU = VersionLimitee|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{A660E874-D1C8-4C36-9382-0A46F00B6883}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A660E874-D1C8-4C36-9382-0A46F00B6883}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A660E874-D1C8-4C36-9382-0A46F00B6883}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A660E874-D1C8-4C36-9382-0A46F00B6883}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A660E874-D1C8-4C36-9382-0A46F00B6883}.VersionLimitee|Any CPU.ActiveCfg = VersionLimitee|Any CPU
+		{A660E874-D1C8-4C36-9382-0A46F00B6883}.VersionLimitee|Any CPU.Build.0 = VersionLimitee|Any CPU
 		{6DF6430A-6167-D977-7BC9-6CB53D97C41B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6DF6430A-6167-D977-7BC9-6CB53D97C41B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6DF6430A-6167-D977-7BC9-6CB53D97C41B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6DF6430A-6167-D977-7BC9-6CB53D97C41B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DF6430A-6167-D977-7BC9-6CB53D97C41B}.VersionLimitee|Any CPU.ActiveCfg = VersionLimitee|Any CPU
+		{6DF6430A-6167-D977-7BC9-6CB53D97C41B}.VersionLimitee|Any CPU.Build.0 = VersionLimitee|Any CPU
 		{C7BFA0B2-50D2-414D-B2FD-E01FCA5A4C6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C7BFA0B2-50D2-414D-B2FD-E01FCA5A4C6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C7BFA0B2-50D2-414D-B2FD-E01FCA5A4C6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C7BFA0B2-50D2-414D-B2FD-E01FCA5A4C6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7BFA0B2-50D2-414D-B2FD-E01FCA5A4C6B}.VersionLimitee|Any CPU.ActiveCfg = VersionLimitee|Any CPU
+		{C7BFA0B2-50D2-414D-B2FD-E01FCA5A4C6B}.VersionLimitee|Any CPU.Build.0 = VersionLimitee|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -13,6 +13,58 @@ namespace MonCode
             return j.AddDays(DateTime.DaysInMonth(j.Year, j.Month) - j.Day);
         }
 
+        // Fonction qui s'applique à tout IEnumerable quel que soit le type
+        public static IEnumerable<TSource> Sample<TSource>(this IEnumerable<TSource> source, int pas)
+        {
+            if (source == null)
+            {
+                throw new ArgumentNullException("La source est nulle");
+            }
+            int i = 0;
+            foreach(var e in source)
+            {
+                if(i % pas == 0)
+                {
+                    yield return e;
+                }
+
+                i++;
+            }
+        }
+
+        public static IEnumerable<TTarget> Cast<TSource,TTarget>(this IEnumerable<TSource> source, int n) 
+            where TTarget : TSource
+        {
+            foreach(var e in source)
+            {
+                yield return (TTarget)e;
+            }
+        }
+
+        public static IEnumerable<TSource> MyShuffle<TSource>(this IEnumerable<TSource> source){
+            var r = new Random();
+            return source.OrderBy(c => r.Next());
+        }
+
+        public static IEnumerable<TSource> MySkip<TSource>(this IEnumerable<TSource> source, int n)
+        {
+            var iterator = source.GetEnumerator();
+
+            for (var i = 0; i < n; i++)
+            {
+                if (!iterator.MoveNext())
+                {
+                    break;
+             
+                }
+            }
+            while (true)
+            {
+                iterator.MoveNext();
+                yield return iterator.Current;
+            }
+
+        }
 
 
         public static IEnumerable<int> Next(this int start, int nbElements)
