@@ -3,12 +3,32 @@ using System.Collections.Generic;
 using System.Runtime.ConstrainedExecution;
 using System.Text;
 
+
 namespace MonCode
 {
     public class ExtensionsTests
     {
+
         [TestMethod]
-        public void StringExtensionsTests()
+        public void EnfOfMonthTests()
+        {
+            var d = DateTime.Now;
+            var e = d.EndOfMonth(0, 0, 45);
+            e = d.EndOfMonth( 0,2,  secondes: 10, 
+                                jours: 45);
+        }
+
+        [TestMethod]
+        public void NextTests()
+        {
+            var a = 6;
+            foreach(var i in a.Next(10).Take(2))
+            {
+              
+            }
+        }
+        [TestMethod]
+        public void EllipsisTests()
         {
             var s = "Cet autoradion est un super autoradionhkj KjhKJ kjh kshfkjsh dkfjskdjfh skjdfh ksjh dfkj hsdjkf ksj dfhk sdf ks";
             // Afficher s dans une interface
@@ -16,11 +36,11 @@ namespace MonCode
             // méthode qui prend une chaine 
 
 
-            var e = StringExtensions.Ellipsis(s, 10); // => Cet aut...
+            var e = MyExtensions.Ellipsis(s, 10); // => Cet aut...
             e = s.Ellipsis(10);
 
-            new List<int>().Where(c => c < 10);
-
+            // Les méthodes de Linq (Where, OrderBy,etc)
+            // Sont des méthodes d'extension sur IEnumerable<T>
         }
 
        
@@ -38,12 +58,5 @@ namespace MonCode
     // var e = StringExtensions.Ellipsis(s, 10); // => Cet aut...
     // e = s.Ellipsis(10);
 
-    public static class StringExtensions
-    {
-        public static string Ellipsis(this string s, int maxLength)
-        {
-            if (s.Length <= maxLength) return s;
-            return s.Substring(0, maxLength - 3) + "...";
-        }
-    }
+
 }
