@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Dom\\source\\repos\\LibrodocusDAL\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7E491FD7-9278-24E1-2409-58A87F915F74}|LibrodocusDAL.Tests\\LibrodocusDAL.Tests.csproj|c:\\users\\dom\\source\\repos\\librodocusdal\\librodocusdal.tests\\librodocuscontexttests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E491FD7-9278-24E1-2409-58A87F915F74}|LibrodocusDAL.Tests\\LibrodocusDAL.Tests.csproj|solutionrelative:librodocusdal.tests\\librodocuscontexttests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2653A19-CF5A-4C70-D9D0-0357DA591BAF}|LibrodocusDAL\\LibrodocusDAL.csproj|c:\\users\\dom\\source\\repos\\librodocusdal\\librodocusdal\\librodocuscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2653A19-CF5A-4C70-D9D0-0357DA591BAF}|LibrodocusDAL\\LibrodocusDAL.csproj|solutionrelative:librodocusdal\\librodocuscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LibrodocusContext.cs",
+              "DocumentMoniker": "C:\\Users\\Dom\\source\\repos\\LibrodocusDAL\\LibrodocusDAL\\LibrodocusContext.cs",
+              "RelativeDocumentMoniker": "LibrodocusDAL\\LibrodocusContext.cs",
+              "ToolTip": "C:\\Users\\Dom\\source\\repos\\LibrodocusDAL\\LibrodocusDAL\\LibrodocusContext.cs",
+              "RelativeToolTip": "LibrodocusDAL\\LibrodocusContext.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAkwCMAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-04T13:32:15.125Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LibrodocusContextTests.cs",
+              "DocumentMoniker": "C:\\Users\\Dom\\source\\repos\\LibrodocusDAL\\LibrodocusDAL.Tests\\LibrodocusContextTests.cs",
+              "RelativeDocumentMoniker": "LibrodocusDAL.Tests\\LibrodocusContextTests.cs",
+              "ToolTip": "C:\\Users\\Dom\\source\\repos\\LibrodocusDAL\\LibrodocusDAL.Tests\\LibrodocusContextTests.cs*",
+              "RelativeToolTip": "LibrodocusDAL.Tests\\LibrodocusContextTests.cs*",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAAAGMAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-04T12:41:49.379Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

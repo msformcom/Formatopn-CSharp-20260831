@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="LibrodocusDAL.Tests/LibrodocusDAL.Tests.csproj" />
+  <Project Path="LibrodocusDAL/LibrodocusDAL.csproj" />
+</Solution>
