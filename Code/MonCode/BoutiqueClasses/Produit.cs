@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Reflection;
 using System.Text;
 using System.Text.RegularExpressions;
 using Microsoft.Extensions.DependencyInjection;
@@ -46,6 +48,10 @@ namespace Boutique
                 // si DI fournit la fonction de validation
                 if (validator != null)
                 {
+
+
+
+
                     var resultatValidation = validator(value);
                     if (!resultatValidation.valid)
                     {

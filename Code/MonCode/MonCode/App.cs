@@ -50,7 +50,7 @@ namespace MonCode
                 // ici => utiliser la config pour rechercher la chaine de connection nommée
                 // MyConnection
 
-                options.UseSqlServer("name=MyConnection");
+                options.UseSqlServer(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=BoutiqueDB;Integrated Security=True;Trust Server Certificate=True;");
                 //options.UseSqlServer(config.GetConnectionString("MyConnection"));
             });
             #endregion
@@ -104,6 +104,18 @@ namespace MonCode
 
             // Création de l'injecteur
             App.Services= serviceCollection.BuildServiceProvider();
+
+
+            #region Assurer que la BDD est crée
+            var db = App.Services.GetRequiredService<BoutiqueContext>();
+            // Va créer la BDD avec la structure de tables nécessaire
+            // si non existante
+            // On peut aussi demander à mettre à jour la BDD si notre application a évolue
+            db.Database.EnsureCreated();
+            #endregion
+
+
+
         }
     }
 }

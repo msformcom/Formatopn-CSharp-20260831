@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BoutiqueClasses")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e905ee4d66bc3496382b9a07d495b253570fce08")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0616ce1b1197fc25cb5384ddcedea6650a41a2c3")]
 [assembly: System.Reflection.AssemblyProductAttribute("BoutiqueClasses")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BoutiqueClasses")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

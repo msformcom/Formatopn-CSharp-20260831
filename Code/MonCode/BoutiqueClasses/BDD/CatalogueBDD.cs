@@ -6,11 +6,11 @@ namespace Boutique.BDD
 {
     public class CatalogueBDD : ICatalogue
     {
-        public int LimiteEpuisementProduit { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public int LimiteEpuisementProduit { get; set; }
 
         public IEnumerable<IProduit> ListeProduits => throw new NotImplementedException();
 
-        public decimal PrixMinimum => throw new NotImplementedException();
+        public decimal PrixMinimum { get; set; }
 
         public event EventHandler<ProduitPresqueEpuiseEventArgs> ProduitPresqueEpuise;
         public event EventHandler<ProduitVenduEventArgs> ProduitVendu;
