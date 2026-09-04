@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Text.RegularExpressions;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Boutique
 {
@@ -11,9 +12,11 @@ namespace Boutique
     public partial class Produit : IProduit
     {
         #region Constructeurs
-        public Produit(string nom)
+        public Produit(string nom, IServiceProvider serviceProvider)
         {
+            this.serviceProvider = serviceProvider;
             this.Nom = nom;
+
         }
         #endregion
 
@@ -26,6 +29,7 @@ namespace Boutique
         #region Propriété Nom
 
         private string _Nom;
+        private readonly IServiceProvider serviceProvider;
 
         /// <summary>
         /// Le nom du produit affiché dans les UI
@@ -36,22 +40,17 @@ namespace Boutique
             get { return _Nom; }
             internal set
             {
-
-
-
-                // TODO : Ajoutez ici la logique de validation pour la propriété Nom
-
-
-
-                if (string.IsNullOrWhiteSpace(value))
+                // Demande du validateur de chaine associé au Nom
+                // Si non configuré dans DI => null
+                var validator = serviceProvider.GetKeyedService<StringValidator>("NomValidator");
+                // si DI fournit la fonction de validation
+                if (validator != null)
                 {
-                    throw new ArgumentException("Le nom ne doit pas être vide");
-                }
-                // var path = @"c:\temp"; @ devant une chaine => permet d'échapper les caractères spéciaux
-                var reg = new Regex(@"^[A-Z \-0-9]{1,49}$");
-                if (!reg.IsMatch(value))
-                {
-                    throw new ArgumentException("Le nom n'est pas correct");
+                    var resultatValidation = validator(value);
+                    if (!resultatValidation.valid)
+                    {
+                        throw new ArgumentException(resultatValidation.message);
+                    }
                 }
                 _Nom = value;
             }

@@ -17,13 +17,13 @@ public class DITests
 #if VERSIONLIMITEE
         serviceCollection.AddTransient<ICatalogue,Catalogue>(s=>new Catalogue(10));
 #else
-        serviceCollection.AddKeyedTransient<IProduit>("Fourchette",(s,o)=>new Produit("FOURCHETTE",12));
-        serviceCollection.AddKeyedTransient<IProduit>("Couteau", (s, o) => new Produit("COUTEAU", 23));
+        serviceCollection.AddKeyedTransient<IProduit>("Fourchette",(s,o)=>new Produit("FOURCHETTE",12,App.Services));
+        serviceCollection.AddKeyedTransient<IProduit>("Couteau", (s, o) => new Produit("COUTEAU", 23, App.Services));
         serviceCollection.AddTransient<ICatalogue>(s=> {
             ICatalogue c=new Catalogue(5);
             c.AddProduit(s.GetRequiredKeyedService<IProduit>("Fourchette"),10);
             c.AddProduit(s.GetRequiredKeyedService<IProduit>("Couteau"), 10);
-            c.AddProduit(new Produit("ASSIETTE", 76));
+            c.AddProduit(new Produit("ASSIETTE", 76, App.Services));
 
             return c;
         });

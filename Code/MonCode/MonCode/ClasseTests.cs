@@ -15,7 +15,7 @@ public class ClasseTests
         decimal nouveauPrix = decimal.Parse(nouveauPrixString);
         // Arrange 
         bool exception = false;
-        var p = new Produit("TOTO",prixInitial);
+        var p = new Produit("TOTO",prixInitial,App.Services);
 
         try
         {
@@ -48,7 +48,7 @@ public class ClasseTests
         try
         {
             // Sensé renvoyer une exception
-             p = new Produit("Toto", 1000);
+             p = new Produit("Toto", 1000, App.Services);
            
         }
         catch (Exception)
@@ -82,7 +82,7 @@ public class ClasseTests
         var ex=Assert.ThrowsException<ArgumentException>(() =>
         {
             // Sensé renvoyer une exception
-            p = new Produit("Toto", 1000);
+            p = new Produit("Toto", 1000,App.Services);
         },"Le nom du produit incorrect passe");
         Assert.AreEqual(ex.Message, "Le nom n'est pas correct","Le message d'erreur n'est pas correct");
     }
@@ -94,7 +94,7 @@ public class ClasseTests
     public void ValidationTest()
     {
         // Arrange
-        Produit produit = new Produit("TOTO", 1000M);
+        Produit produit = new Produit("TOTO", 1000M, App.Services);
         bool exceptionPrixNegatif = false;
         // Act : une instance doit avoir un prix par défaut supérieur à 0
         Assert.IsTrue(produit.Prix > 0, "La valeur par défaut ne convient pas");

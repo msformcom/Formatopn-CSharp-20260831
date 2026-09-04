@@ -15,8 +15,9 @@ public class CatalogueTests
     public void AjoutProduitTest(string inputPrix, bool erreurExpected)
     {
         var c = App.Services.GetRequiredService<ICatalogue>();
-        var p = App.Services.GetRequiredKeyedService<IProduit>("Random");
-        Action action = () => c.AddProduit(new Produit("PRODUITTEST", decimal.Parse(inputPrix)));
+        var produitAjoute = App.Services.GetRequiredKeyedService<IProduit>("Random");
+
+        Action action = () => c.AddProduit(produitAjoute);
         if (erreurExpected)
         {
             // Avec la valeur de inputPrix, on s'attend à ce que l'ajout du produit échoue et lève une exception
@@ -26,7 +27,7 @@ public class CatalogueTests
         {
             // Avec la valeur de inputPrix, on s'attend à ce que l'ajout du produit réussisse
             action();
-            Assert.IsTrue(c.ListeProduits.Any(p => p.Nom == "PRODUITTEST" && p.Prix == decimal.Parse(inputPrix)), $"Le produit n'a pas été ajouté correctement");
+            Assert.IsTrue(c.ListeProduits.Any(p => p.Nom == produitAjoute.Nom && p.Prix == produitAjoute.Prix), $"Le produit n'a pas été ajouté correctement");
         }
 
         var ListeProduits = c.ListeProduits.Where(p => p.Prix <= 100)
@@ -84,7 +85,7 @@ public class CatalogueTests
     {
         var c = App.Services.GetRequiredService<ICatalogue>();
         c.LimiteEpuisementProduit = 20;
-        var p = new Produit("TEST", 20);
+        var p = App.Services.GetRequiredKeyedService<IProduit>("Random");
         c.AddProduit(p, 25);
 
         Boolean eventExecuted = false;

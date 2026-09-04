@@ -13,7 +13,7 @@ namespace Boutique
         // On veut forcer l'initialisation du prix à la création de l'instance
         // On crée un constructeur avec un paramètre prix
         // Qui passe le nom au constructeur privé qui gère l'initialisation du nom
-        public Produit(string nom, decimal prix) : this(nom)
+        public Produit(string nom, decimal prix, IServiceProvider s) : this(nom,s)
         {
 
             // On utilise la propriété Prix pour valider la valeur

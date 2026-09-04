@@ -10,3 +10,4 @@ C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260
 C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\MonCode\BoutiqueClasses\obj\Debug\net10.0\refint\BoutiqueClasses.dll
 C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\MonCode\BoutiqueClasses\obj\Debug\net10.0\BoutiqueClasses.pdb
 C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\MonCode\BoutiqueClasses\obj\Debug\net10.0\ref\BoutiqueClasses.dll
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\MonCode\BoutiqueClasses\obj\Debug\net10.0\BoutiqueClasses.csproj.AssemblyReference.cache
