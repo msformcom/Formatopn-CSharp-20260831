@@ -552,11 +552,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Dom\\source\\repos\\LibrodocusDAL\\LibrodocusDAL\\LibrodocusDAL.csproj",
+      "projectUniqueName": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\LibrodocusDAL\\LibrodocusDAL\\LibrodocusDAL.csproj",
       "projectName": "LibrodocusDAL",
-      "projectPath": "C:\\Users\\Dom\\source\\repos\\LibrodocusDAL\\LibrodocusDAL\\LibrodocusDAL.csproj",
+      "projectPath": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\LibrodocusDAL\\LibrodocusDAL\\LibrodocusDAL.csproj",
       "packagesPath": "C:\\Users\\Dom\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Dom\\source\\repos\\LibrodocusDAL\\LibrodocusDAL\\obj\\",
+      "outputPath": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\LibrodocusDAL\\LibrodocusDAL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

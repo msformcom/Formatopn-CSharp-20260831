@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FN/CpAJ3w8w=",
+  "dgSpecHash": "AT+rWDMXYSY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Dom\\source\\repos\\LibrodocusDAL\\LibrodocusDAL.Tests\\LibrodocusDAL.Tests.csproj",
+  "projectFilePath": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\LibrodocusDAL\\LibrodocusDAL.Tests\\LibrodocusDAL.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Dom\\.nuget\\packages\\azure.core\\1.50.0\\azure.core.1.50.0.nupkg.sha512",
     "C:\\Users\\Dom\\.nuget\\packages\\azure.identity\\1.17.1\\azure.identity.1.17.1.nupkg.sha512",
