@@ -1,0 +1,13 @@
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\AlloCine\AlloCineDAL\bin\Debug\net10.0\AlloCineDAL.deps.json
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\AlloCine\AlloCineDAL\bin\Debug\net10.0\AlloCineDAL.dll
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\AlloCine\AlloCineDAL\bin\Debug\net10.0\AlloCineDAL.pdb
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\AlloCine\AlloCineDAL\obj\Debug\net10.0\AlloCineDAL.csproj.AssemblyReference.cache
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\AlloCine\AlloCineDAL\obj\Debug\net10.0\AlloCineDAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\AlloCine\AlloCineDAL\obj\Debug\net10.0\AlloCineDAL.AssemblyInfoInputs.cache
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\AlloCine\AlloCineDAL\obj\Debug\net10.0\AlloCineDAL.AssemblyInfo.cs
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\AlloCine\AlloCineDAL\obj\Debug\net10.0\AlloCineDAL.csproj.CoreCompileInputs.cache
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\AlloCine\AlloCineDAL\obj\Debug\net10.0\AlloCineDAL.sourcelink.json
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\AlloCine\AlloCineDAL\obj\Debug\net10.0\AlloCineDAL.dll
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\AlloCine\AlloCineDAL\obj\Debug\net10.0\refint\AlloCineDAL.dll
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\AlloCine\AlloCineDAL\obj\Debug\net10.0\AlloCineDAL.pdb
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\AlloCine\AlloCineDAL\obj\Debug\net10.0\ref\AlloCineDAL.dll
