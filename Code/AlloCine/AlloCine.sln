@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeTests", "CodeTests\Code
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MesTests", "MesTests\MesTests.csproj", "{3B313A1F-1476-4888-B0BF-35A89A7BDF26}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlloCineServiceBDD", "AlloCineServiceBDD\AlloCineServiceBDD.csproj", "{7447FFFA-6319-4D54-8C28-D49204A1C077}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{3B313A1F-1476-4888-B0BF-35A89A7BDF26}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B313A1F-1476-4888-B0BF-35A89A7BDF26}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B313A1F-1476-4888-B0BF-35A89A7BDF26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7447FFFA-6319-4D54-8C28-D49204A1C077}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7447FFFA-6319-4D54-8C28-D49204A1C077}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7447FFFA-6319-4D54-8C28-D49204A1C077}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7447FFFA-6319-4D54-8C28-D49204A1C077}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

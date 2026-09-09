@@ -341,3 +341,12 @@ C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260
 C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\AlloCine\MesTests\obj\Debug\net10.0\MesTests.genruntimeconfig.cache
 C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\AlloCine\MesTests\obj\Debug\net10.0\ref\MesTests.dll
 C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\AlloCine\MesTests\bin\Debug\net10.0\Microsoft.Extensions.Logging.Debug.dll
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\AlloCine\MesTests\bin\Debug\net10.0\AlloCineInterfaces.dll
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\AlloCine\MesTests\bin\Debug\net10.0\AlloCineServiceBDD.dll
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\AlloCine\MesTests\bin\Debug\net10.0\AlloCineInterfaces.pdb
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\AlloCine\MesTests\bin\Debug\net10.0\AlloCineServiceBDD.pdb
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\AlloCine\MesTests\bin\Debug\net10.0\AutoMapper.dll
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\AlloCine\MesTests\bin\Debug\net10.0\AutoMapper.Collection.dll
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\AlloCine\MesTests\bin\Debug\net10.0\AutoMapper.Collection.EntityFrameworkCore.dll
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\AlloCine\MesTests\bin\Debug\net10.0\AutoMapper.Extensions.ExpressionMapping.dll
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\AlloCine\MesTests\bin\Debug\net10.0\Castle.Core.dll

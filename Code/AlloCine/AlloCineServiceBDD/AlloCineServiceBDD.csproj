@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="16.2.0" />
+    <PackageReference Include="AutoMapper.Collection.EntityFrameworkCore" Version="13.0.0" />
+    <PackageReference Include="Castle.Core" Version="5.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AlloCineDAL\AlloCineDAL.csproj" />
+    <ProjectReference Include="..\AlloCineInterfaces\AlloCineInterfaces.csproj" />
+  </ItemGroup>
+
+</Project>

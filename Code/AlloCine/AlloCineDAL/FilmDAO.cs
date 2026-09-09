@@ -29,7 +29,7 @@ namespace AlloCineDAL
 
         public DateOnly ReleaseDate { get; set; }
 
-        public DateTime LastUpdate { get; set; }
+        public DateTime LastUpdate { get; set; } = DateTime.Now;
 
         // Indique à EF que un Film est associé à une ICollection de séance
         public ICollection<SeanceDAO> Seances { get; set; }

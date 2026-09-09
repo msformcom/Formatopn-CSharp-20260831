@@ -5,9 +5,18 @@
         // La lecture des cinémas passe par des processus (internet) qui peuvent être longs
         // On ne peut l'utiliser comme une fonction "normale"
         Task<IEnumerable<ICinema>> GetCinemasAsync(string codePostal);
+
+        // Recherche des films dont le titre contient un texte donné
+        Task<IEnumerable<IFilm>> SearchFilmsByTextAsync(string searchText); 
         Task<IEnumerable<IFilm>> GetFilmsByCinemaAsync(string codeCinema);
 
         Task<IEnumerable<ICinema>> GetCinemasByFilmAsync(string codeFilm);
+
+        Task<IFilm> AddFilmAsync(IFilm film);
+        Task<ICinema> AddCinemaAsync(ICinema cinema);
+        Task<ISeance> AddSeanceAsync(ISeance seance);
+       
+        // Task RemoveFilm(IFilm film);
 
     }
 }

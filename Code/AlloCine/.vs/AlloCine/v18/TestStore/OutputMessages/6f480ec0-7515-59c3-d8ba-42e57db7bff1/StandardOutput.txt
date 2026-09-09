@@ -1,0 +1,114 @@
+
+
+Trace du débogage :
+AlloCineDAL.AlloCineContext: Information: Création d'un context Allocine
+Microsoft.EntityFrameworkCore.Database.Command: Information: Executed DbCommand (26ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+Microsoft.EntityFrameworkCore.Database.Command: Information: Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [AlloCineDB] SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
+END;
+Microsoft.EntityFrameworkCore.Database.Command: Information: Executed DbCommand (23ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+DROP DATABASE [AlloCineDB];
+Microsoft.EntityFrameworkCore.Database.Command: Information: Executed DbCommand (290ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+CREATE DATABASE [AlloCineDB];
+Microsoft.EntityFrameworkCore.Database.Command: Information: Executed DbCommand (72ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [AlloCineDB] SET READ_COMMITTED_SNAPSHOT ON;
+END;
+Microsoft.EntityFrameworkCore.Database.Command: Information: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+Microsoft.EntityFrameworkCore.Database.Command: Information: Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [TBL_Cinemas] (
+    [PK_Cinema] uniqueidentifier NOT NULL,
+    [Code] char(10) NOT NULL,
+    [Name] nvarchar(100) NOT NULL,
+    [PostalCode] nvarchar(max) NOT NULL,
+    [RoomCount] int NOT NULL,
+    [OwnerName] nvarchar(max) NOT NULL,
+    [LastUpdate] datetime2 NOT NULL,
+    CONSTRAINT [PK_TBL_Cinemas] PRIMARY KEY ([PK_Cinema])
+);
+Microsoft.EntityFrameworkCore.Database.Command: Information: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [TBL_Films] (
+    [PK_Film] uniqueidentifier NOT NULL,
+    [Code] char(10) NOT NULL,
+    [Title] nvarchar(100) NOT NULL,
+    [Length] int NOT NULL,
+    [ReleaseDate] date NOT NULL,
+    [LastUpdate] datetime2 NOT NULL,
+    CONSTRAINT [PK_TBL_Films] PRIMARY KEY ([PK_Film])
+);
+Microsoft.EntityFrameworkCore.Database.Command: Information: Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [TBL_Seances] (
+    [PK_Seance] uniqueidentifier NOT NULL,
+    [Code] nvarchar(10) NOT NULL,
+    [Date] datetime2 NOT NULL,
+    [FK_Cinema] uniqueidentifier NOT NULL,
+    [FK_Film] uniqueidentifier NOT NULL,
+    CONSTRAINT [PK_TBL_Seances] PRIMARY KEY ([PK_Seance]),
+    CONSTRAINT [FK_TBL_Seances_TBL_Cinemas_FK_Cinema] FOREIGN KEY ([FK_Cinema]) REFERENCES [TBL_Cinemas] ([PK_Cinema]) ON DELETE CASCADE,
+    CONSTRAINT [FK_TBL_Seances_TBL_Films_FK_Film] FOREIGN KEY ([FK_Film]) REFERENCES [TBL_Films] ([PK_Film]) ON DELETE CASCADE
+);
+Microsoft.EntityFrameworkCore.Database.Command: Information: Executed DbCommand (37ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'PK_Cinema', N'Code', N'LastUpdate', N'Name', N'OwnerName', N'PostalCode', N'RoomCount') AND [object_id] = OBJECT_ID(N'[TBL_Cinemas]'))
+    SET IDENTITY_INSERT [TBL_Cinemas] ON;
+INSERT INTO [TBL_Cinemas] ([PK_Cinema], [Code], [LastUpdate], [Name], [OwnerName], [PostalCode], [RoomCount])
+VALUES ('9517e117-556a-44bf-b963-b30638ad2398', 'CI422', '2026-09-09T16:55:43.6403654+02:00', N'Paradiso', N'John Wick', N'75000', 1);
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'PK_Cinema', N'Code', N'LastUpdate', N'Name', N'OwnerName', N'PostalCode', N'RoomCount') AND [object_id] = OBJECT_ID(N'[TBL_Cinemas]'))
+    SET IDENTITY_INSERT [TBL_Cinemas] OFF;
+Microsoft.EntityFrameworkCore.Database.Command: Information: Executed DbCommand (12ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'PK_Film', N'Code', N'LastUpdate', N'Length', N'ReleaseDate', N'Title') AND [object_id] = OBJECT_ID(N'[TBL_Films]'))
+    SET IDENTITY_INSERT [TBL_Films] ON;
+INSERT INTO [TBL_Films] ([PK_Film], [Code], [LastUpdate], [Length], [ReleaseDate], [Title])
+VALUES ('0ccb412b-2a8c-4833-b43c-1df15f6b9b2d', 'CO1981SC', '2026-09-09T16:55:43.6397215+02:00', 96, '1081-12-02', N'La soupe aux choux');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'PK_Film', N'Code', N'LastUpdate', N'Length', N'ReleaseDate', N'Title') AND [object_id] = OBJECT_ID(N'[TBL_Films]'))
+    SET IDENTITY_INSERT [TBL_Films] OFF;
+Microsoft.EntityFrameworkCore.Database.Command: Information: Executed DbCommand (12ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'PK_Seance', N'Code', N'Date', N'FK_Cinema', N'FK_Film') AND [object_id] = OBJECT_ID(N'[TBL_Seances]'))
+    SET IDENTITY_INSERT [TBL_Seances] ON;
+INSERT INTO [TBL_Seances] ([PK_Seance], [Code], [Date], [FK_Cinema], [FK_Film])
+VALUES ('a2216911-cf62-4088-ab31-57b0e657dde8', N'SE00001', '0001-01-01T00:00:00.0000000', '9517e117-556a-44bf-b963-b30638ad2398', '0ccb412b-2a8c-4833-b43c-1df15f6b9b2d');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'PK_Seance', N'Code', N'Date', N'FK_Cinema', N'FK_Film') AND [object_id] = OBJECT_ID(N'[TBL_Seances]'))
+    SET IDENTITY_INSERT [TBL_Seances] OFF;
+Microsoft.EntityFrameworkCore.Database.Command: Information: Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE UNIQUE INDEX [IX_TBL_Cinemas_Code] ON [TBL_Cinemas] ([Code]);
+Microsoft.EntityFrameworkCore.Database.Command: Information: Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE UNIQUE INDEX [IX_TBL_Films_Code] ON [TBL_Films] ([Code]);
+Microsoft.EntityFrameworkCore.Database.Command: Information: Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE UNIQUE INDEX [IX_TBL_Seances_Code] ON [TBL_Seances] ([Code]);
+Microsoft.EntityFrameworkCore.Database.Command: Information: Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_TBL_Seances_FK_Cinema] ON [TBL_Seances] ([FK_Cinema]);
+Microsoft.EntityFrameworkCore.Database.Command: Information: Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_TBL_Seances_FK_Film] ON [TBL_Seances] ([FK_Film]);
+AlloCineDAL.AlloCineContext: Information: Création d'un context Allocine
+Microsoft.EntityFrameworkCore.Database.Command: Information: Executed DbCommand (42ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 10) (DbType = AnsiString), @p2='?' (DbType = DateTime2), @p3='?' (Size = 100), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [TBL_Cinemas] ([PK_Cinema], [Code], [LastUpdate], [Name], [OwnerName], [PostalCode], [RoomCount])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+AlloCineDAL.AlloCineContext: Information: Création d'un context Allocine
+Microsoft.EntityFrameworkCore.Database.Command: Information: Executed DbCommand (6ms) [Parameters=[@seance_Cinema_Code='?' (Size = 10) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [t].[PK_Cinema], [t].[Code], [t].[LastUpdate], [t].[Name], [t].[OwnerName], [t].[PostalCode], [t].[RoomCount]
+FROM [TBL_Cinemas] AS [t]
+WHERE [t].[Code] = @seance_Cinema_Code
+Microsoft.EntityFrameworkCore.Database.Command: Information: Executed DbCommand (1ms) [Parameters=[@seance_Film_Code='?' (Size = 10) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [t].[PK_Film], [t].[Code], [t].[LastUpdate], [t].[Length], [t].[ReleaseDate], [t].[Title]
+FROM [TBL_Films] AS [t]
+WHERE [t].[Code] = @seance_Film_Code
+Microsoft.EntityFrameworkCore.Database.Command: Information: Executed DbCommand (14ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 10) (DbType = AnsiString), @p2='?' (DbType = DateTime2), @p3='?' (DbType = Int32), @p4='?' (DbType = Date), @p5='?' (Size = 100)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [TBL_Films] ([PK_Film], [Code], [LastUpdate], [Length], [ReleaseDate], [Title])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+Microsoft.EntityFrameworkCore.Database.Command: Information: Executed DbCommand (0ms) [Parameters=[@seance_Film_Code='?' (Size = 10) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [t].[PK_Film], [t].[Code], [t].[LastUpdate], [t].[Length], [t].[ReleaseDate], [t].[Title]
+FROM [TBL_Films] AS [t]
+WHERE [t].[Code] = @seance_Film_Code
+Microsoft.EntityFrameworkCore.Database.Command: Information: Executed DbCommand (15ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 10), @p2='?' (DbType = DateTime2), @p3='?' (DbType = Guid), @p4='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [TBL_Seances] ([PK_Seance], [Code], [Date], [FK_Cinema], [FK_Film])
+VALUES (@p0, @p1, @p2, @p3, @p4);

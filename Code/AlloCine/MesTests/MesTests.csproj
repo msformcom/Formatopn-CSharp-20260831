@@ -18,6 +18,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AlloCineDAL\AlloCineDAL.csproj" />
+    <ProjectReference Include="..\AlloCineInterfaces\AlloCineInterfaces.csproj" />
+    <ProjectReference Include="..\AlloCineServiceBDD\AlloCineServiceBDD.csproj" />
   </ItemGroup>
 
   <ItemGroup>
