@@ -42,11 +42,28 @@ namespace AlloCineWebApi
                 // retour d'érreur de requete => indique à l'utilisateur pourquoi le Cinema n'était pas correct
                 return BadRequest(this.ModelState);
             }
-
             var cineDansBDD = await service.AddCinemaAsync(cinema);
             return Ok(cineDansBDD); // StatusCode 200 + Json 
-
         }
+
+        // GET /Cinema?page=1&nbElementParPage=10
+        [HttpGet()]
+        public async Task<ActionResult<IEnumerable<Cinema>>> SearchCinema(CinemaSearch search, 
+                                                                        int page=1, 
+                                                                        int nbElementParPage=10 )
+        {
+            if (!this.ModelState.IsValid)
+            {
+                // retour d'érreur de requete => indique à l'utilisateur pourquoi le Cinema n'était pas correct
+                return BadRequest(this.ModelState);
+            }
+            var cinemas = await service.GetCinemasAsync(search);
+            cinemas=cinemas.Skip((page-1)*nbElementParPage).Take(nbElementParPage);
+            // Skip et Take sont par défaut les méthodes de IEnumerable => pas traduit dans le SQL
+            // Sauf si IQueryable (ProjectTo) => SELECT .... OFFSET 10 FETCH NEXT 10 ROWS ONLY
+            return Ok(cinemas); // StatusCode 200 + Json 
+        }
+        
 
         
         //[HttpGet("Add/{a:int}/{b:int}")]

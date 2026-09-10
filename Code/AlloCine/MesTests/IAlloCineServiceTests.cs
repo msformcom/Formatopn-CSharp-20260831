@@ -28,7 +28,7 @@ public class IAlloCineServiceTests
 
 
         // J'obtiens un enumerable => Rien est encore matérialisé
-        var cinemasParisiensQuery = await service.GetCinemasAsync("75000");
+        var cinemasParisiensQuery = await service.GetCinemasAsync(new CinemaSearch() { CodePostal="75000" });
 
         var resultats = cinemasParisiensQuery.ToList();
         Assert.AreEqual(1, resultats.Count);

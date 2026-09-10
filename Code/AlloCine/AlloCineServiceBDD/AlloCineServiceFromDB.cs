@@ -1,6 +1,7 @@
 ﻿using AlloCineDAL;
 using AlloCineInterfaces;
 using AutoMapper;
+using AutoMapper.QueryableExtensions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 
@@ -81,7 +82,7 @@ namespace AlloCineServiceBDD
 
         }
 
-        public async Task<IEnumerable<ICinema>> GetCinemasAsync(string codePostal)
+        public async Task<IEnumerable<ICinema>> GetCinemasAsync(ICinemaSearch search)
         {
 
             //// IQueryable + IEnumerable => Objet qui représente une requete dans la BDD
@@ -98,14 +99,17 @@ namespace AlloCineServiceBDD
             //var l1 = s2.ToList();
 
             // Requete ecrite avec Linq To Entities (sur IQueryable)
-            var requete = db.Cinemas.Where(c => c.PostalCode.ToUpper().StartsWith(codePostal.Substring(0, 3).ToUpper()));
-            return requete.Select(c => new Cinema()
+            IQueryable<CinemaDAO> requete = db.Cinemas;
+            if (!string.IsNullOrWhiteSpace(search.CodePostal))
             {
-                Nom = c.Name,
-                Code = c.Code,
-                CodePostal = c.PostalCode,
-                NombreSalles = c.RoomCount
-            });
+                requete = requete.Where(c => c.PostalCode.ToUpper().StartsWith(search.CodePostal.Substring(0, 3).ToUpper()));
+            }
+            if (!string.IsNullOrWhiteSpace(search.NomPart))
+            {
+                requete = requete.Where(c => c.Name.ToUpper().Contains(search.NomPart.ToUpper()));
+            }
+            return requete.Select(c => mapper.Map<Cinema>(c));//.Where(c=>c.Nom=="Paradiso");
+            //return requete.ProjectTo<Cinema>(null)
         }
 
         public Task<IEnumerable<ICinema>> GetCinemasByFilmAsync(string codeFilm)
@@ -120,6 +124,10 @@ namespace AlloCineServiceBDD
 
         public Task<IEnumerable<IFilm>> SearchFilmsByTextAsync(string searchText)
         {
+            // SearchFilm (IFilmSearch..)
+            // IFilmSearch : IEntitySearch
+            // IEntitySearch => page + nbItemPerPage
+
             var requete = db.Films.Where(c => c.Title.Contains(searchText));
             return Task.FromResult(requete.AsEnumerable().Select(c => mapper.Map<IFilm>(c)));
             //return Task.FromResult<IEnumerable<IFilm>>(requete.Select(c => new Film()
