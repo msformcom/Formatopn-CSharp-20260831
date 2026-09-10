@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MesTests", "MesTests\MesTes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlloCineServiceBDD", "AlloCineServiceBDD\AlloCineServiceBDD.csproj", "{7447FFFA-6319-4D54-8C28-D49204A1C077}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlloCineWebApi", "AlloCineWebApi\AlloCineWebApi.csproj", "{6176E3FF-43E5-A432-39B4-1193BECC1B61}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{7447FFFA-6319-4D54-8C28-D49204A1C077}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7447FFFA-6319-4D54-8C28-D49204A1C077}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7447FFFA-6319-4D54-8C28-D49204A1C077}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6176E3FF-43E5-A432-39B4-1193BECC1B61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6176E3FF-43E5-A432-39B4-1193BECC1B61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6176E3FF-43E5-A432-39B4-1193BECC1B61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6176E3FF-43E5-A432-39B4-1193BECC1B61}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

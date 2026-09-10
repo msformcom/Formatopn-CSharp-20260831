@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AlloCineInterfaces")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+23e19bbb623019e5d66e799ccc1c788472f37ca5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0133260999dcc39e4cb79dcf0ec12f77788dda44")]
 [assembly: System.Reflection.AssemblyProductAttribute("AlloCineInterfaces")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AlloCineInterfaces")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

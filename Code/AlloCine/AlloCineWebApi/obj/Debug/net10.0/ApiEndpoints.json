@@ -1,0 +1,28 @@
+[
+  {
+    "ContainingType": "AlloCineWebApi.CinemaController",
+    "Method": "AddCinema",
+    "RelativePath": "Cinema",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cinema",
+        "Type": "AlloCineWebApi.Models.Cinema",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AlloCineInterfaces.ICinema",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
