@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AlloCineWebApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c671ccfca01d68d4853d77a2629abef2bf2d838c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+035632a53d3d7af47d403708195973180f951b68")]
 [assembly: System.Reflection.AssemblyProductAttribute("AlloCineWebApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AlloCineWebApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -2040,6 +2040,19 @@
           "bin/placeholder/AlloCineInterfaces.dll": {}
         }
       },
+      "AlloCineServiceApi/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "AlloCineInterfaces": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/AlloCineServiceApi.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AlloCineServiceApi.dll": {}
+        }
+      },
       "AlloCineServiceBDD/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
@@ -4562,6 +4575,11 @@
       "path": "../AlloCineInterfaces/AlloCineInterfaces.csproj",
       "msbuildProject": "../AlloCineInterfaces/AlloCineInterfaces.csproj"
     },
+    "AlloCineServiceApi/1.0.0": {
+      "type": "project",
+      "path": "../AlloCineServiceApi/AlloCineServiceApi.csproj",
+      "msbuildProject": "../AlloCineServiceApi/AlloCineServiceApi.csproj"
+    },
     "AlloCineServiceBDD/1.0.0": {
       "type": "project",
       "path": "../AlloCineServiceBDD/AlloCineServiceBDD.csproj",
@@ -4572,6 +4590,7 @@
     "net10.0": [
       "AlloCineDAL >= 1.0.0",
       "AlloCineInterfaces >= 1.0.0",
+      "AlloCineServiceApi >= 1.0.0",
       "AlloCineServiceBDD >= 1.0.0",
       "MSTest >= 4.0.2",
       "Microsoft.EntityFrameworkCore.SqlServer >= 10.0.11",
@@ -4619,6 +4638,9 @@
             },
             "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\AlloCine\\AlloCineInterfaces\\AlloCineInterfaces.csproj": {
               "projectPath": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\AlloCine\\AlloCineInterfaces\\AlloCineInterfaces.csproj"
+            },
+            "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\AlloCine\\AlloCineServiceApi\\AlloCineServiceApi.csproj": {
+              "projectPath": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\AlloCine\\AlloCineServiceApi\\AlloCineServiceApi.csproj"
             },
             "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\AlloCine\\AlloCineServiceBDD\\AlloCineServiceBDD.csproj": {
               "projectPath": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\AlloCine\\AlloCineServiceBDD\\AlloCineServiceBDD.csproj"

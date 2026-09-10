@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlloCineServiceBDD", "AlloC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlloCineWebApi", "AlloCineWebApi\AlloCineWebApi.csproj", "{6176E3FF-43E5-A432-39B4-1193BECC1B61}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlloCineServiceApi", "AlloCineServiceApi\AlloCineServiceApi.csproj", "{5CDCF3A0-6C84-4684-ADC6-C46D1839826C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{6176E3FF-43E5-A432-39B4-1193BECC1B61}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6176E3FF-43E5-A432-39B4-1193BECC1B61}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6176E3FF-43E5-A432-39B4-1193BECC1B61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CDCF3A0-6C84-4684-ADC6-C46D1839826C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CDCF3A0-6C84-4684-ADC6-C46D1839826C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CDCF3A0-6C84-4684-ADC6-C46D1839826C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CDCF3A0-6C84-4684-ADC6-C46D1839826C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

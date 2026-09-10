@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\AlloCine\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7447FFFA-6319-4D54-8C28-D49204A1C077}|AlloCineServiceBDD\\AlloCineServiceBDD.csproj|c:\\users\\dom\\desktop\\formations\\formatopn csharp 20260831\\formatopn csharp 20260831\\code\\allocine\\allocineservicebdd\\allocineservicefromdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7447FFFA-6319-4D54-8C28-D49204A1C077}|AlloCineServiceBDD\\AlloCineServiceBDD.csproj|solutionrelative:allocineservicebdd\\allocineservicefromdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3B313A1F-1476-4888-B0BF-35A89A7BDF26}|MesTests\\MesTests.csproj|c:\\users\\dom\\desktop\\formations\\formatopn csharp 20260831\\formatopn csharp 20260831\\code\\allocine\\mestests\\iallocineservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B313A1F-1476-4888-B0BF-35A89A7BDF26}|MesTests\\MesTests.csproj|solutionrelative:mestests\\iallocineservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B313A1F-1476-4888-B0BF-35A89A7BDF26}|MesTests\\MesTests.csproj|c:\\users\\dom\\desktop\\formations\\formatopn csharp 20260831\\formatopn csharp 20260831\\code\\allocine\\mestests\\di.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B313A1F-1476-4888-B0BF-35A89A7BDF26}|MesTests\\MesTests.csproj|solutionrelative:mestests\\di.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7447FFFA-6319-4D54-8C28-D49204A1C077}|AlloCineServiceBDD\\AlloCineServiceBDD.csproj|c:\\users\\dom\\desktop\\formations\\formatopn csharp 20260831\\formatopn csharp 20260831\\code\\allocine\\allocineservicebdd\\models\\cinema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7447FFFA-6319-4D54-8C28-D49204A1C077}|AlloCineServiceBDD\\AlloCineServiceBDD.csproj|solutionrelative:allocineservicebdd\\models\\cinema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6176E3FF-43E5-A432-39B4-1193BECC1B61}|AlloCineWebApi\\AlloCineWebApi.csproj|c:\\users\\dom\\desktop\\formations\\formatopn csharp 20260831\\formatopn csharp 20260831\\code\\allocine\\allocinewebapi\\cinemacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6176E3FF-43E5-A432-39B4-1193BECC1B61}|AlloCineWebApi\\AlloCineWebApi.csproj|solutionrelative:allocinewebapi\\cinemacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7447FFFA-6319-4D54-8C28-D49204A1C077}|AlloCineServiceBDD\\AlloCineServiceBDD.csproj|c:\\users\\dom\\desktop\\formations\\formatopn csharp 20260831\\formatopn csharp 20260831\\code\\allocine\\allocineservicebdd\\allocineservicefromdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7447FFFA-6319-4D54-8C28-D49204A1C077}|AlloCineServiceBDD\\AlloCineServiceBDD.csproj|solutionrelative:allocineservicebdd\\allocineservicefromdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B313A1F-1476-4888-B0BF-35A89A7BDF26}|MesTests\\MesTests.csproj|c:\\users\\dom\\desktop\\formations\\formatopn csharp 20260831\\formatopn csharp 20260831\\code\\allocine\\mestests\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3B313A1F-1476-4888-B0BF-35A89A7BDF26}|MesTests\\MesTests.csproj|solutionrelative:mestests\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,45 +30,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Cinema.cs",
-              "DocumentMoniker": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\AlloCine\\AlloCineServiceBDD\\Models\\Cinema.cs",
-              "RelativeDocumentMoniker": "AlloCineServiceBDD\\Models\\Cinema.cs",
-              "ToolTip": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\AlloCine\\AlloCineServiceBDD\\Models\\Cinema.cs",
-              "RelativeToolTip": "AlloCineServiceBDD\\Models\\Cinema.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAlwBEAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-10T12:10:31.308Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AlloCineServiceFromDB.cs",
-              "DocumentMoniker": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\AlloCine\\AlloCineServiceBDD\\AlloCineServiceFromDB.cs",
-              "RelativeDocumentMoniker": "AlloCineServiceBDD\\AlloCineServiceFromDB.cs",
-              "ToolTip": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\AlloCine\\AlloCineServiceBDD\\AlloCineServiceFromDB.cs",
-              "RelativeToolTip": "AlloCineServiceBDD\\AlloCineServiceFromDB.cs",
-              "ViewState": "AgIAAHUAAAAAAAAAAAAowIAAAAA0AAAAAAAAAA==",
+              "Title": "IAlloCineServiceTests.cs",
+              "DocumentMoniker": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\AlloCine\\MesTests\\IAlloCineServiceTests.cs",
+              "RelativeDocumentMoniker": "MesTests\\IAlloCineServiceTests.cs",
+              "ToolTip": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\AlloCine\\MesTests\\IAlloCineServiceTests.cs",
+              "RelativeToolTip": "MesTests\\IAlloCineServiceTests.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAowCcAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-10T12:08:28.261Z",
+              "WhenOpened": "2026-09-10T15:05:55.59Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "CinemaController.cs",
-              "DocumentMoniker": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\AlloCine\\AlloCineWebApi\\CinemaController.cs",
-              "RelativeDocumentMoniker": "AlloCineWebApi\\CinemaController.cs",
-              "ToolTip": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\AlloCine\\AlloCineWebApi\\CinemaController.cs",
-              "RelativeToolTip": "AlloCineWebApi\\CinemaController.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAcwD8AAAAMAAAAAAAAAA==",
+              "Title": "Cinema.cs",
+              "DocumentMoniker": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\AlloCine\\AlloCineServiceBDD\\Models\\Cinema.cs",
+              "RelativeDocumentMoniker": "AlloCineServiceBDD\\Models\\Cinema.cs",
+              "ToolTip": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\AlloCine\\AlloCineServiceBDD\\Models\\Cinema.cs",
+              "RelativeToolTip": "AlloCineServiceBDD\\Models\\Cinema.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAawAwAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-10T08:21:53.787Z",
+              "WhenOpened": "2026-09-10T15:07:17.926Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AlloCineServiceFromDB.cs",
+              "DocumentMoniker": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\AlloCine\\AlloCineServiceBDD\\AlloCineServiceFromDB.cs",
+              "RelativeDocumentMoniker": "AlloCineServiceBDD\\AlloCineServiceFromDB.cs",
+              "ToolTip": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\AlloCine\\AlloCineServiceBDD\\AlloCineServiceFromDB.cs",
+              "RelativeToolTip": "AlloCineServiceBDD\\AlloCineServiceFromDB.cs",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAawG8AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-10T15:07:17.96Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DI.cs",
+              "DocumentMoniker": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\AlloCine\\MesTests\\DI.cs",
+              "RelativeDocumentMoniker": "MesTests\\DI.cs",
+              "ToolTip": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\AlloCine\\MesTests\\DI.cs",
+              "RelativeToolTip": "MesTests\\DI.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAnwIgAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-10T14:56:34.18Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\AlloCine\\MesTests\\appsettings.json",
+              "RelativeDocumentMoniker": "MesTests\\appsettings.json",
+              "ToolTip": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\AlloCine\\MesTests\\appsettings.json",
+              "RelativeToolTip": "MesTests\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-09-10T14:55:51.492Z",
               "EditorCaption": ""
             }
           ]

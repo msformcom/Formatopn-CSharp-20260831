@@ -7,7 +7,7 @@
         Task<IEnumerable<ICinema>> GetCinemasAsync(ICinemaSearch search);
 
         // Recherche des films dont le titre contient un texte donné
-        Task<IEnumerable<IFilm>> SearchFilmsByTextAsync(string searchText); 
+        Task<IEnumerable<IFilm>> SearchFilmsAsync(IFilmSearch search); 
         Task<IEnumerable<IFilm>> GetFilmsByCinemaAsync(string codeCinema);
 
         Task<IEnumerable<ICinema>> GetCinemasByFilmAsync(string codeFilm);

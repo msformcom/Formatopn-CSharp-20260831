@@ -350,3 +350,5 @@ C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260
 C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\AlloCine\MesTests\bin\Debug\net10.0\AutoMapper.Collection.EntityFrameworkCore.dll
 C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\AlloCine\MesTests\bin\Debug\net10.0\AutoMapper.Extensions.ExpressionMapping.dll
 C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\AlloCine\MesTests\bin\Debug\net10.0\Castle.Core.dll
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\AlloCine\MesTests\bin\Debug\net10.0\AlloCineServiceApi.dll
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\AlloCine\MesTests\bin\Debug\net10.0\AlloCineServiceApi.pdb

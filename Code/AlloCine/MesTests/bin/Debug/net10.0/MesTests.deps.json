@@ -10,6 +10,7 @@
         "dependencies": {
           "AlloCineDAL": "1.0.0",
           "AlloCineInterfaces": "1.0.0",
+          "AlloCineServiceApi": "1.0.0",
           "AlloCineServiceBDD": "1.0.0",
           "MSTest": "4.0.2",
           "Microsoft.EntityFrameworkCore.SqlServer": "10.0.11",
@@ -1688,6 +1689,17 @@
           }
         }
       },
+      "AlloCineServiceApi/1.0.0": {
+        "dependencies": {
+          "AlloCineInterfaces": "1.0.0"
+        },
+        "runtime": {
+          "AlloCineServiceApi.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "AlloCineServiceBDD/1.0.0": {
         "dependencies": {
           "AlloCineDAL": "1.0.0",
@@ -2187,6 +2199,11 @@
       "sha512": ""
     },
     "AlloCineInterfaces/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AlloCineServiceApi/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace AlloCineInterfaces
 {
-    public interface ICinemaSearch
+    public interface ICinemaSearch : IEntitySearch
     {
         public string? CodePostal { get; set; }
 

@@ -46,6 +46,9 @@ namespace AlloCineWebApi
             return Ok(cineDansBDD); // StatusCode 200 + Json 
         }
 
+
+
+
         // GET /Cinema?page=1&nbElementParPage=10
         [HttpGet()]
         public async Task<ActionResult<IEnumerable<Cinema>>> SearchCinema(CinemaSearch search, 
@@ -58,7 +61,22 @@ namespace AlloCineWebApi
                 return BadRequest(this.ModelState);
             }
             var cinemas = await service.GetCinemasAsync(search);
-            cinemas=cinemas.Skip((page-1)*nbElementParPage).Take(nbElementParPage);
+            if(cinemas is IQueryable<ICinema> cines)
+            {
+                // Puisque la fonction m'a renvoyé un IQueryable => 
+                // J'utilise les fonctions Where, Take,Skip de IQueryable
+                return Ok(cines
+                 .Where(c => c.NombreSalles < 10)
+                 .OrderBy(c=>c.Nom)
+                 .Skip((page - 1) * nbElementParPage).Take(nbElementParPage));
+            }
+            
+             
+            
+            cinemas=cinemas
+                .Where(c => c.NombreSalles < 10)
+                .Skip((page-1)*nbElementParPage)
+                .Take(nbElementParPage);
             // Skip et Take sont par défaut les méthodes de IEnumerable => pas traduit dans le SQL
             // Sauf si IQueryable (ProjectTo) => SELECT .... OFFSET 10 FETCH NEXT 10 ROWS ONLY
             return Ok(cinemas); // StatusCode 200 + Json 

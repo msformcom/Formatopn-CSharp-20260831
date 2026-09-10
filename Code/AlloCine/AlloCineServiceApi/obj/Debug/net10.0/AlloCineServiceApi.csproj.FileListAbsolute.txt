@@ -1,0 +1,16 @@
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\AlloCine\AlloCineServiceApi\bin\Debug\net10.0\AlloCineServiceApi.deps.json
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\AlloCine\AlloCineServiceApi\bin\Debug\net10.0\AlloCineServiceApi.dll
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\AlloCine\AlloCineServiceApi\bin\Debug\net10.0\AlloCineServiceApi.pdb
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\AlloCine\AlloCineServiceApi\bin\Debug\net10.0\AlloCineInterfaces.dll
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\AlloCine\AlloCineServiceApi\bin\Debug\net10.0\AlloCineInterfaces.pdb
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\AlloCine\AlloCineServiceApi\obj\Debug\net10.0\AlloCineServiceApi.csproj.AssemblyReference.cache
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\AlloCine\AlloCineServiceApi\obj\Debug\net10.0\AlloCineServiceApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\AlloCine\AlloCineServiceApi\obj\Debug\net10.0\AlloCineServiceApi.AssemblyInfoInputs.cache
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\AlloCine\AlloCineServiceApi\obj\Debug\net10.0\AlloCineServiceApi.AssemblyInfo.cs
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\AlloCine\AlloCineServiceApi\obj\Debug\net10.0\AlloCineServiceApi.csproj.CoreCompileInputs.cache
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\AlloCine\AlloCineServiceApi\obj\Debug\net10.0\AlloCineServiceApi.sourcelink.json
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\AlloCine\AlloCineServiceApi\obj\Debug\net10.0\AlloCine.E89FE781.Up2Date
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\AlloCine\AlloCineServiceApi\obj\Debug\net10.0\AlloCineServiceApi.dll
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\AlloCine\AlloCineServiceApi\obj\Debug\net10.0\refint\AlloCineServiceApi.dll
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\AlloCine\AlloCineServiceApi\obj\Debug\net10.0\AlloCineServiceApi.pdb
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\AlloCine\AlloCineServiceApi\obj\Debug\net10.0\ref\AlloCineServiceApi.dll

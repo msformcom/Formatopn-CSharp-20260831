@@ -22,7 +22,6 @@ C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260
 C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\AlloCine\AlloCineWebApi\obj\Debug\net10.0\staticwebassets.development.json
 C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\AlloCine\AlloCineWebApi\obj\Debug\net10.0\staticwebassets.build.endpoints.json
 C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\AlloCine\AlloCineWebApi\obj\Debug\net10.0\swae.build.ex.cache
-C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\AlloCine\AlloCineWebApi\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
 C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\AlloCine\AlloCineWebApi\obj\Debug\net10.0\AlloCineWebApi.dll
 C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\AlloCine\AlloCineWebApi\obj\Debug\net10.0\refint\AlloCineWebApi.dll
 C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\AlloCine\AlloCineWebApi\obj\Debug\net10.0\AlloCineWebApi.pdb

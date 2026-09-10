@@ -3,6 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using AlloCineServiceBDD;
 using AlloCineDAL;
+using MesTests.Models;
 
 namespace MesTests;
 
@@ -48,7 +49,7 @@ public class IAlloCineServiceTests
 
 
         // J'obtiens un enumerable => Rien est encore matérialisé
-        var filmsSearch = await service.SearchFilmsByTextAsync("soupe");
+        var filmsSearch = await service.SearchFilmsAsync(new FilmSearch() { });
 
         var resultats = filmsSearch.ToList();
         Assert.HasCount(1, resultats);
@@ -71,7 +72,7 @@ public class IAlloCineServiceTests
 
         var filmInsere = await service.AddFilmAsync(film);
 
-        var filmsInBDD = await service.SearchFilmsByTextAsync("Odysee");
+        var filmsInBDD = await service.SearchFilmsAsync(new FilmSearch() { TitrePart="Odysee"});
         Assert.HasCount(1, filmsInBDD);
     }
 

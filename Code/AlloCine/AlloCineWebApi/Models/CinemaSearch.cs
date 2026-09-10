@@ -6,5 +6,7 @@ namespace AlloCineWebApi.Models
     {
         public string? CodePostal { get; set; }
         public string? NomPart { get; set; }
+        public int Page { get ; set ; }
+        public int NbItemsPerPage { get ; set ; }
     }
 }

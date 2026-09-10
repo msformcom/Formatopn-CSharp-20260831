@@ -108,8 +108,8 @@ namespace AlloCineServiceBDD
             {
                 requete = requete.Where(c => c.Name.ToUpper().Contains(search.NomPart.ToUpper()));
             }
-            return requete.Select(c => mapper.Map<Cinema>(c));//.Where(c=>c.Nom=="Paradiso");
-            //return requete.ProjectTo<Cinema>(null)
+            //return requete.Select(c => mapper.Map<Cinema>(c));//.Where(c=>c.Nom=="Paradiso");
+            return requete.ProjectTo<Cinema>(mapper.ConfigurationProvider); // IQueryable
         }
 
         public Task<IEnumerable<ICinema>> GetCinemasByFilmAsync(string codeFilm)
@@ -122,21 +122,31 @@ namespace AlloCineServiceBDD
             throw new NotImplementedException();
         }
 
-        public Task<IEnumerable<IFilm>> SearchFilmsByTextAsync(string searchText)
+        public async Task<IEnumerable<IFilm>> SearchFilmsAsync(IFilmSearch search)
         {
             // SearchFilm (IFilmSearch..)
             // IFilmSearch : IEntitySearch
             // IEntitySearch => page + nbItemPerPage
 
-            var requete = db.Films.Where(c => c.Title.Contains(searchText));
-            return Task.FromResult(requete.AsEnumerable().Select(c => mapper.Map<IFilm>(c)));
-            //return Task.FromResult<IEnumerable<IFilm>>(requete.Select(c => new Film()
-            //{
-            //    Code = c.Code,
-            //    DateSortie = c.ReleaseDate,
-            //    Duree = c.Length,
-            //    Titre = c.Title
-            //}) );
+            IQueryable<FilmDAO> requete = db.Films;
+            if (search.DureeMax != null)
+            {
+                requete = requete.Where(c => c.Length <= search.DureeMax);
+            }
+            if (search.DureeMin != null)
+            {
+                requete = requete.Where(c => c.Length >= search.DureeMin);
+            }
+            if (search.TitrePart != null)
+            {
+                requete = requete.Where(c => c.Title.Contains(search.TitrePart));
+            }
+            if (search.Page != null && search.NbItemsPerPage!=null)
+            {
+                requete = requete.Skip((search.Page-1)*search.NbItemsPerPage).Take(search.NbItemsPerPage);
+
+            }
+            return requete.ProjectTo<Film>(mapper.ConfigurationProvider);
         }
 
         public async Task<ICinema> AddCinemaAsync(ICinema cinema)
