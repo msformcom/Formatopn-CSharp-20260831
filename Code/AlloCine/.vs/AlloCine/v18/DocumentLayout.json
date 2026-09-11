@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\AlloCine\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6C3D1CF6-C9A9-492B-A3AA-34B35EFF6A62}|AlloCineUI\\AlloCineUI.csproj|c:\\users\\dom\\desktop\\formations\\formatopn csharp 20260831\\formatopn csharp 20260831\\code\\allocine\\allocineui\\listefilmsvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6C3D1CF6-C9A9-492B-A3AA-34B35EFF6A62}|AlloCineUI\\AlloCineUI.csproj|solutionrelative:allocineui\\listefilmsvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6C3D1CF6-C9A9-492B-A3AA-34B35EFF6A62}|AlloCineUI\\AlloCineUI.csproj|c:\\users\\dom\\desktop\\formations\\formatopn csharp 20260831\\formatopn csharp 20260831\\code\\allocine\\allocineui\\models\\filmsearch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C3D1CF6-C9A9-492B-A3AA-34B35EFF6A62}|AlloCineUI\\AlloCineUI.csproj|solutionrelative:allocineui\\models\\filmsearch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6C3D1CF6-C9A9-492B-A3AA-34B35EFF6A62}|AlloCineUI\\AlloCineUI.csproj|c:\\users\\dom\\desktop\\formations\\formatopn csharp 20260831\\formatopn csharp 20260831\\code\\allocine\\allocineui\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{6C3D1CF6-C9A9-492B-A3AA-34B35EFF6A62}|AlloCineUI\\AlloCineUI.csproj|solutionrelative:allocineui\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C3D1CF6-C9A9-492B-A3AA-34B35EFF6A62}|AlloCineUI\\AlloCineUI.csproj|c:\\users\\dom\\desktop\\formations\\formatopn csharp 20260831\\formatopn csharp 20260831\\code\\allocine\\allocineui\\listefilmsvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C3D1CF6-C9A9-492B-A3AA-34B35EFF6A62}|AlloCineUI\\AlloCineUI.csproj|solutionrelative:allocineui\\listefilmsvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C3D1CF6-C9A9-492B-A3AA-34B35EFF6A62}|AlloCineUI\\AlloCineUI.csproj|c:\\users\\dom\\desktop\\formations\\formatopn csharp 20260831\\formatopn csharp 20260831\\code\\allocine\\allocineui\\models\\cinemasearch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C3D1CF6-C9A9-492B-A3AA-34B35EFF6A62}|AlloCineUI\\AlloCineUI.csproj|solutionrelative:allocineui\\models\\cinemasearch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7447FFFA-6319-4D54-8C28-D49204A1C077}|AlloCineServiceBDD\\AlloCineServiceBDD.csproj|c:\\users\\dom\\desktop\\formations\\formatopn csharp 20260831\\formatopn csharp 20260831\\code\\allocine\\allocineservicebdd\\allocineservicefromdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,24 +38,49 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FilmSearch.cs",
+              "DocumentMoniker": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\AlloCine\\AlloCineUI\\Models\\FilmSearch.cs",
+              "RelativeDocumentMoniker": "AlloCineUI\\Models\\FilmSearch.cs",
+              "ToolTip": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\AlloCine\\AlloCineUI\\Models\\FilmSearch.cs",
+              "RelativeToolTip": "AlloCineUI\\Models\\FilmSearch.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBYAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-11T14:23:21.367Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "AlloCineServiceBDD",
+              "Title": "CinemaSearch.cs",
+              "DocumentMoniker": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\AlloCine\\AlloCineUI\\Models\\CinemaSearch.cs",
+              "RelativeDocumentMoniker": "AlloCineUI\\Models\\CinemaSearch.cs",
+              "ToolTip": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\AlloCine\\AlloCineUI\\Models\\CinemaSearch.cs",
+              "RelativeToolTip": "AlloCineUI\\Models\\CinemaSearch.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-11T14:21:37.162Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AlloCineServiceBDD.csproj",
               "DocumentMoniker": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\AlloCine\\AlloCineServiceBDD\\AlloCineServiceBDD.csproj",
               "RelativeDocumentMoniker": "AlloCineServiceBDD\\AlloCineServiceBDD.csproj",
               "ToolTip": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\AlloCine\\AlloCineServiceBDD\\AlloCineServiceBDD.csproj",
               "RelativeToolTip": "AlloCineServiceBDD\\AlloCineServiceBDD.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-09-11T13:56:06.802Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-11T13:56:06.802Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "AlloCineServiceFromDB.cs",
               "DocumentMoniker": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\AlloCine\\AlloCineServiceBDD\\AlloCineServiceFromDB.cs",
               "RelativeDocumentMoniker": "AlloCineServiceBDD\\AlloCineServiceFromDB.cs",
@@ -55,31 +88,29 @@
               "RelativeToolTip": "AlloCineServiceBDD\\AlloCineServiceFromDB.cs",
               "ViewState": "AgIAAIYAAAAAAAAAAAASwJkAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-11T13:03:01.197Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-11T13:03:01.197Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AlloCineUI",
+              "DocumentIndex": 6,
+              "Title": "AlloCineUI.csproj",
               "DocumentMoniker": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\AlloCine\\AlloCineUI\\AlloCineUI.csproj",
               "RelativeDocumentMoniker": "AlloCineUI\\AlloCineUI.csproj",
               "ToolTip": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\AlloCine\\AlloCineUI\\AlloCineUI.csproj",
               "RelativeToolTip": "AlloCineUI\\AlloCineUI.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-09-11T13:46:51.734Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-11T13:46:51.734Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "ListeFilmsVM.cs",
               "DocumentMoniker": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\AlloCine\\AlloCineUI\\ListeFilmsVM.cs",
               "RelativeDocumentMoniker": "AlloCineUI\\ListeFilmsVM.cs",
               "ToolTip": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\AlloCine\\AlloCineUI\\ListeFilmsVM.cs",
               "RelativeToolTip": "AlloCineUI\\ListeFilmsVM.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAASwCYAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAvwB8AAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-11T13:05:49.675Z",
               "EditorCaption": ""

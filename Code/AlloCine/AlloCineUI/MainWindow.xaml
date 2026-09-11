@@ -12,7 +12,7 @@
         </Window.DataContext>
     <StackPanel>
         <TextBlock Foreground="Red">Ajouter élément à la liste</TextBlock>
-        <TextBox Text="{Binding TitrePart}"></TextBox>
+        <TextBox Text="{Binding Search.TitrePart}"></TextBox>
         <Button Command="{Binding RechercheFilmCommand}">Ok</Button>
         <ListBox ItemsSource="{Binding ListeDesFilms}">
             <ListBox.ItemTemplate>

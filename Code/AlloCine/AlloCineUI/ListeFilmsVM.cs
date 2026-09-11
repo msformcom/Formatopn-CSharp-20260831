@@ -15,7 +15,7 @@ namespace AlloCineUI
         // Dans l'UI, cette propriété va être liée au TextBox de la recherche
         // Lié correctement par un evenement OnPropertyChanged
         [ObservableProperty]
-        private string titrePart  = "Toto";
+        private FilmSearch search  = new FilmSearch() { TitrePart="o"};
 
         // Va être lié à la liste des ficles affiches
         [ObservableProperty]
@@ -29,7 +29,7 @@ namespace AlloCineUI
             // Obtention du service par Injection de dépendance
             var service=DI.GetInjector().GetRequiredService<IAlloCineService>();
             // Faire appel au modele pour obtenir les films en fonction de la valeur de TitrePart
-            var films =await service.SearchFilmsAsync(new FilmSearch() { TitrePart = this.TitrePart });
+            var films =await service.SearchFilmsAsync(search);
 
             // Mise à jour des films Affiches
             ListeDesFilms.Clear();
