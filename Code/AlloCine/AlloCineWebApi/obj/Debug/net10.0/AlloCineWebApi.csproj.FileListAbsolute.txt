@@ -88,3 +88,4 @@ C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260
 C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\AlloCine\AlloCineWebApi\bin\Debug\net10.0\AlloCineServiceBDD.dll
 C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\AlloCine\AlloCineWebApi\bin\Debug\net10.0\AlloCineDAL.pdb
 C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\AlloCine\AlloCineWebApi\bin\Debug\net10.0\AlloCineServiceBDD.pdb
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\AlloCine\AlloCineWebApi\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt

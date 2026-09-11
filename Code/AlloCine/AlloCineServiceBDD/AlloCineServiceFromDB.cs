@@ -1,4 +1,5 @@
-﻿using AlloCineDAL;
+﻿using System.Reflection.Emit;
+using AlloCineDAL;
 using AlloCineInterfaces;
 using AutoMapper;
 using AutoMapper.QueryableExtensions;
@@ -19,6 +20,11 @@ namespace AlloCineServiceBDD
             #region Configuration du mapper
             var builder = new MapperConfiguration(config =>
             {
+                config.CreateMap<CategorieDAO, ICategorie>()
+                .ConstructUsing(c => new Categorie())
+                     .ForMember(c => c.Libelle, o => o.MapFrom(c => c.Label))
+                    .ReverseMap();
+
                 // 
                 config.CreateMap<FilmDAO, IFilm>() // ; En s'arrêtant ici, les propriétés de même nom sont mappées
                                                    // IFilm.Code est mappé avec FilmDAO.Code
@@ -37,7 +43,7 @@ namespace AlloCineServiceBDD
                 .ForMember(c => c.CodePostal, o => o.MapFrom(c => c.PostalCode))
                 .ReverseMap()
                  .ForMember(c => c.OwnerName, o => o.MapFrom(c => "Inconnu"))
-                 .ForMember(c => c.LastUpdate, o => o.MapFrom(c=>DateTime.Now));
+                 .ForMember(c => c.LastUpdate, o => o.MapFrom(c => DateTime.Now));
             }, new LoggerFactory());
 
 
@@ -137,13 +143,13 @@ namespace AlloCineServiceBDD
             {
                 requete = requete.Where(c => c.Length >= search.DureeMin);
             }
-            if (search.TitrePart != null)
+            if (!string.IsNullOrWhiteSpace(search.TitrePart))
             {
                 requete = requete.Where(c => c.Title.Contains(search.TitrePart));
             }
-            if (search.Page != null && search.NbItemsPerPage!=null)
+            if (search.Page != 0 && search.NbItemsPerPage != 0)
             {
-                requete = requete.Skip((search.Page-1)*search.NbItemsPerPage).Take(search.NbItemsPerPage);
+                requete = requete.Skip((search.Page - 1) * search.NbItemsPerPage).Take(search.NbItemsPerPage);
 
             }
             return requete.ProjectTo<Film>(mapper.ConfigurationProvider);
@@ -154,7 +160,7 @@ namespace AlloCineServiceBDD
             var dao = mapper.Map<CinemaDAO>(cinema);
             db.Cinemas.Add(dao);
             await db.SaveChangesAsync();
-            var cinemaInDb = db.Cinemas.Find( dao.Id);
+            var cinemaInDb = db.Cinemas.Find(dao.Id);
             return mapper.Map<Cinema>(dao);
 
 
@@ -187,6 +193,20 @@ namespace AlloCineServiceBDD
             db.Add(seanceDAO);
             await db.SaveChangesAsync();
             return seance;
-        }   
+        }
+
+        public async Task<ICategorie> GetCategoryByFilmAsync(string codeFilm)
+        {
+            var film = db.Films.FirstOrDefault(c => c.Code == codeFilm);
+            if (film == null)
+            {
+                throw new Exception("Le film n'existe pas");
+            }
+            var categorie = db.Categories.FirstOrDefault(c => c.Id == film.IdCategorie);
+            categorie = db.Films.Include(c => c.Categorie).FirstOrDefault(c => c.Code == codeFilm).Categorie;
+           
+            var resultat = mapper.Map<ICategorie>(categorie);
+            return resultat as ICategorie;
+        }
     }
 }

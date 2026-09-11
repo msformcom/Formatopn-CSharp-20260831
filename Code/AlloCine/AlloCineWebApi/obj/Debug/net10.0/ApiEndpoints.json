@@ -1,5 +1,31 @@
 [
   {
+    "ContainingType": "AlloCineWebApi.CategorieController",
+    "Method": "GetByFilm",
+    "RelativePath": "Categorie/GetByFilm/{codeFilm}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "codeFilm",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AlloCineInterfaces.ICategorie",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "AlloCineWebApi.CinemaController",
     "Method": "AddCinema",
     "RelativePath": "Cinema",
@@ -52,6 +78,32 @@
     "ReturnTypes": [
       {
         "Type": "System.Collections.Generic.IEnumerable\u00601[[AlloCineWebApi.Models.Cinema, AlloCineWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AlloCineWebApi.FilmController",
+    "Method": "SearchFilm",
+    "RelativePath": "Film",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "search",
+        "Type": "AlloCineWebApi.Models.FilmSearch",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[AlloCineInterfaces.IFilm, AlloCineInterfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",

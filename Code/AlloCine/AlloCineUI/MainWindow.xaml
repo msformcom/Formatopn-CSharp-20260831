@@ -1,0 +1,31 @@
+﻿<Window x:Class="AlloCineUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AlloCineUI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <!-- Cette fénètre est liée a une instance de ListeFilmsVM-->
+        <Window.DataContext>
+        <local:ListeFilmsVM></local:ListeFilmsVM> <!-- Instancie un ListeFilmVM-->
+        </Window.DataContext>
+    <StackPanel>
+        <TextBlock Foreground="Red">Ajouter élément à la liste</TextBlock>
+        <TextBox Text="{Binding TitrePart}"></TextBox>
+        <Button Command="{Binding RechercheFilmCommand}">Ok</Button>
+        <ListBox ItemsSource="{Binding ListeDesFilms}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <Ellipse Width="10" Height="10" Fill="Red" Margin="3px"></Ellipse>
+                        <TextBlock Text="{Binding Code}"></TextBlock>
+                        <TextBlock Text=" - "></TextBlock>
+                        <TextBlock Text="{Binding Titre}"></TextBlock>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+   
+    </StackPanel>
+</Window>

@@ -40,6 +40,20 @@ public class IAlloCineServiceTests
     }
 
     [TestMethod]
+    public async Task GetCategorieByFilmTest()
+    {
+        IAlloCineService service = services.GetRequiredService<IAlloCineService>();
+        Assert.IsNotNull(service);
+
+        var categorie = await service.GetCategoryByFilmAsync("CO1981SC");
+
+        Assert.IsNotNull(categorie);
+
+
+
+    }
+
+    [TestMethod]
     public async Task SearchFilmsByTextAsyncTest()
     {
         // Je demande une instance de IAlloCineService à l'injector

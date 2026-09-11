@@ -24,10 +24,13 @@ builder.Services.AddDbContext<AlloCineContext>(builder =>
 
 builder.Services.AddSingleton<Action<ModelBuilder>>(builder =>
 {
+    var cat1 = new CategorieDAO() { Code = "Cat1", Label = "Comédie" };
+    var cat2 = new CategorieDAO() { Code = "Cat2", Label = "Horreur" };
     var f1 = new FilmDAO()
     {
         Code = "CO1981SC",
         Title = "La soupe aux choux",
+        IdCategorie = cat1.Id,
         LastUpdate = DateTime.Now,
         Length = 96,
         ReleaseDate = new DateOnly(1081, 12, 02)
@@ -37,6 +40,7 @@ builder.Services.AddSingleton<Action<ModelBuilder>>(builder =>
     {
         Code = "CI422",
         Name = "Paradiso",
+
         OwnerName = "John Wick",
         LastUpdate = DateTime.Now,
         PostalCode = "75000",
@@ -50,10 +54,20 @@ builder.Services.AddSingleton<Action<ModelBuilder>>(builder =>
         IdFilm = f1.Id
     };
 
+    builder.Entity<CategorieDAO>(options =>
+    {
+        options.ToTable("TBL_Categories");
+        options.Property(c => c.Id).HasColumnName("PK_Categorie");
+        options.Property(c => c.Label).IsUnicode();
+        options.Property(c => c.Code).IsFixedLength().HasMaxLength(10).IsUnicode(false);
+        options.HasData(cat1, cat2);
+    });
+
     builder.Entity<FilmDAO>(options =>
     {
         options.ToTable("TBL_Films");
         options.Property(c => c.Id).HasColumnName("PK_Film");
+        options.Property(c => c.IdCategorie).HasColumnName("FK_Categorie");
         options.Property(c => c.Title).IsUnicode();
         options.Property(c => c.Code).IsFixedLength().HasMaxLength(10).IsUnicode(false);
 
@@ -79,6 +93,7 @@ builder.Services.AddSingleton<Action<ModelBuilder>>(builder =>
 
 
 });
+
 
 builder.Services.AddTransient<IAlloCineService, AlloCineServiceFromDB>();
 

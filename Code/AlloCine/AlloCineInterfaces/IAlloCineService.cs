@@ -15,6 +15,8 @@
         Task<IFilm> AddFilmAsync(IFilm film);
         Task<ICinema> AddCinemaAsync(ICinema cinema);
         Task<ISeance> AddSeanceAsync(ISeance seance);
+
+        Task<ICategorie> GetCategoryByFilmAsync(string codeFilm);
        
         // Task RemoveFilm(IFilm film);
 

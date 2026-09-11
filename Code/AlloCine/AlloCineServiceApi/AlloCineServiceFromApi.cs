@@ -27,6 +27,12 @@ namespace AlloCineServiceApi
             throw new NotImplementedException();
         }
 
+        public async Task<ICategorie> GetCategoryByFilmAsync(string codeFilm)
+        {
+            
+            return  await httpClient.GetFromJsonAsync<Categorie>($"Categorie/GetByFilm/{codeFilm}");
+        }
+
         public async Task<IEnumerable<ICinema>> GetCinemasAsync(ICinemaSearch search)
         {
             // Interroger l'api et exécuter la bonne méthode
