@@ -1,5 +1,5 @@
 ﻿AlloCineUI
-
+1.0.0.0
 
 winexe
 C#
@@ -12,9 +12,9 @@ TRACE;DEBUG;NET;NET10_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_O
 C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\AlloCine\AlloCineUI\App.xaml
 11407045341
 
-12-1622967383
-254-264570037
+14-133393203
+253286567781
 MainWindow.xaml;
 
-False
+True
 
