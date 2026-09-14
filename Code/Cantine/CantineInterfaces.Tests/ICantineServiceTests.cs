@@ -13,6 +13,8 @@ namespace CantineInterfaces.Tests
             // Ici on ne sait pas quel est le type précis que l'on va tester
             ICantineService instance=DI.Services.GetService<ICantineService>();
             Assert.IsNotNull(instance); 
+
+
         }
     }
 }

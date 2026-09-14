@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CantineInterfaces\CantineInterfaces.csproj" />
+    <ProjectReference Include="..\HRDAL\HRDAL.csproj" />
   </ItemGroup>
 
 </Project>

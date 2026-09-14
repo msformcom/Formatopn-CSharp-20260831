@@ -3,14 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\Cantine\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B3F21966-61FE-4374-8762-9C56A363F608}|CantineInterfaces.Tests\\CantineInterfaces.Tests.csproj|c:\\users\\dom\\desktop\\formations\\formatopn csharp 20260831\\formatopn csharp 20260831\\code\\cantine\\cantineinterfaces.tests\\icantineservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B3F21966-61FE-4374-8762-9C56A363F608}|CantineInterfaces.Tests\\CantineInterfaces.Tests.csproj|solutionrelative:cantineinterfaces.tests\\icantineservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B3F21966-61FE-4374-8762-9C56A363F608}|CantineInterfaces.Tests\\CantineInterfaces.Tests.csproj|c:\\users\\dom\\desktop\\formations\\formatopn csharp 20260831\\formatopn csharp 20260831\\code\\cantine\\cantineinterfaces.tests\\di.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B3F21966-61FE-4374-8762-9C56A363F608}|CantineInterfaces.Tests\\CantineInterfaces.Tests.csproj|solutionrelative:cantineinterfaces.tests\\di.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3CB6389E-DB0E-49E1-895D-01245A0A72C1}|CantineServiceFromBDD\\CantineServiceFromBDD.csproj|c:\\users\\dom\\desktop\\formations\\formatopn csharp 20260831\\formatopn csharp 20260831\\code\\cantine\\cantineservicefrombdd\\cantineservicebdd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3CB6389E-DB0E-49E1-895D-01245A0A72C1}|CantineServiceFromBDD\\CantineServiceFromBDD.csproj|solutionrelative:cantineservicefrombdd\\cantineservicebdd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -19,8 +11,28 @@
       "RelativeMoniker": "D:0:0:{1EE28DA2-9489-CA5E-E688-BDB3F9F885DD}|CantineInterfaces\\CantineInterfaces.csproj|solutionrelative:cantineinterfaces\\icantineservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{B3F21966-61FE-4374-8762-9C56A363F608}|CantineInterfaces.Tests\\CantineInterfaces.Tests.csproj|c:\\users\\dom\\desktop\\formations\\formatopn csharp 20260831\\formatopn csharp 20260831\\code\\cantine\\cantineinterfaces.tests\\icantineservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3F21966-61FE-4374-8762-9C56A363F608}|CantineInterfaces.Tests\\CantineInterfaces.Tests.csproj|solutionrelative:cantineinterfaces.tests\\icantineservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CFAA82DA-31B5-459C-AA4E-0289E7910377}|HRDAL\\HRDAL.csproj|c:\\users\\dom\\desktop\\formations\\formatopn csharp 20260831\\formatopn csharp 20260831\\code\\cantine\\hrdal\\cantinecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CFAA82DA-31B5-459C-AA4E-0289E7910377}|HRDAL\\HRDAL.csproj|solutionrelative:hrdal\\cantinecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CFAA82DA-31B5-459C-AA4E-0289E7910377}|HRDAL\\HRDAL.csproj|c:\\users\\dom\\desktop\\formations\\formatopn csharp 20260831\\formatopn csharp 20260831\\code\\cantine\\hrdal\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CFAA82DA-31B5-459C-AA4E-0289E7910377}|HRDAL\\HRDAL.csproj|solutionrelative:hrdal\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CFAA82DA-31B5-459C-AA4E-0289E7910377}|HRDAL\\HRDAL.csproj|c:\\users\\dom\\desktop\\formations\\formatopn csharp 20260831\\formatopn csharp 20260831\\code\\cantine\\hrdal\\hrdal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{CFAA82DA-31B5-459C-AA4E-0289E7910377}|HRDAL\\HRDAL.csproj|solutionrelative:hrdal\\hrdal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1EE28DA2-9489-CA5E-E688-BDB3F9F885DD}|CantineInterfaces\\CantineInterfaces.csproj|c:\\users\\dom\\desktop\\formations\\formatopn csharp 20260831\\formatopn csharp 20260831\\code\\cantine\\cantineinterfaces\\iemploye.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1EE28DA2-9489-CA5E-E688-BDB3F9F885DD}|CantineInterfaces\\CantineInterfaces.csproj|solutionrelative:cantineinterfaces\\iemploye.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3F21966-61FE-4374-8762-9C56A363F608}|CantineInterfaces.Tests\\CantineInterfaces.Tests.csproj|c:\\users\\dom\\desktop\\formations\\formatopn csharp 20260831\\formatopn csharp 20260831\\code\\cantine\\cantineinterfaces.tests\\di.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3F21966-61FE-4374-8762-9C56A363F608}|CantineInterfaces.Tests\\CantineInterfaces.Tests.csproj|solutionrelative:cantineinterfaces.tests\\di.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1EE28DA2-9489-CA5E-E688-BDB3F9F885DD}|CantineInterfaces\\CantineInterfaces.csproj|c:\\users\\dom\\desktop\\formations\\formatopn csharp 20260831\\formatopn csharp 20260831\\code\\cantine\\cantineinterfaces\\iarticle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,11 +54,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "CantineContext.cs",
+              "DocumentMoniker": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\Cantine\\HRDAL\\CantineContext.cs",
+              "RelativeDocumentMoniker": "HRDAL\\CantineContext.cs",
+              "ToolTip": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\Cantine\\HRDAL\\CantineContext.cs",
+              "RelativeToolTip": "HRDAL\\CantineContext.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-14T12:51:47.583Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HRDAL",
+              "DocumentMoniker": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\Cantine\\HRDAL\\HRDAL.csproj",
+              "RelativeDocumentMoniker": "HRDAL\\HRDAL.csproj",
+              "ToolTip": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\Cantine\\HRDAL\\HRDAL.csproj",
+              "RelativeToolTip": "HRDAL\\HRDAL.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-09-14T12:37:10.541Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\Cantine\\HRDAL\\Class1.cs",
+              "RelativeDocumentMoniker": "HRDAL\\Class1.cs",
+              "ToolTip": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\Cantine\\HRDAL\\Class1.cs",
+              "RelativeToolTip": "HRDAL\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-14T12:12:34.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "DI.cs",
               "DocumentMoniker": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\Cantine\\CantineInterfaces.Tests\\DI.cs",
               "RelativeDocumentMoniker": "CantineInterfaces.Tests\\DI.cs",
@@ -54,51 +105,50 @@
               "RelativeToolTip": "CantineInterfaces.Tests\\DI.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAAQwBoAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-14T11:51:57.125Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-14T11:51:57.125Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "CantineServiceBDD.cs",
               "DocumentMoniker": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\Cantine\\CantineServiceFromBDD\\CantineServiceBDD.cs",
               "RelativeDocumentMoniker": "CantineServiceFromBDD\\CantineServiceBDD.cs",
               "ToolTip": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\Cantine\\CantineServiceFromBDD\\CantineServiceBDD.cs",
               "RelativeToolTip": "CantineServiceFromBDD\\CantineServiceBDD.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAABsAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-14T11:47:46.52Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "ICantineServiceTests.cs",
               "DocumentMoniker": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\Cantine\\CantineInterfaces.Tests\\ICantineServiceTests.cs",
               "RelativeDocumentMoniker": "CantineInterfaces.Tests\\ICantineServiceTests.cs",
               "ToolTip": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\Cantine\\CantineInterfaces.Tests\\ICantineServiceTests.cs",
               "RelativeToolTip": "CantineInterfaces.Tests\\ICantineServiceTests.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAA3wA4AAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAYwA0AAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-14T11:33:51.088Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "IEmploye.cs",
               "DocumentMoniker": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\Cantine\\CantineInterfaces\\IEmploye.cs",
               "RelativeDocumentMoniker": "CantineInterfaces\\IEmploye.cs",
               "ToolTip": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\Cantine\\CantineInterfaces\\IEmploye.cs",
               "RelativeToolTip": "CantineInterfaces\\IEmploye.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-14T11:29:02.055Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "IArticle.cs",
               "DocumentMoniker": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\Cantine\\CantineInterfaces\\IArticle.cs",
               "RelativeDocumentMoniker": "CantineInterfaces\\IArticle.cs",
@@ -106,25 +156,24 @@
               "RelativeToolTip": "CantineInterfaces\\IArticle.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-14T11:10:52.6Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-14T11:10:52.6Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "ICantineService.cs",
               "DocumentMoniker": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\Cantine\\CantineInterfaces\\ICantineService.cs",
               "RelativeDocumentMoniker": "CantineInterfaces\\ICantineService.cs",
               "ToolTip": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\Cantine\\CantineInterfaces\\ICantineService.cs",
               "RelativeToolTip": "CantineInterfaces\\ICantineService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwA4AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-14T11:09:25.729Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "DelegateTests.cs",
               "DocumentMoniker": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\Cantine\\CodeTests\\DelegateTests.cs",
               "RelativeDocumentMoniker": "CodeTests\\DelegateTests.cs",
@@ -132,12 +181,11 @@
               "RelativeToolTip": "CodeTests\\DelegateTests.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAQwBAAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-14T08:55:52.31Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-14T08:55:52.31Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "TaskTests.cs",
               "DocumentMoniker": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\Cantine\\CodeTests\\TaskTests.cs",
               "RelativeDocumentMoniker": "CodeTests\\TaskTests.cs",
@@ -145,8 +193,7 @@
               "RelativeToolTip": "CodeTests\\TaskTests.cs",
               "ViewState": "AgIAABwAAAAAAAAAAAAcwCAAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-14T08:51:30.833Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-14T08:51:30.833Z"
             }
           ]
         }
