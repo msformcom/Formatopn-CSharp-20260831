@@ -19,6 +19,10 @@ namespace CantineInterfaces.Tests
 
             var resultat = (await instance.ListeArticlesAsync(null)).ToList();
 
+            // Le AfterMap du mapping découpe la chaine Allergens de la BDD
+            var avecAllergenes = resultat.First(a => a.Allergenes.Count >= 2);
+            Assert.AreEqual(2, avecAllergenes.Allergenes.Count);
+
         }
 
         [TestMethod]
@@ -26,7 +30,7 @@ namespace CantineInterfaces.Tests
         {
             using var scope = DI.Services.CreateScope();
             ICantineService instance = scope.ServiceProvider.GetRequiredService<ICantineService>();
-            var resultat=await instance.LireEmployeInfosAsync("AA0001");
+            var resultat=await instance.LireEmployeInfosAsync("AA001");
 
             Assert.IsNotNull(resultat);
 

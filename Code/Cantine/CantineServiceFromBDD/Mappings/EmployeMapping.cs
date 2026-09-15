@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using AutoMapper;
+using CantineInterfaces;
 using CantineServiceFromBDD.Models;
 using HRDAL.DAO;
 
@@ -10,13 +11,14 @@ namespace CantineServiceFromBDD.Mappings
     public static class EmployeMapping
     {
         public static void AddEmployeMapping(this IMapperConfigurationExpression config) {
-
-            // Lecture : la BDD vers le métier
-            config.CreateMap<EmployeDAO, Employe>()
-                         .ForMember(c => c.Matricule, o => o.MapFrom(c => c.PublicId))
-                          .ForMember(c => c.DateNaissance, o => o.MapFrom(c => c.BirthDate))
-                           .ForMember(c => c.Nom, o => o.MapFrom(c => c.Name))
-                            .ForMember(c => c.Prenom, o => o.MapFrom(c => c.Surname));
+            config.CreateMap<IEmploye, EmployeDAO>()
+                         .ForMember(c => c.PublicId, o => o.MapFrom(c => c.Matricule))
+                          .ForMember(c => c.BirthDate, o => o.MapFrom(c => c.DateNaissance))
+                           .ForMember(c => c.Name, o => o.MapFrom(c => c.Nom))
+                            .ForMember(c => c.Surname, o => o.MapFrom(c => c.Prenom))
+                           .ReverseMap()
+                           // Construction de IEmploye : AutoMapper ne sait pas instancier une interface
+                           .ConstructUsing(c => new Employe());
         }
     }
 }

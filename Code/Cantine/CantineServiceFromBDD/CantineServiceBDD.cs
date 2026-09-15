@@ -39,7 +39,7 @@ namespace CantineServiceFromBDD
             }
 
             // Les règles de conversion sont décrites dans CantineMapping
-            return mapper.Map<Employe>(employeDAO);
+            return mapper.Map<IEmploye>(employeDAO);
            
         }
 
@@ -72,7 +72,7 @@ namespace CantineServiceFromBDD
             // AutoMapper travaille sur des objets déjà chargés
             // La requête est donc matérialisée avant le mapping
             var listeDesDAOs = await db.Articles.ToListAsync(); // SELECT * FROM TBL_Articles
-            var listedesIarticles = mapper.Map<List<Article>>(listeDesDAOs);
+            var listedesIarticles = mapper.Map<List<IArticle>>(listeDesDAOs);
 
             //SELECT Reference, Label, Photo, Price, Allergens FROM TBL_Articles
 
