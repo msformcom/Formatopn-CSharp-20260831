@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using HRDAL.DAO;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace HRDAL
@@ -12,16 +13,21 @@ namespace HRDAL
     public class CantineContext : DbContext
     {
         private readonly Action<ModelBuilder>? continueModelBuilding;
+        private readonly IConfiguration config;
 
         // le constructeur de CantineContext reçoit les options de config du contexte
         // et les passe au constructeur de la classe de base
         public CantineContext(DbContextOptions<CantineContext> options,
+            // Demande à l'injecteur de dépendance un accès à la configuration
+                 IConfiguration config,
             // Je reçois de la part du DI la fonction qui finit la config du Model
             [FromKeyedServices("Builder1")] Action<ModelBuilder>? continueModelBuilding=null
+       
             
             ) : base(options)
         {
             this.continueModelBuilding = continueModelBuilding;
+            this.config = config;
         }
         // DALCompta => EmployeComptaDAO => Id, Nom, Prenom, Salaire, Matricule +  Civilite => Migration ALTER TABLE Employes ADD ...
         // DALPetanque => EmployePetanqueDAO => Id, Nom, Prenom, RefInscriptionPretanque, NiveauPetanque, Civilite
@@ -40,9 +46,13 @@ namespace HRDAL
             // Configuration pour ArticleDAO
             modelBuilder.Entity<ArticleDAO>(options =>
             {
+               
                 options.HasKey(a => a.Id);
                 options.HasIndex(a => a.Reference);
-                options.Property(c => c.Price).HasPrecision(18, 2);
+                // Utilisation de la configuration pour gérer le nombre de décimales 
+                // du prix
+                var nbDecimals = int.Parse(config.GetSection("metadata:nbDecimals").Value!);
+                options.Property(c => c.Price).HasPrecision(18, nbDecimals);
                 options.Property(c => c.Label).HasMaxLength(100);
                 options.Property(c => c.Reference).IsUnicode(false).HasMaxLength(5);
 

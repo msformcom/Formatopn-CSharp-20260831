@@ -19,10 +19,10 @@ namespace CantineInterfaces.Tests
         }
 
         [TestMethod]
-        public async Task MyTestMethod()
+        public async Task LireEmployeInfosTest()
         {
             ICantineService instance = DI.Services.GetRequiredService<ICantineService>();
-            var resultat=await instance.LireEmployeInfosAsync("AA0001");
+            var resultat=await instance.LireEmployeInfosAsync("AA001");
 
             Assert.IsNotNull(resultat);
 

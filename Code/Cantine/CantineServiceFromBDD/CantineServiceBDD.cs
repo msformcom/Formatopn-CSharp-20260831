@@ -5,6 +5,7 @@ using CantineServiceFromBDD.Models;
 using HRDAL;
 using HRDAL.DAO;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
 namespace CantineServiceFromBDD
@@ -24,20 +25,26 @@ namespace CantineServiceFromBDD
             {
                 // Configuration de l'objet mapper pour mapper de IArticle vers ArticleDAO
                 config.AddArticleMapping();
+                config.AddEmployeMapping();
             }, LoggerFactory.Create(o => { }));
-            mapper = configMapping.CreateMapper();
-
-
-            
-
-        
+            mapper = configMapping.CreateMapper();    
         }
 
         private readonly CantineContext db;
+        private readonly IServiceProvider services;
+  
 
-        public CantineServiceBDD(CantineContext db)
+        public CantineServiceBDD(CantineContext db, 
+                // Référence vers l'injection de dépendance,
+                //ILogger<CantineServiceBDD> logger,
+                IServiceProvider services)
         {
+            // logger typé pour besoins de suivi
+            
             this.db = db;
+            this.services = services;
+       
+
         }
 
         public Task ConsommerArticleAsync(string matricule, string referenceArticle)
@@ -50,25 +57,33 @@ namespace CantineServiceFromBDD
 
         public Task IncrementerCreditEmployeAsync(string matricule, decimal montant)
         {
+            var db=services.GetRequiredService<CantineContext>();
             throw new NotImplementedException();
         }
 
         public async Task<IEmploye> LireEmployeInfosAsync(string matricule)
         {
+         
+            // Journalisation
+            var logger=services.GetRequiredService<ILogger<CantineServiceBDD>>();
+            logger.LogInformation("Selection d'un employé par matricule");
+
+
             var employeDAO= await db.Employes.FirstOrDefaultAsync(c=>c.PublicId== matricule);
             if (employeDAO == null)
             {
                 throw new Exception("Matricule non trouvé");
             }
 
-            return new Employe()
-            {
-                DateNaissance = employeDAO.BirthDate,
-                Matricule = employeDAO.PublicId,
-                Nom = employeDAO.Name,
-                Prenom = employeDAO.Surname
-            };
-           
+            return mapper.Map<IEmploye>(employeDAO);
+
+            //return new Employe()
+            //{
+            //    DateNaissance = employeDAO.BirthDate,
+            //    Matricule = employeDAO.PublicId,
+            //    Nom = employeDAO.Name,
+            //    Prenom = employeDAO.Surname
+            //};
         }
 
         public async Task<IEnumerable<IArticle>> ListeArticlesAsync(IArticleSearch search)

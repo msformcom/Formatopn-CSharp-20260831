@@ -7,7 +7,10 @@ using CantineServiceFromBDD;
 using HRDAL;
 using HRDAL.DAO;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
+using Microsoft.IdentityModel.Protocols;
 
 namespace CantineInterfaces.Tests
 {
@@ -20,8 +23,23 @@ namespace CantineInterfaces.Tests
         // Exécuté une seule fois 
         static DI()
         {
+
+
             // Design patter builer => objet qui sert à construire un autre objet
             var collection = new ServiceCollection();
+
+            #region Config de la config
+            var configBuilder = new ConfigurationBuilder();
+            configBuilder.AddJsonFile("appsettings.json");
+            //configBuilder.AddXmlFile("app.config");
+
+            // Je crée l'objet de type IConfiguration
+            var config= configBuilder.Build();
+            collection.AddSingleton < IConfiguration>(config);
+            #endregion
+
+
+
 
             // Chaque demande de ICantineService fera l'objet 
             // d'une nouvelle instanciation de CantineServiceBDD
@@ -34,10 +52,21 @@ namespace CantineInterfaces.Tests
             // J'ajoute le CantineContext aux classes connues de ma collection
             collection.AddDbContext<CantineContext>(options =>
             {
+               
                 // Le OptionBuilder me permet de spécifier les options facilement
                 // Par le biais de fonctions extensions définies dans le package du provider
                 // TODO : Mettre la chaine de connection dans un fichier de config
-                options.UseSqlServer("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=CantineDB;Integrated Security=True;Trust Server Certificate=true;");
+                options.UseSqlServer("name=CantineDB");
+                //options.UseSqlServer(config.GetConnectionString("CantineDB"));
+            });
+
+            collection.AddLogging(options =>
+            {
+                // Configuration de la journalisation
+                // Importer un package spécialisé
+                // Ajouter la config de journalisation via la méthode associé
+                options.AddDebug();
+
             });
 
 
