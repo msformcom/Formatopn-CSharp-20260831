@@ -47,8 +47,8 @@ namespace HRDAL
                 options.Property(c => c.Reference).IsUnicode(false).HasMaxLength(5);
 
 
-                var article1 = new ArticleDAO() { Label = "Purée", Reference = "P01", Price = 12 };
-                var article2 = new ArticleDAO() { Label = "Steak", Reference = "S01", Price = 15 };
+                var article1 = new ArticleDAO() { Label = "Purée", Reference = "P0001", Price = 12, Allergens="" };
+                var article2 = new ArticleDAO() { Label = "Steak", Reference = "S0001", Price = 15, Allergens="Cianure, Gluten" };
 
                 options.HasData(article1, article2);
             });
@@ -62,9 +62,9 @@ namespace HRDAL
                 options.HasIndex(a => a.PublicId);
                 options.Property(c => c.Name).HasMaxLength(100);
                 options.Property(c => c.Surname).HasMaxLength(100);
-                options.Property(c => c.PublicId).IsUnicode(false).HasMaxLength(6);
-                var employe1 = new EmployeDAO() { PublicId = "AA0001", Name = "NAME0001", Surname = "SURNAME0001", BirthDate = new DateOnly(1996, 2, 12) };
-                var employe2 = new EmployeDAO() { PublicId = "AA0002", Name = "NAME0002", Surname = "SURNAME0002", BirthDate = new DateOnly(2002, 4, 7) };
+                options.Property(c => c.PublicId).IsUnicode(false).HasMaxLength(5);
+                var employe1 = new EmployeDAO() { PublicId = "AA001", Name = "NAME0001", Surname = "SURNAME0001", BirthDate = new DateOnly(1996, 2, 12) };
+                var employe2 = new EmployeDAO() { PublicId = "AA002", Name = "NAME0002", Surname = "SURNAME0002", BirthDate = new DateOnly(2002, 4, 7) };
 
 
 
