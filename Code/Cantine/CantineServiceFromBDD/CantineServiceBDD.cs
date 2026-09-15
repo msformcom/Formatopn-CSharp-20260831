@@ -1,12 +1,38 @@
-﻿using CantineInterfaces;
+﻿using AutoMapper;
+using CantineInterfaces;
+using CantineServiceFromBDD.Mappings;
 using CantineServiceFromBDD.Models;
 using HRDAL;
+using HRDAL.DAO;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 
 namespace CantineServiceFromBDD
 {
     public class CantineServiceBDD : ICantineService
     {
+
+
+        protected static IMapper mapper = null;
+        
+
+
+        static CantineServiceBDD()
+        {
+            // Configuration du mapping DAO <=> Interfaces
+            var configMapping = new MapperConfiguration(config =>
+            {
+                // Configuration de l'objet mapper pour mapper de IArticle vers ArticleDAO
+                config.AddArticleMapping();
+            }, LoggerFactory.Create(o => { }));
+            mapper = configMapping.CreateMapper();
+
+
+            
+
+        
+        }
+
         private readonly CantineContext db;
 
         public CantineServiceBDD(CantineContext db)
@@ -50,7 +76,7 @@ namespace CantineServiceFromBDD
             // Accéder à la BDD via le CantineContext pour obtenir la liste des éléments à renvoyer
             // Le CantineContext est fourni par DI lors de la construction
 
-           // var listeDesDAOs = db.Articles; //.Where(c=>c.Price<10);
+            // var listeDesDAOs = db.Articles; //.Where(c=>c.Price<10);
 
             // db.Vecteurs; // Vecteur => X, Y
             // SELECT * FROM TBL_Vecteurs
@@ -71,17 +97,22 @@ namespace CantineServiceFromBDD
             // SELECT X,Y FROM TBL_Vecteurs => 100 premiers enregistre => Filtre appliqué 1 par 1 => Take => 10 => Arreter la lecture
 
 
-            var listedesIarticles = db.Articles  // SELECT * FROM TBL_Articles
+            var listedesIarticlesDAO = db.Articles; // SELECT * FROM TBL_Articles
                                                  //.Where(c => c.Price > 1000)  SELECT * FROM TBL_Articles WHERE Price> 1000
                                                  //
-                                    .Select(dao => new Article()
-            {
-                Reference = dao.Reference,
-                Libelle = dao.Label,
-                Photo = dao.Photo,
-                Prix = dao.Price,
-                Allergenes = dao.Allergens.Split(',').ToList()
-            }); // SELECT Reference, Label, Photo,Price, Allergens FROM TBL_Articles
+              var listedesIarticles=listedesIarticlesDAO.ToList()
+                                    .Select(dao => 
+                                    mapper.Map<IArticle>(dao)
+                                    );
+                                    // mapper.map<ArticleDAO>(art)
+                                    //.Select(dao => new Article()
+            //{
+            //    Reference = dao.Reference,
+            //    Libelle = dao.Label,
+            //    Photo = dao.Photo,
+            //    Prix = dao.Price,
+            //    Allergenes = dao.Allergens.Split(',').ToList()
+            //}); // SELECT Reference, Label, Photo,Price, Allergens FROM TBL_Articles
             // Puis new Article()
 
             //SELECT Reference, Label, Photo, Price, Allergens FROM TBL_Articles

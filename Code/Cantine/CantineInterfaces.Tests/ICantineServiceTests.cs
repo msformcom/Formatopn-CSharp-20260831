@@ -6,14 +6,15 @@ namespace CantineInterfaces.Tests
     public sealed class ICantineServiceTests
     {
         [TestMethod]
-        public void ListeArticlesAsyncTests()
+        public async Task ListeArticlesAsyncTests()
         {
             // Arrange
             // Avoir l'instance de ICantineService à tester
             // Ici on ne sait pas quel est le type précis que l'on va tester
             ICantineService instance=DI.Services.GetService<ICantineService>();
-            Assert.IsNotNull(instance); 
+            Assert.IsNotNull(instance);
 
+            var resultat = (await instance.ListeArticlesAsync(null)).ToList();
 
         }
 
