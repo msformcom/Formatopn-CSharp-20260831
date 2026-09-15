@@ -4,10 +4,15 @@
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+	 
   </PropertyGroup>
 
   <ItemGroup>
+	
+	  <InternalsVisibleTo  Include="CantineServiceFromBDD"/>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="10.0.12" />
   </ItemGroup>
+
+
 
 </Project>

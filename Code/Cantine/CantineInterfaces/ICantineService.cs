@@ -10,12 +10,12 @@
         // Task = Objet qui représente une opération en couurs d'eéxution
         Task<IEnumerable<IArticle>> ListeArticlesAsync(IArticleSearch search); // SEARCH
 
-        Task<IEmploye> LireEmployeInfos(string matricule);
+        Task<IEmploye> LireEmployeInfosAsync(string matricule);
 
-        Task SupprimerArticle(string referenceArticle); // DELETE
+        Task SupprimerArticleAsync(string referenceArticle); // DELETE
 
-        Task ConsommerArticle(string matricule, string referenceArticle); // CREATE
+        Task ConsommerArticleAsync(string matricule, string referenceArticle); // CREATE
 
-        Task IncrementerCreditEmploye(string matricule, decimal montant); // UPDATE
+        Task IncrementerCreditEmployeAsync(string matricule, decimal montant); // UPDATE
     }
 }

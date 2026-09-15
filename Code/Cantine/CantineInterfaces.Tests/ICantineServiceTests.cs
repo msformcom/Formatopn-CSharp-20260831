@@ -16,5 +16,16 @@ namespace CantineInterfaces.Tests
 
 
         }
+
+        [TestMethod]
+        public async Task MyTestMethod()
+        {
+            ICantineService instance = DI.Services.GetRequiredService<ICantineService>();
+            var resultat=await instance.LireEmployeInfosAsync("AA0001");
+
+            Assert.IsNotNull(resultat);
+
+
+        }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using CantineInterfaces;
 using CantineServiceFromBDD.Models;
 using HRDAL;
+using Microsoft.EntityFrameworkCore;
 
 namespace CantineServiceFromBDD
 {
@@ -13,19 +14,35 @@ namespace CantineServiceFromBDD
             this.db = db;
         }
 
-        public Task ConsommerArticle(string matricule, string referenceArticle)
+        public Task ConsommerArticleAsync(string matricule, string referenceArticle)
+        {
+            var e = new Employe() { Nom=null};
+
+          
+            throw new NotImplementedException();
+        }
+
+        public Task IncrementerCreditEmployeAsync(string matricule, decimal montant)
         {
             throw new NotImplementedException();
         }
 
-        public Task IncrementerCreditEmploye(string matricule, decimal montant)
+        public async Task<IEmploye> LireEmployeInfosAsync(string matricule)
         {
-            throw new NotImplementedException();
-        }
+            var employeDAO= await db.Employes.FirstOrDefaultAsync(c=>c.PublicId== matricule);
+            if (employeDAO == null)
+            {
+                throw new Exception("Matricule non trouvé");
+            }
 
-        public Task<IEmploye> LireEmployeInfos(string matricule)
-        {
-            throw new NotImplementedException();
+            return new Employe()
+            {
+                DateNaissance = employeDAO.BirthDate,
+                Matricule = employeDAO.PublicId,
+                Nom = employeDAO.Name,
+                Prenom = employeDAO.Surname
+            };
+           
         }
 
         public async Task<IEnumerable<IArticle>> ListeArticlesAsync(IArticleSearch search)
@@ -90,7 +107,7 @@ namespace CantineServiceFromBDD
             
         }
 
-        public Task SupprimerArticle(string referenceArticle)
+        public Task SupprimerArticleAsync(string referenceArticle)
         {
             throw new NotImplementedException();
         }
