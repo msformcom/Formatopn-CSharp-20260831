@@ -1,4 +1,5 @@
-﻿using CantineInterfaces;
+﻿using AutoMapper;
+using CantineInterfaces;
 using CantineServiceFromBDD.Models;
 using HRDAL;
 using Microsoft.EntityFrameworkCore;
@@ -8,10 +9,12 @@ namespace CantineServiceFromBDD
     public class CantineServiceBDD : ICantineService
     {
         private readonly CantineContext db;
+        private readonly IMapper mapper;
 
-        public CantineServiceBDD(CantineContext db)
+        public CantineServiceBDD(CantineContext db, IMapper mapper)
         {
             this.db = db;
+            this.mapper = mapper;
         }
 
         public Task ConsommerArticleAsync(string matricule, string referenceArticle)
@@ -35,13 +38,8 @@ namespace CantineServiceFromBDD
                 throw new Exception("Matricule non trouvé");
             }
 
-            return new Employe()
-            {
-                DateNaissance = employeDAO.BirthDate,
-                Matricule = employeDAO.PublicId,
-                Nom = employeDAO.Name,
-                Prenom = employeDAO.Surname
-            };
+            // Les règles de conversion sont décrites dans CantineMapping
+            return mapper.Map<Employe>(employeDAO);
            
         }
 
@@ -71,18 +69,10 @@ namespace CantineServiceFromBDD
             // SELECT X,Y FROM TBL_Vecteurs => 100 premiers enregistre => Filtre appliqué 1 par 1 => Take => 10 => Arreter la lecture
 
 
-            var listedesIarticles = db.Articles  // SELECT * FROM TBL_Articles
-                                                 //.Where(c => c.Price > 1000)  SELECT * FROM TBL_Articles WHERE Price> 1000
-                                                 //
-                                    .Select(dao => new Article()
-            {
-                Reference = dao.Reference,
-                Libelle = dao.Label,
-                Photo = dao.Photo,
-                Prix = dao.Price,
-                Allergenes = dao.Allergens.Split(',').ToList()
-            }); // SELECT Reference, Label, Photo,Price, Allergens FROM TBL_Articles
-            // Puis new Article()
+            // AutoMapper travaille sur des objets déjà chargés
+            // La requête est donc matérialisée avant le mapping
+            var listeDesDAOs = await db.Articles.ToListAsync(); // SELECT * FROM TBL_Articles
+            var listedesIarticles = mapper.Map<List<Article>>(listeDesDAOs);
 
             //SELECT Reference, Label, Photo, Price, Allergens FROM TBL_Articles
 

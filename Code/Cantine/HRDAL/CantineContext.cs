@@ -62,7 +62,7 @@ namespace HRDAL
                 options.HasIndex(a => a.PublicId);
                 options.Property(c => c.Name).HasMaxLength(100);
                 options.Property(c => c.Surname).HasMaxLength(100);
-                options.Property(c => c.PublicId).IsUnicode(false).HasMaxLength(5);
+                options.Property(c => c.PublicId).IsUnicode(false).HasMaxLength(6);
                 var employe1 = new EmployeDAO() { PublicId = "AA0001", Name = "NAME0001", Surname = "SURNAME0001", BirthDate = new DateOnly(1996, 2, 12) };
                 var employe2 = new EmployeDAO() { PublicId = "AA0002", Name = "NAME0002", Surname = "SURNAME0002", BirthDate = new DateOnly(2002, 4, 7) };
 

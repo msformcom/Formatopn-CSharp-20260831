@@ -1,12 +1,24 @@
-C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\Cantine\CantineInterfaces\bin\Debug\net10.0\CantineInterfaces.deps.json
-C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\Cantine\CantineInterfaces\bin\Debug\net10.0\CantineInterfaces.dll
-C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\Cantine\CantineInterfaces\bin\Debug\net10.0\CantineInterfaces.pdb
-C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\Cantine\CantineInterfaces\obj\Debug\net10.0\CantineInterfaces.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\Cantine\CantineInterfaces\obj\Debug\net10.0\CantineInterfaces.AssemblyInfoInputs.cache
-C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\Cantine\CantineInterfaces\obj\Debug\net10.0\CantineInterfaces.AssemblyInfo.cs
-C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\Cantine\CantineInterfaces\obj\Debug\net10.0\CantineInterfaces.csproj.CoreCompileInputs.cache
-C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\Cantine\CantineInterfaces\obj\Debug\net10.0\CantineInterfaces.sourcelink.json
-C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\Cantine\CantineInterfaces\obj\Debug\net10.0\CantineInterfaces.dll
-C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\Cantine\CantineInterfaces\obj\Debug\net10.0\refint\CantineInterfaces.dll
-C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\Cantine\CantineInterfaces\obj\Debug\net10.0\CantineInterfaces.pdb
-C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\Cantine\CantineInterfaces\obj\Debug\net10.0\ref\CantineInterfaces.dll
+C:/Users/Dom/Desktop/Formations/Formatopn CSharp 20260831/Formatopn CSharp 20260831/Code/Cantine/CantineInterfaces/bin/Debug/net10.0/CantineInterfaces.deps.json
+C:/Users/Dom/Desktop/Formations/Formatopn CSharp 20260831/Formatopn CSharp 20260831/Code/Cantine/CantineInterfaces/bin/Debug/net10.0/CantineInterfaces.dll
+C:/Users/Dom/Desktop/Formations/Formatopn CSharp 20260831/Formatopn CSharp 20260831/Code/Cantine/CantineInterfaces/bin/Debug/net10.0/CantineInterfaces.pdb
+C:/Users/Dom/Desktop/Formations/Formatopn CSharp 20260831/Formatopn CSharp 20260831/Code/Cantine/CantineInterfaces/obj/Debug/net10.0/CantineInterfaces.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/Dom/Desktop/Formations/Formatopn CSharp 20260831/Formatopn CSharp 20260831/Code/Cantine/CantineInterfaces/obj/Debug/net10.0/CantineInterfaces.AssemblyInfoInputs.cache
+C:/Users/Dom/Desktop/Formations/Formatopn CSharp 20260831/Formatopn CSharp 20260831/Code/Cantine/CantineInterfaces/obj/Debug/net10.0/CantineInterfaces.AssemblyInfo.cs
+C:/Users/Dom/Desktop/Formations/Formatopn CSharp 20260831/Formatopn CSharp 20260831/Code/Cantine/CantineInterfaces/obj/Debug/net10.0/CantineInterfaces.csproj.CoreCompileInputs.cache
+C:/Users/Dom/Desktop/Formations/Formatopn CSharp 20260831/Formatopn CSharp 20260831/Code/Cantine/CantineInterfaces/obj/Debug/net10.0/CantineInterfaces.sourcelink.json
+C:/Users/Dom/Desktop/Formations/Formatopn CSharp 20260831/Formatopn CSharp 20260831/Code/Cantine/CantineInterfaces/obj/Debug/net10.0/CantineInterfaces.dll
+C:/Users/Dom/Desktop/Formations/Formatopn CSharp 20260831/Formatopn CSharp 20260831/Code/Cantine/CantineInterfaces/obj/Debug/net10.0/refint/CantineInterfaces.dll
+C:/Users/Dom/Desktop/Formations/Formatopn CSharp 20260831/Formatopn CSharp 20260831/Code/Cantine/CantineInterfaces/obj/Debug/net10.0/CantineInterfaces.pdb
+C:/Users/Dom/Desktop/Formations/Formatopn CSharp 20260831/Formatopn CSharp 20260831/Code/Cantine/CantineInterfaces/obj/Debug/net10.0/ref/CantineInterfaces.dll
+/home/chaminade/Documents/WDIR/Formatopn-CSharp-20260831/Code/Cantine/CantineInterfaces/bin/Debug/net10.0/CantineInterfaces.deps.json
+/home/chaminade/Documents/WDIR/Formatopn-CSharp-20260831/Code/Cantine/CantineInterfaces/bin/Debug/net10.0/CantineInterfaces.dll
+/home/chaminade/Documents/WDIR/Formatopn-CSharp-20260831/Code/Cantine/CantineInterfaces/bin/Debug/net10.0/CantineInterfaces.pdb
+/home/chaminade/Documents/WDIR/Formatopn-CSharp-20260831/Code/Cantine/CantineInterfaces/obj/Debug/net10.0/CantineInterfaces.GeneratedMSBuildEditorConfig.editorconfig
+/home/chaminade/Documents/WDIR/Formatopn-CSharp-20260831/Code/Cantine/CantineInterfaces/obj/Debug/net10.0/CantineInterfaces.AssemblyInfoInputs.cache
+/home/chaminade/Documents/WDIR/Formatopn-CSharp-20260831/Code/Cantine/CantineInterfaces/obj/Debug/net10.0/CantineInterfaces.AssemblyInfo.cs
+/home/chaminade/Documents/WDIR/Formatopn-CSharp-20260831/Code/Cantine/CantineInterfaces/obj/Debug/net10.0/CantineInterfaces.csproj.CoreCompileInputs.cache
+/home/chaminade/Documents/WDIR/Formatopn-CSharp-20260831/Code/Cantine/CantineInterfaces/obj/Debug/net10.0/CantineInterfaces.sourcelink.json
+/home/chaminade/Documents/WDIR/Formatopn-CSharp-20260831/Code/Cantine/CantineInterfaces/obj/Debug/net10.0/CantineInterfaces.dll
+/home/chaminade/Documents/WDIR/Formatopn-CSharp-20260831/Code/Cantine/CantineInterfaces/obj/Debug/net10.0/refint/CantineInterfaces.dll
+/home/chaminade/Documents/WDIR/Formatopn-CSharp-20260831/Code/Cantine/CantineInterfaces/obj/Debug/net10.0/CantineInterfaces.pdb
+/home/chaminade/Documents/WDIR/Formatopn-CSharp-20260831/Code/Cantine/CantineInterfaces/obj/Debug/net10.0/ref/CantineInterfaces.dll

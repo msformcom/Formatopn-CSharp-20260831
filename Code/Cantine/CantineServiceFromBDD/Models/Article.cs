@@ -13,8 +13,6 @@ namespace CantineServiceFromBDD.Models
         public  string Libelle { get ; set ; }
         public decimal Prix { get; set; } 
         public byte[] Photo { get ; set ; }
-
-        public int? NbEnfant { get; set; } // int => default 0 , int? => Int + possibilité de null => default null
         public ICollection<string> Allergenes { get; internal set; }
     }
 }
