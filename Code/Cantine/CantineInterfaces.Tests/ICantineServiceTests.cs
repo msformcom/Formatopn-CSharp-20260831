@@ -11,7 +11,10 @@ namespace CantineInterfaces.Tests
             // Arrange
             // Avoir l'instance de ICantineService à tester
             // Ici on ne sait pas quel est le type précis que l'on va tester
-            ICantineService instance=DI.Services.GetService<ICantineService>();
+            // Le CantineContext est Scoped : un scope par test évite de le partager
+            // entre les méthodes exécutées en parallèle
+            using var scope = DI.Services.CreateScope();
+            ICantineService instance = scope.ServiceProvider.GetService<ICantineService>();
             Assert.IsNotNull(instance);
 
             var resultat = (await instance.ListeArticlesAsync(null)).ToList();
@@ -21,7 +24,8 @@ namespace CantineInterfaces.Tests
         [TestMethod]
         public async Task MyTestMethod()
         {
-            ICantineService instance = DI.Services.GetRequiredService<ICantineService>();
+            using var scope = DI.Services.CreateScope();
+            ICantineService instance = scope.ServiceProvider.GetRequiredService<ICantineService>();
             var resultat=await instance.LireEmployeInfosAsync("AA0001");
 
             Assert.IsNotNull(resultat);

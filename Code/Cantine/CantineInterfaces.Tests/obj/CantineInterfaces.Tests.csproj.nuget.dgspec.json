@@ -747,7 +747,7 @@
           "dependencies": {
             "AutoMapper": {
               "target": "Package",
-              "version": "[14.0.0, )"
+              "version": "[16.2.0, )"
             }
           },
           "imports": [
