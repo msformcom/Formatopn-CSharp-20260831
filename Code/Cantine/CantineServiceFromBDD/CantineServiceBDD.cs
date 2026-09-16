@@ -1,4 +1,5 @@
-﻿using AutoMapper;
+﻿using System.Transactions;
+using AutoMapper;
 using AutoMapper.QueryableExtensions;
 using CantineInterfaces;
 using CantineServiceFromBDD.Mappings;
@@ -16,7 +17,7 @@ namespace CantineServiceFromBDD
 
 
         protected static IMapper mapper = null;
-        
+
 
 
         static CantineServiceBDD()
@@ -28,70 +29,123 @@ namespace CantineServiceFromBDD
                 config.AddArticleMapping();
                 config.AddEmployeMapping();
             }, LoggerFactory.Create(o => { }));
-            mapper = configMapping.CreateMapper();    
+            mapper = configMapping.CreateMapper();
         }
 
         private readonly CantineContext db;
         private readonly IServiceProvider services;
-  
 
-        public CantineServiceBDD(CantineContext db, 
+
+        public CantineServiceBDD(CantineContext db,
                 // Référence vers l'injection de dépendance,
                 //ILogger<CantineServiceBDD> logger,
                 IServiceProvider services)
         {
             // logger typé pour besoins de suivi
-            
+
             this.db = db;
             this.services = services;
-       
+
 
         }
 
-        public async Task<IAchat> ConsommerArticleAsync(string matricule, string referenceArticle, int quantite=1)
+
+
+
+
+        public async Task ConsommerArticleAsync(string matricule, string referenceArticle, int quantite = 1)
         {
-            var article= await db.Articles.Where(c => c.Reference == referenceArticle).FirstOrDefaultAsync();
+            //using(var T = await db.Database.BeginTransactionAsync(IsolationLevel.RepeatableRead))
+            //{
+
+            var article = await db.Articles.Where(c => c.Reference == referenceArticle).FirstOrDefaultAsync();
 
             if (article == null)
             {
                 throw new ArgumentException("Pas d'article avec cette référence");
             }
-            var employe = await db.Employes.Where(c=>c.PublicId==matricule).FirstOrDefaultAsync();
+            var employe = await db.Employes.Where(c => c.PublicId == matricule).FirstOrDefaultAsync();
             if (employe == null)
             {
                 throw new ArgumentException("Pas d'employé avec ce matricule");
+            }
+            if (article.Stock < quantite)
+            {
+                throw new ArgumentException("Stock insuffisant");
             }
             if (employe.CreditRepas < article.Price * quantite)
             {
                 throw new ArgumentException("Crédit insuffisant");
             }
 
-            var achat = new AchatDAO() { IdArticle=article.Id,IdEmploye=employe.Id, Quantite=quantite };
+            var achat = new AchatDAO()
+            {
+                IdArticle = article.Id,
+                IdEmploye = employe.Id,
+
+                Quantite = quantite
+            };
             // Ajout de l'achat à la BDD
-            db.Achats.Add(achat);
-            var e = new EmployeDAO() { Id = employe.Id, CreditRepas = employe.CreditRepas - article.Price * quantite };
-            db.Employes.Entry(e).State = EntityState.Modified;
-
-
-
-
+            db.Achats.Add(achat); // achat est marquée comme Added dans le changetracker
+            employe.CreditRepas = employe.CreditRepas - article.Price * quantite; // Modified
+            article.Stock -= quantite; // Modified
+            await db.SaveChangesAsync(); // Exécute les changements dans une transaction
+                                         // T.Commit();
+                                         //}
+                                         // 1 créer un transaction scope
+                                         // 2 associer plusieurs contexts au  transaction scope
+                                         // 3 faire els op
+                                         // 4 commitre le scope
         }
 
-        public Task IncrementerCreditEmployeAsync(string matricule, decimal montant)
+        public async Task IncrementerCreditEmployeAsync(string matricule, decimal montant)
         {
-            var db=services.GetRequiredService<CantineContext>();
-            throw new NotImplementedException();
+            var db = services.GetRequiredService<CantineContext>();
+
+           
+     
+
+            // Selectionner puis mettre à jour
+            var employe = db.Employes.FirstOrDefault(c => c.PublicId == matricule);
+            if (employe == null)
+            {
+                throw new Exception("Matricule non trouvé");
+            }
+            employe.CreditRepas += montant;
+            employe.Name = "Toto";
+
+            
+            await db.SaveChangesAsync();
+
+            // UPDATE TBL_Employes SET CreditRepas=CreditRepas+1 WHERE CreditRepas<1000
+            db.Employes.Where(c=>c.CreditRepas<1000)
+                .ExecuteUpdate(u=>u.SetProperty(    // Nom de la propriété à modifier
+                                                    c=>c.CreditRepas, 
+                                                    // Nouvelle valeur (e représente l'enregistrement en cour)
+                                                    e=>e.CreditRepas+1)
+                                    //.SetProperty(    // Nom de la propriété à modifier
+                                    //                c => c.CreditRepas,
+                                    //                // Nouvelle valeur (e représente l'enregistrement en cour)
+                                    //                e => e.CreditRepas + 1)
+
+
+               );
+            // DELETE FROM TBL_EMPLOYES WHERE 1=2
+            db.Employes.Where(c=>false).ExecuteDelete();
+
+         
+
         }
 
         public async Task<IEmploye> LireEmployeInfosAsync(string matricule)
         {
-         
+
             // Journalisation
-            var logger=services.GetRequiredService<ILogger<CantineServiceBDD>>();
+            var logger = services.GetRequiredService<ILogger<CantineServiceBDD>>();
             logger.LogInformation("Selection d'un employé par matricule");
 
 
-            var employeDAO= await db.Employes.FirstOrDefaultAsync(c=>c.PublicId== matricule);
+            var employeDAO = await db.Employes.FirstOrDefaultAsync(c => c.PublicId == matricule);
             if (employeDAO == null)
             {
                 throw new Exception("Matricule non trouvé");
@@ -135,19 +189,19 @@ namespace CantineServiceFromBDD
 
 
             IQueryable<ArticleDAO> listedesIarticlesDAO = db.Articles; // SELECT * FROM TBL_Articles
-                                                    //.Where(c => c.Price > 1000)  SELECT * FROM TBL_Articles WHERE Price> 1000
-                                                    //
+                                                                       //.Where(c => c.Price > 1000)  SELECT * FROM TBL_Articles WHERE Price> 1000
+                                                                       //
             if (search != null)
             {
                 if (!string.IsNullOrWhiteSpace(search.SearchText))
                 {
                     // J'ajoute la condition si SearchText n'est pas vide
-                    listedesIarticlesDAO=listedesIarticlesDAO.Where(c=>c.Label.Contains(search.SearchText));
+                    listedesIarticlesDAO = listedesIarticlesDAO.Where(c => c.Label.Contains(search.SearchText));
                 }
                 if (search.PrixMax.HasValue)
                 {
                     // J'ajoute la condition si PrixMax est non null
-                    listedesIarticlesDAO = listedesIarticlesDAO.Where(c => c.Price<=search.PrixMax);
+                    listedesIarticlesDAO = listedesIarticlesDAO.Where(c => c.Price <= search.PrixMax);
                 }
             }
 
@@ -160,19 +214,19 @@ namespace CantineServiceFromBDD
                                         Libelle = dao.Label
                                     });
 
-            
+
 
             //var testValues = listedesIarticles.ToList();
-                                   
+
 
             // Ce que je renvois IEnumerable mais aussi IQueryble
             return listedesIarticles;
-            
+
         }
 
         public Task SupprimerArticleAsync(string referenceArticle)
         {
-            throw new NotImplementedException();
+            throw new Exception();
         }
     }
 }

@@ -37,7 +37,7 @@ namespace HRDAL
         // DALCAntine => EmployeCantineDAO => Id, Nom, Prenom, Allergies => Ajout CreditRepas => Migration => ALTER TABLE Employes ADD CreditRepas Decimal
         // Table :  Id, Nom, Prenom, Salaire, Matricule,RefInscriptionPretanque, NiveauPetanque, Allergies
 
-
+        // Gestion des dates Xréation / Modification
         public override int SaveChanges()
         {
             foreach(var e in this.ChangeTracker.Entries())
@@ -53,6 +53,24 @@ namespace HRDAL
                 }
             }
             return base.SaveChanges();
+        }
+
+        public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
+        {
+            foreach (var e in this.ChangeTracker.Entries())
+            {
+                if (e.State == EntityState.Modified && e.Entity is IGestionData g)
+                {
+                   // g.Property(c => c.DateModification).IsModified = false ;
+                    g.DateModification = DateTime.Now;
+                }
+                if (e.State == EntityState.Added && e.Entity is IGestionData g2)
+                {
+                    g2.DateModification = DateTime.Now;
+                    g2.DateCreation = DateTime.Now;
+                }
+            }
+            return base.SaveChangesAsync(cancellationToken);
         }
 
         // Ce context saura interroger la BDD pour la table des articles
@@ -71,6 +89,7 @@ namespace HRDAL
                
                 options.HasKey(a => a.Id);
                 options.HasIndex(a => a.Reference);
+                options.Property(c => c.Stock).IsConcurrencyToken();
                 // Utilisation de la configuration pour gérer le nombre de décimales 
                 // du prix
                 var nbDecimals = dbDataModel.NbDecimals;
@@ -93,6 +112,7 @@ namespace HRDAL
 
                 options.HasKey(a => a.Id);//.ToTable("TBL_Employes");
                 options.HasIndex(a => a.PublicId);
+                options.Property(c => c.CreditRepas).IsConcurrencyToken();
                 options.Property(c => c.Name).HasMaxLength(100);
                 options.Property(c => c.Surname).HasMaxLength(100);
                 options.Property(c => c.PublicId).IsUnicode(false).HasMaxLength(5);

@@ -62,13 +62,17 @@ namespace CantineInterfaces.Tests
             // J'ajoute le CantineContext aux classes connues de ma collection
             collection.AddDbContext<CantineContext>(options =>
             {
-               
+
                 // Le OptionBuilder me permet de spécifier les options facilement
                 // Par le biais de fonctions extensions définies dans le package du provider
                 // TODO : Mettre la chaine de connection dans un fichier de config
-                options.UseSqlServer("name=CantineDB");
+                options.UseSqlServer("name=CantineDB")
+                // Permet aux propriétés de navigation d'être
+                // implémentées dans des classes heritières
+                .UseLazyLoadingProxies();
                 //options.UseSqlServer(config.GetConnectionString("CantineDB"));
             });
+               
 
             collection.AddLogging(options =>
             {

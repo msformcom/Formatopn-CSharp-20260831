@@ -30,6 +30,8 @@ namespace HRDAL.DAO
 
         public byte[]? Photo { get; set; }
 
+        public int Stock { get; set; } = 10;
+
         public string? Allergens { get; set; } // => "gluten","arsenic"
 
         // Données d'une autre appli ou sensibles
@@ -37,7 +39,7 @@ namespace HRDAL.DAO
 
         // Propriété de navigation => permet en code d'accéder aux enregistrements associés dans la tables des achats
         // Indique également la cardinalité de la relation 1 Article => 0-n achats
-        public ICollection<AchatDAO> Achats { get; set; } = new HashSet<AchatDAO>();
+        public virtual ICollection<AchatDAO> Achats { get; set; } = new HashSet<AchatDAO>();
 
         // Données de gestion
         public DateTime DateCreation { get; set; }

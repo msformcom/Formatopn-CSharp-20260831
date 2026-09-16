@@ -45,5 +45,15 @@ namespace CantineInterfaces.Tests
 
 
         }
+
+        [TestMethod]
+        public async Task Achat()
+        {
+            ICantineService instance = DI.Services.GetRequiredService<ICantineService>();
+            
+           
+            await instance.ConsommerArticleAsync("AA001", "P0001", 2);
+            Assert.IsNotNull(instance);
+        }
     }
 }
