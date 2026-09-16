@@ -66,15 +66,22 @@ namespace CantineServiceFromBDD
                 throw new ArgumentException("Crédit insuffisant");
             }
 
-            var achat = new AchatDAO() { IdArticle=article.Id,IdEmploye=employe.Id, Quantite=quantite };
+            var achat = new AchatDAO() { IdArticle=article.Id,IdEmploye=employe.Id, Quantite=quantite, DateAchat=DateTime.Now };
             // Ajout de l'achat à la BDD
             db.Achats.Add(achat);
-            var e = new EmployeDAO() { Id = employe.Id, CreditRepas = employe.CreditRepas - article.Price * quantite };
-            db.Employes.Entry(e).State = EntityState.Modified;
+            // employe est suivi par le ChangeTracker : la modification est détectée au SaveChanges
+            employe.CreditRepas -= article.Price * quantite;
 
+            await db.SaveChangesAsync();
 
-
-
+            return new Achat()
+            {
+                MatriculeEmploye = employe.PublicId,
+                ReferenceArticle = article.Reference,
+                Prix = article.Price * quantite,
+                Quantite = quantite,
+                DateAchat = achat.DateAchat
+            };
         }
 
         public Task IncrementerCreditEmployeAsync(string matricule, decimal montant)

@@ -15,6 +15,7 @@
           "Microsoft.Extensions.Configuration.Binder": "10.0.12",
           "Microsoft.Extensions.Configuration.Json": "10.0.12",
           "Microsoft.Extensions.DependencyInjection": "10.0.12",
+          "Microsoft.Extensions.Logging.Console": "10.0.12",
           "Microsoft.Extensions.Logging.Debug": "10.0.12",
           "MSTest.TestFramework.Extensions": "4.0.2.0"
         },
@@ -159,17 +160,17 @@
           "runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll": {
             "rid": "win-arm64",
             "assetType": "native",
-            "fileVersion": "6.2.0.0"
+            "fileVersion": "0.0.0.0"
           },
           "runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll": {
             "rid": "win-x64",
             "assetType": "native",
-            "fileVersion": "6.2.0.0"
+            "fileVersion": "0.0.0.0"
           },
           "runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll": {
             "rid": "win-x86",
             "assetType": "native",
-            "fileVersion": "6.2.0.0"
+            "fileVersion": "0.0.0.0"
           }
         }
       },
@@ -404,6 +405,39 @@
           }
         }
       },
+      "Microsoft.Extensions.Logging.Configuration/10.0.12": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "10.0.12",
+          "Microsoft.Extensions.Configuration.Abstractions": "10.0.12",
+          "Microsoft.Extensions.Configuration.Binder": "10.0.12",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.12",
+          "Microsoft.Extensions.Logging": "10.0.12",
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.12",
+          "Microsoft.Extensions.Options": "10.0.12",
+          "Microsoft.Extensions.Options.ConfigurationExtensions": "10.0.12"
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.Extensions.Logging.Configuration.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.1226.42308"
+          }
+        }
+      },
+      "Microsoft.Extensions.Logging.Console/10.0.12": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.12",
+          "Microsoft.Extensions.Logging": "10.0.12",
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.12",
+          "Microsoft.Extensions.Logging.Configuration": "10.0.12",
+          "Microsoft.Extensions.Options": "10.0.12"
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.Extensions.Logging.Console.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.1226.42308"
+          }
+        }
+      },
       "Microsoft.Extensions.Logging.Debug/10.0.12": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.12",
@@ -424,6 +458,21 @@
         },
         "runtime": {
           "lib/net10.0/Microsoft.Extensions.Options.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.1226.42308"
+          }
+        }
+      },
+      "Microsoft.Extensions.Options.ConfigurationExtensions/10.0.12": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "10.0.12",
+          "Microsoft.Extensions.Configuration.Binder": "10.0.12",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.12",
+          "Microsoft.Extensions.Options": "10.0.12",
+          "Microsoft.Extensions.Primitives": "10.0.12"
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll": {
             "assemblyVersion": "10.0.0.0",
             "fileVersion": "10.0.1226.42308"
           }
@@ -740,7 +789,7 @@
           "runtimes/win-arm64/native/CodeCoverageMessages.dll": {
             "rid": "win-arm64",
             "assetType": "native",
-            "fileVersion": "18.0.25503.60479"
+            "fileVersion": "0.0.0.0"
           },
           "runtimes/win-arm64/native/Cov_arm64.config": {
             "rid": "win-arm64",
@@ -760,42 +809,42 @@
           "runtimes/win-arm64/native/MicrosoftInstrumentationEngine_arm64.dll": {
             "rid": "win-arm64",
             "assetType": "native",
-            "fileVersion": "15.1.0.49995"
+            "fileVersion": "0.0.0.0"
           },
           "runtimes/win-arm64/native/MicrosoftInstrumentationEngine_x64.dll": {
             "rid": "win-arm64",
             "assetType": "native",
-            "fileVersion": "15.1.0.49995"
+            "fileVersion": "0.0.0.0"
           },
           "runtimes/win-arm64/native/MicrosoftInstrumentationEngine_x86.dll": {
             "rid": "win-arm64",
             "assetType": "native",
-            "fileVersion": "15.1.0.49995"
+            "fileVersion": "0.0.0.0"
           },
           "runtimes/win-arm64/native/covrun32.dll": {
             "rid": "win-arm64",
             "assetType": "native",
-            "fileVersion": "18.0.25503.60479"
+            "fileVersion": "0.0.0.0"
           },
           "runtimes/win-arm64/native/covrun64.dll": {
             "rid": "win-arm64",
             "assetType": "native",
-            "fileVersion": "18.0.25503.60479"
+            "fileVersion": "0.0.0.0"
           },
           "runtimes/win-arm64/native/covrunarm64.dll": {
             "rid": "win-arm64",
             "assetType": "native",
-            "fileVersion": "18.0.25503.60479"
+            "fileVersion": "0.0.0.0"
           },
           "runtimes/win-arm64/native/msdia140.dll": {
             "rid": "win-arm64",
             "assetType": "native",
-            "fileVersion": "14.50.35313.0"
+            "fileVersion": "0.0.0.0"
           },
           "runtimes/win-x64/native/CodeCoverageMessages.dll": {
             "rid": "win-x64",
             "assetType": "native",
-            "fileVersion": "18.0.25503.60479"
+            "fileVersion": "0.0.0.0"
           },
           "runtimes/win-x64/native/Cov_arm64.config": {
             "rid": "win-x64",
@@ -815,42 +864,42 @@
           "runtimes/win-x64/native/MicrosoftInstrumentationEngine_arm64.dll": {
             "rid": "win-x64",
             "assetType": "native",
-            "fileVersion": "15.1.0.49995"
+            "fileVersion": "0.0.0.0"
           },
           "runtimes/win-x64/native/MicrosoftInstrumentationEngine_x64.dll": {
             "rid": "win-x64",
             "assetType": "native",
-            "fileVersion": "15.1.0.49995"
+            "fileVersion": "0.0.0.0"
           },
           "runtimes/win-x64/native/MicrosoftInstrumentationEngine_x86.dll": {
             "rid": "win-x64",
             "assetType": "native",
-            "fileVersion": "15.1.0.49995"
+            "fileVersion": "0.0.0.0"
           },
           "runtimes/win-x64/native/covrun32.dll": {
             "rid": "win-x64",
             "assetType": "native",
-            "fileVersion": "18.0.25503.60479"
+            "fileVersion": "0.0.0.0"
           },
           "runtimes/win-x64/native/covrun64.dll": {
             "rid": "win-x64",
             "assetType": "native",
-            "fileVersion": "18.0.25503.60479"
+            "fileVersion": "0.0.0.0"
           },
           "runtimes/win-x64/native/covrunarm64.dll": {
             "rid": "win-x64",
             "assetType": "native",
-            "fileVersion": "18.0.25503.60479"
+            "fileVersion": "0.0.0.0"
           },
           "runtimes/win-x64/native/msdia140.dll": {
             "rid": "win-x64",
             "assetType": "native",
-            "fileVersion": "14.50.35313.0"
+            "fileVersion": "0.0.0.0"
           },
           "runtimes/win-x86/native/CodeCoverageMessages.dll": {
             "rid": "win-x86",
             "assetType": "native",
-            "fileVersion": "18.0.25503.60479"
+            "fileVersion": "0.0.0.0"
           },
           "runtimes/win-x86/native/Cov_arm64.config": {
             "rid": "win-x86",
@@ -870,37 +919,37 @@
           "runtimes/win-x86/native/MicrosoftInstrumentationEngine_arm64.dll": {
             "rid": "win-x86",
             "assetType": "native",
-            "fileVersion": "15.1.0.49995"
+            "fileVersion": "0.0.0.0"
           },
           "runtimes/win-x86/native/MicrosoftInstrumentationEngine_x64.dll": {
             "rid": "win-x86",
             "assetType": "native",
-            "fileVersion": "15.1.0.49995"
+            "fileVersion": "0.0.0.0"
           },
           "runtimes/win-x86/native/MicrosoftInstrumentationEngine_x86.dll": {
             "rid": "win-x86",
             "assetType": "native",
-            "fileVersion": "15.1.0.49995"
+            "fileVersion": "0.0.0.0"
           },
           "runtimes/win-x86/native/covrun32.dll": {
             "rid": "win-x86",
             "assetType": "native",
-            "fileVersion": "18.0.25503.60479"
+            "fileVersion": "0.0.0.0"
           },
           "runtimes/win-x86/native/covrun64.dll": {
             "rid": "win-x86",
             "assetType": "native",
-            "fileVersion": "18.0.25503.60479"
+            "fileVersion": "0.0.0.0"
           },
           "runtimes/win-x86/native/covrunarm64.dll": {
             "rid": "win-x86",
             "assetType": "native",
-            "fileVersion": "18.0.25503.60479"
+            "fileVersion": "0.0.0.0"
           },
           "runtimes/win-x86/native/msdia140.dll": {
             "rid": "win-x86",
             "assetType": "native",
-            "fileVersion": "14.50.35313.0"
+            "fileVersion": "0.0.0.0"
           }
         }
       },
@@ -1579,7 +1628,7 @@
             "rid": "win",
             "assetType": "runtime",
             "assemblyVersion": "9.0.0.0",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "9.0.1125.51716"
           },
           "runtimes/win/lib/net9.0/System.Diagnostics.EventLog.dll": {
             "rid": "win",
@@ -1871,6 +1920,20 @@
       "path": "microsoft.extensions.logging.abstractions/10.0.12",
       "hashPath": "microsoft.extensions.logging.abstractions.10.0.12.nupkg.sha512"
     },
+    "Microsoft.Extensions.Logging.Configuration/10.0.12": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CLHWfKQZWFE6fSzRXfjd4UlGveckkfPtwx/p5yF/o3hEkMSzGsl7MSxNAkI19hjw0rprBqrQC09Dwy6Lh6kweA==",
+      "path": "microsoft.extensions.logging.configuration/10.0.12",
+      "hashPath": "microsoft.extensions.logging.configuration.10.0.12.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Logging.Console/10.0.12": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-nHvaR8gO0CdEfG324KdUsP3Hqgdf1licZb+UlNh5pFYw7+o8QYTmiMgFmwayE/LPSpaqND/Qn3xHa1cI9b8x0w==",
+      "path": "microsoft.extensions.logging.console/10.0.12",
+      "hashPath": "microsoft.extensions.logging.console.10.0.12.nupkg.sha512"
+    },
     "Microsoft.Extensions.Logging.Debug/10.0.12": {
       "type": "package",
       "serviceable": true,
@@ -1884,6 +1947,13 @@
       "sha512": "sha512-TDYD33TSRpXKZWlmTXNlj5kCihxatmv2Ec1u6C+bMYLphCS7PoSLE9Pjd/nunDoE7yETk+LLKjVJX78HYtWjpA==",
       "path": "microsoft.extensions.options/10.0.12",
       "hashPath": "microsoft.extensions.options.10.0.12.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Options.ConfigurationExtensions/10.0.12": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rqpu4qj5WE9x1IHGXSIgHBKi7IUlQaHyp4aXCYIanG2OghlUMFZpZTgExaXwcvmLAJHsxKQWMPpc7D2WIbCVtA==",
+      "path": "microsoft.extensions.options.configurationextensions/10.0.12",
+      "hashPath": "microsoft.extensions.options.configurationextensions.10.0.12.nupkg.sha512"
     },
     "Microsoft.Extensions.Primitives/10.0.12": {
       "type": "package",

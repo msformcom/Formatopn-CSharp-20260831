@@ -117,6 +117,9 @@ namespace CantineInterfaces.Tests
 
             // je demande un objet CantineContext Configuré
             var db = Services.GetRequiredService<CantineContext>();
+            // EnsureCreated ne met pas à jour le schéma d'une BDD existante
+            // On repart d'une base vide pour rester aligné sur le modèle courant
+            db.Database.EnsureDeleted();
             // Cette instruction créé la BDD si elle n'existe pas
             db.Database.EnsureCreated();
 

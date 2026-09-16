@@ -40,6 +40,19 @@ namespace HRDAL
 
         public override int SaveChanges()
         {
+            RenseignerDatesGestion();
+            return base.SaveChanges();
+        }
+
+        // Même traitement pour la voie asynchrone, sinon les dates de gestion restent vides
+        public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
+        {
+            RenseignerDatesGestion();
+            return base.SaveChangesAsync(cancellationToken);
+        }
+
+        private void RenseignerDatesGestion()
+        {
             foreach(var e in this.ChangeTracker.Entries())
             {
                 if(e.State== EntityState.Modified && e.Entity is IGestionData g)
@@ -52,7 +65,6 @@ namespace HRDAL
                     g2.DateCreation = DateTime.Now;
                 }
             }
-            return base.SaveChanges();
         }
 
         // Ce context saura interroger la BDD pour la table des articles

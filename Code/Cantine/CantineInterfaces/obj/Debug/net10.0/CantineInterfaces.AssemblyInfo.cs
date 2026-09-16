@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CantineInterfaces")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6f2842004bd43adbf1e1528d71d218625a5ced90")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+05b3ac748f1f04fc87397b2e7831349ecb926d16")]
 [assembly: System.Reflection.AssemblyProductAttribute("CantineInterfaces")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CantineInterfaces")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
