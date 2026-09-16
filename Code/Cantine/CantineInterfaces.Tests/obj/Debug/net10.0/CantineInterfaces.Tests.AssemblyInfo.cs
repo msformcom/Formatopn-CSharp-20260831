@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CantineInterfaces.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b9246e120968bd3b2c77b00916fefd7da72e8914")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b3f38f8d596f384f0ce85fa5799aee7052965f27")]
 [assembly: System.Reflection.AssemblyProductAttribute("CantineInterfaces.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CantineInterfaces.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
