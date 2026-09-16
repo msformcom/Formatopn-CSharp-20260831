@@ -80,5 +80,24 @@ namespace CantineInterfaces.Tests
             Assert.AreEqual(70m, employe.CreditRepas);
             Assert.AreEqual(1, await db.Achats.CountAsync(c => c.IdEmploye == employe.Id));
         }
+
+        [TestMethod]
+        public async Task ConsommerArticleAsyncRefusTests()
+        {
+            using var scope = DI.Services.CreateScope();
+            ICantineService instance = scope.ServiceProvider.GetRequiredService<ICantineService>();
+
+            // Référence inconnue
+            await Assert.ThrowsExactlyAsync<ArgumentException>(
+                () => instance.ConsommerArticleAsync("AA001", "ZZZZZ"));
+
+            // Matricule inconnu
+            await Assert.ThrowsExactlyAsync<ArgumentException>(
+                () => instance.ConsommerArticleAsync("ZZ999", "S0001"));
+
+            // Steak à 15 : 10 parts dépassent les 100 de crédit
+            await Assert.ThrowsExactlyAsync<ArgumentException>(
+                () => instance.ConsommerArticleAsync("AA002", "S0001", 10));
+        }
     }
 }
