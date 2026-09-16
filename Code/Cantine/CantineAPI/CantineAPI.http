@@ -1,0 +1,11 @@
+@CantineAPI_HostAddress = http://localhost:5097
+
+GET {{CantineAPI_HostAddress}}/api/articles
+Accept: application/json
+
+###
+
+GET {{CantineAPI_HostAddress}}/api/articles?searchText=steak&prixMax=20
+Accept: application/json
+
+###

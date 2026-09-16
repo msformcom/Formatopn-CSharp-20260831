@@ -209,10 +209,7 @@ namespace CantineServiceFromBDD
             var listedesIarticles = listedesIarticlesDAO
                                     // Project to permet de faire passer les méthodes
                                     // de IQueryable dans la requete SQL
-                                    .Select(dao => new Article()
-                                    {
-                                        Libelle = dao.Label
-                                    });
+                                    .ProjectTo<Article>(mapper.ConfigurationProvider);
 
 
 
