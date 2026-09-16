@@ -14,12 +14,14 @@ namespace HRDAL
     {
         private readonly Action<ModelBuilder>? continueModelBuilding;
         private readonly IConfiguration config;
+        private readonly DbDataModel dbDataModel;
 
         // le constructeur de CantineContext reçoit les options de config du contexte
         // et les passe au constructeur de la classe de base
         public CantineContext(DbContextOptions<CantineContext> options,
             // Demande à l'injecteur de dépendance un accès à la configuration
                  IConfiguration config,
+                 DbDataModel dbDataModel,
             // Je reçois de la part du DI la fonction qui finit la config du Model
             [FromKeyedServices("Builder1")] Action<ModelBuilder>? continueModelBuilding=null
        
@@ -28,6 +30,7 @@ namespace HRDAL
         {
             this.continueModelBuilding = continueModelBuilding;
             this.config = config;
+            this.dbDataModel = dbDataModel;
         }
         // DALCompta => EmployeComptaDAO => Id, Nom, Prenom, Salaire, Matricule +  Civilite => Migration ALTER TABLE Employes ADD ...
         // DALPetanque => EmployePetanqueDAO => Id, Nom, Prenom, RefInscriptionPretanque, NiveauPetanque, Civilite
@@ -35,9 +38,28 @@ namespace HRDAL
         // Table :  Id, Nom, Prenom, Salaire, Matricule,RefInscriptionPretanque, NiveauPetanque, Allergies
 
 
+        public override int SaveChanges()
+        {
+            foreach(var e in this.ChangeTracker.Entries())
+            {
+                if(e.State== EntityState.Modified && e.Entity is IGestionData g)
+                {
+                    g.DateModification=DateTime.Now;
+                }
+                if (e.State == EntityState.Added && e.Entity is IGestionData g2)
+                {
+                    g2.DateModification = DateTime.Now;
+                    g2.DateCreation = DateTime.Now;
+                }
+            }
+            return base.SaveChanges();
+        }
+
         // Ce context saura interroger la BDD pour la table des articles
         public DbSet<ArticleDAO> Articles { get; set; }
         public DbSet<EmployeDAO> Employes { get; set; }
+
+        public DbSet<AchatDAO> Achats { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -51,15 +73,16 @@ namespace HRDAL
                 options.HasIndex(a => a.Reference);
                 // Utilisation de la configuration pour gérer le nombre de décimales 
                 // du prix
-                var nbDecimals = int.Parse(config.GetSection("metadata:nbDecimals").Value!);
+                var nbDecimals = dbDataModel.NbDecimals;
                 options.Property(c => c.Price).HasPrecision(18, nbDecimals);
-                options.Property(c => c.Label).HasMaxLength(100);
+                options.Property(c => c.Label).HasMaxLength(dbDataModel.LabelLength);
                 options.Property(c => c.Reference).IsUnicode(false).HasMaxLength(5);
 
 
                 var article1 = new ArticleDAO() { Label = "Purée", Reference = "P0001", Price = 12, Allergens="" };
                 var article2 = new ArticleDAO() { Label = "Steak", Reference = "S0001", Price = 15, Allergens="Cianure, Gluten" };
-
+                options.HasMany(c => c.Achats).WithOne(c => c.Article).HasForeignKey(c => c.IdArticle).OnDelete(DeleteBehavior.Restrict);
+            
                 options.HasData(article1, article2);
             });
 
@@ -79,6 +102,12 @@ namespace HRDAL
 
 
                 options.HasData(employe1, employe2);
+            });
+
+            modelBuilder.Entity<AchatDAO>(options => {
+                options.HasKey(a => a.Id);
+                options.HasOne(c => c.Employe).WithMany(c => c.Achats).HasForeignKey(c => c.IdEmploye).OnDelete(DeleteBehavior.Restrict);
+
             });
 
             if (continueModelBuilding != null)

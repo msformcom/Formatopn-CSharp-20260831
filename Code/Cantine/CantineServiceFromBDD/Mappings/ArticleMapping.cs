@@ -21,14 +21,15 @@ namespace CantineServiceFromBDD.Mappings
                            .ConstructUsing(c => 
                            new Article() { }
                            )
-                          .AfterMap((src, dest, context) =>
-                          {
-                              foreach (var itemSrc in src.Allergens.Split(","))
-                              {
-                                  ;
-                                  dest.Allergenes.Add(itemSrc);
-                              }
-                          });
+                          //.AfterMap((src, dest, context) =>
+                          //{
+                          //    foreach (var itemSrc in src.Allergens.Split(","))
+                          //    {
+                          //        ;
+                          //        dest.Allergenes.Add(itemSrc);
+                          //    }
+                          //})
+                          ;
         }
     }
 }

@@ -346,3 +346,5 @@ C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260
 C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\Cantine\CantineInterfaces.Tests\bin\Debug\net10.0\Microsoft.Extensions.FileProviders.Physical.dll
 C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\Cantine\CantineInterfaces.Tests\bin\Debug\net10.0\Microsoft.Extensions.FileSystemGlobbing.dll
 C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\Cantine\CantineInterfaces.Tests\bin\Debug\net10.0\appsettings.json
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\Cantine\CantineInterfaces.Tests\bin\Debug\net10.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\Cantine\CantineInterfaces.Tests\bin\Debug\net10.0\appsettings.dev.json

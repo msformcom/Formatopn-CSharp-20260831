@@ -14,7 +14,7 @@
 
         Task SupprimerArticleAsync(string referenceArticle); // DELETE
 
-        Task ConsommerArticleAsync(string matricule, string referenceArticle); // CREATE
+        Task<IAchat> ConsommerArticleAsync(string matriculeEmploye, string referenceArticle, int quantite=1); // CREATE
 
         Task IncrementerCreditEmployeAsync(string matricule, decimal montant); // UPDATE
     }

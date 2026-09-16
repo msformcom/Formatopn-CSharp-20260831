@@ -10,7 +10,7 @@ namespace HRDAL.DAO
     // Permet de définir la structure des informations stockées
     
     //[Table("TBL_Articles")]
-    public class ArticleDAO
+    public class ArticleDAO : IGestionData
     {
         // Nécessaire à la BDD
         //[Key]
@@ -34,6 +34,10 @@ namespace HRDAL.DAO
 
         // Données d'une autre appli ou sensibles
         public decimal Marge { get; set; }
+
+        // Propriété de navigation => permet en code d'accéder aux enregistrements associés dans la tables des achats
+        // Indique également la cardinalité de la relation 1 Article => 0-n achats
+        public ICollection<AchatDAO> Achats { get; set; } = new HashSet<AchatDAO>();
 
         // Données de gestion
         public DateTime DateCreation { get; set; }

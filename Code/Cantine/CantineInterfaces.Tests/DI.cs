@@ -28,9 +28,16 @@ namespace CantineInterfaces.Tests
             // Design patter builer => objet qui sert à construire un autre objet
             var collection = new ServiceCollection();
 
+           
+
             #region Config de la config
             var configBuilder = new ConfigurationBuilder();
             configBuilder.AddJsonFile("appsettings.json");
+#if DEBUG      
+                configBuilder.AddJsonFile("appsettings.dev.json");
+         
+#endif
+
             //configBuilder.AddXmlFile("app.config");
 
             // Je crée l'objet de type IConfiguration
@@ -38,7 +45,10 @@ namespace CantineInterfaces.Tests
             collection.AddSingleton < IConfiguration>(config);
             #endregion
 
+            // Ajouter en singleton le DbDataModel qui provient de la config
 
+            var dbDataModel=config.GetSection("metadata").Get<DbDataModel>()!;
+            collection.AddSingleton<DbDataModel>(dbDataModel);
 
 
             // Chaque demande de ICantineService fera l'objet 
@@ -78,6 +88,14 @@ namespace CantineInterfaces.Tests
                     options.Property(c => c.Id).HasColumnName("PK_Article");
                     options.Property(c => c.Reference).IsRequired().HasMaxLength(5).IsFixedLength();
 
+                });
+
+                modelBuilder.Entity<AchatDAO>(options =>
+                {
+                    options.ToTable("TBL_Achats");
+                    options.Property(c => c.Id).HasColumnName("PK_Achat");
+                    options.Property(c => c.IdEmploye).HasColumnName("FK_Employe");
+                    options.Property(c => c.IdArticle).HasColumnName("FK_Article");
                 });
 
                 modelBuilder.Entity<EmployeDAO>(options =>

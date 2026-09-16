@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using AutoMapper.QueryableExtensions;
 using CantineInterfaces;
 using CantineServiceFromBDD.Mappings;
 using CantineServiceFromBDD.Models;
@@ -47,12 +48,33 @@ namespace CantineServiceFromBDD
 
         }
 
-        public Task ConsommerArticleAsync(string matricule, string referenceArticle)
+        public async Task<IAchat> ConsommerArticleAsync(string matricule, string referenceArticle, int quantite=1)
         {
-            var e = new Employe() { Nom=null};
+            var article= await db.Articles.Where(c => c.Reference == referenceArticle).FirstOrDefaultAsync();
 
-          
-            throw new NotImplementedException();
+            if (article == null)
+            {
+                throw new ArgumentException("Pas d'article avec cette référence");
+            }
+            var employe = await db.Employes.Where(c=>c.PublicId==matricule).FirstOrDefaultAsync();
+            if (employe == null)
+            {
+                throw new ArgumentException("Pas d'employé avec ce matricule");
+            }
+            if (employe.CreditRepas < article.Price * quantite)
+            {
+                throw new ArgumentException("Crédit insuffisant");
+            }
+
+            var achat = new AchatDAO() { IdArticle=article.Id,IdEmploye=employe.Id, Quantite=quantite };
+            // Ajout de l'achat à la BDD
+            db.Achats.Add(achat);
+            var e = new EmployeDAO() { Id = employe.Id, CreditRepas = employe.CreditRepas - article.Price * quantite };
+            db.Employes.Entry(e).State = EntityState.Modified;
+
+
+
+
         }
 
         public Task IncrementerCreditEmployeAsync(string matricule, decimal montant)
@@ -112,43 +134,38 @@ namespace CantineServiceFromBDD
             // SELECT X,Y FROM TBL_Vecteurs => 100 premiers enregistre => Filtre appliqué 1 par 1 => Take => 10 => Arreter la lecture
 
 
-            var listedesIarticlesDAO = db.Articles; // SELECT * FROM TBL_Articles
-                                                 //.Where(c => c.Price > 1000)  SELECT * FROM TBL_Articles WHERE Price> 1000
-                                                 //
-              var listedesIarticles=listedesIarticlesDAO.ToList()
-                                    .Select(dao => 
-                                    mapper.Map<IArticle>(dao)
-                                    );
-                                    // mapper.map<ArticleDAO>(art)
-                                    //.Select(dao => new Article()
-            //{
-            //    Reference = dao.Reference,
-            //    Libelle = dao.Label,
-            //    Photo = dao.Photo,
-            //    Prix = dao.Price,
-            //    Allergenes = dao.Allergens.Split(',').ToList()
-            //}); // SELECT Reference, Label, Photo,Price, Allergens FROM TBL_Articles
-            // Puis new Article()
-
-            //SELECT Reference, Label, Photo, Price, Allergens FROM TBL_Articles
-
-            // Exemple plus complexe non transcriptible en SQL
-            //{
-            //    var article = new Article()
-            //    {
-            //        Reference = dao.Reference,
-            //        Libelle = dao.Label,
-            //        Photo = dao.Photo,
-            //        Prix = dao.Price
-            //    };
-            //    // Allergenes doit être une ICollection (IArticle)
-            //    // C'est une chaine simple séparée par des , dans la bdd
-            //    article.Allergenes = dao.Allergens.Split(',').ToList();
-            //    return article;
-            //});
+            IQueryable<ArticleDAO> listedesIarticlesDAO = db.Articles; // SELECT * FROM TBL_Articles
+                                                    //.Where(c => c.Price > 1000)  SELECT * FROM TBL_Articles WHERE Price> 1000
+                                                    //
+            if (search != null)
+            {
+                if (!string.IsNullOrWhiteSpace(search.SearchText))
+                {
+                    // J'ajoute la condition si SearchText n'est pas vide
+                    listedesIarticlesDAO=listedesIarticlesDAO.Where(c=>c.Label.Contains(search.SearchText));
+                }
+                if (search.PrixMax.HasValue)
+                {
+                    // J'ajoute la condition si PrixMax est non null
+                    listedesIarticlesDAO = listedesIarticlesDAO.Where(c => c.Price<=search.PrixMax);
+                }
+            }
 
 
+            var listedesIarticles = listedesIarticlesDAO
+                                    // Project to permet de faire passer les méthodes
+                                    // de IQueryable dans la requete SQL
+                                    .Select(dao => new Article()
+                                    {
+                                        Libelle = dao.Label
+                                    });
 
+            
+
+            //var testValues = listedesIarticles.ToList();
+                                   
+
+            // Ce que je renvois IEnumerable mais aussi IQueryble
             return listedesIarticles;
             
         }

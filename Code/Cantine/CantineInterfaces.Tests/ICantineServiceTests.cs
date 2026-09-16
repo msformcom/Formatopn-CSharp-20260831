@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using CantineInterfaces.Tests.Models;
+using CantineServiceFromBDD.Models;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace CantineInterfaces.Tests
 {
@@ -14,7 +16,22 @@ namespace CantineInterfaces.Tests
             ICantineService instance=DI.Services.GetService<ICantineService>();
             Assert.IsNotNull(instance);
 
-            var resultat = (await instance.ListeArticlesAsync(null)).ToList();
+            var search = new ArticleSearch() { SearchText = "u", PrixMax = 1000 };
+
+            var resultat = await instance.ListeArticlesAsync(search);
+
+            // declarativement resultat est un IEnumerable
+            // mais son contenu peut être un IQueryable
+            IEnumerable<IArticle> resultat2;
+            if(resultat is IQueryable<IArticle> query) {
+                resultat2 = query.Where(c => c.Libelle.Length > 10).ToList();
+            }
+            else
+            {
+                resultat2 = resultat.Where(c => c.Libelle.Length > 10).ToList();
+            }
+
+
 
         }
 

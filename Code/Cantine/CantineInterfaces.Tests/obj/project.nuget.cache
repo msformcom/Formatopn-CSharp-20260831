@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "1FcpXiOsQeM=",
+  "dgSpecHash": "+TBRYlC0xuw=",
   "success": true,
   "projectFilePath": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\Cantine\\CantineInterfaces.Tests\\CantineInterfaces.Tests.csproj",
   "expectedPackageFiles": [
@@ -22,6 +22,7 @@
     "C:\\Users\\Dom\\.nuget\\packages\\microsoft.extensions.caching.memory\\10.0.12\\microsoft.extensions.caching.memory.10.0.12.nupkg.sha512",
     "C:\\Users\\Dom\\.nuget\\packages\\microsoft.extensions.configuration\\10.0.12\\microsoft.extensions.configuration.10.0.12.nupkg.sha512",
     "C:\\Users\\Dom\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\10.0.12\\microsoft.extensions.configuration.abstractions.10.0.12.nupkg.sha512",
+    "C:\\Users\\Dom\\.nuget\\packages\\microsoft.extensions.configuration.binder\\10.0.12\\microsoft.extensions.configuration.binder.10.0.12.nupkg.sha512",
     "C:\\Users\\Dom\\.nuget\\packages\\microsoft.extensions.configuration.fileextensions\\10.0.12\\microsoft.extensions.configuration.fileextensions.10.0.12.nupkg.sha512",
     "C:\\Users\\Dom\\.nuget\\packages\\microsoft.extensions.configuration.json\\10.0.12\\microsoft.extensions.configuration.json.10.0.12.nupkg.sha512",
     "C:\\Users\\Dom\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\10.0.12\\microsoft.extensions.dependencyinjection.10.0.12.nupkg.sha512",
