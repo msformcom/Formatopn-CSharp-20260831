@@ -29,7 +29,7 @@ namespace CodeTests
             // le dernier type => type de retour de la Function
             // Action<int,int> Méthode retour void avec deux pramas int
 
-            OperationDelegate opNommee = (a, b) => (a + b).ToString();
+            //OperationDelegate opNommee = (a, b) => (a + b).ToString();
 
 
             // Méthode déclarative

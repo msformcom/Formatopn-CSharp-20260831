@@ -18,19 +18,18 @@ namespace CantineServiceFromBDD.Mappings
                           .ForMember(c => c.Allergens, o => o.MapFrom(c => String.Join(",", c.Allergenes)))
                            .ReverseMap()
                            // Construction de IArticle en utilisant l'objet renvoyé par la fonction fléchée
-                           // La collection est initialisée ici, le AfterMap ne fait que la remplir
-                           .ConstructUsing(c =>
-                           new Article() { Allergenes = new List<string>() }
+                           .ConstructUsing(c => 
+                           new Article() { }
                            )
-                          .AfterMap((src, dest, context) =>
-                          {
-                              // String.Join n'a pas d'inverse automatique : on redécoupe à la main
-                              if (src.Allergens == null) return;
-                              foreach (var itemSrc in src.Allergens.Split(","))
-                              {
-                                  dest.Allergenes.Add(itemSrc);
-                              }
-                          });
+                          //.AfterMap((src, dest, context) =>
+                          //{
+                          //    foreach (var itemSrc in src.Allergens.Split(","))
+                          //    {
+                          //        ;
+                          //        dest.Allergenes.Add(itemSrc);
+                          //    }
+                          //})
+                          ;
         }
     }
 }
