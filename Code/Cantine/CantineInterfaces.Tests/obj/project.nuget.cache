@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "VZWB8OjUnTg=",
+  "dgSpecHash": "7rlPcAvRTY4=",
   "success": true,
   "projectFilePath": "/home/chaminade/Documents/WDIR/Formatopn-CSharp-20260831/Code/Cantine/CantineInterfaces.Tests/CantineInterfaces.Tests.csproj",
   "expectedPackageFiles": [
@@ -23,9 +23,14 @@
     "/home/chaminade/.nuget/packages/microsoft.extensions.configuration/10.0.12/microsoft.extensions.configuration.10.0.12.nupkg.sha512",
     "/home/chaminade/.nuget/packages/microsoft.extensions.configuration.abstractions/10.0.12/microsoft.extensions.configuration.abstractions.10.0.12.nupkg.sha512",
     "/home/chaminade/.nuget/packages/microsoft.extensions.configuration.binder/10.0.12/microsoft.extensions.configuration.binder.10.0.12.nupkg.sha512",
+    "/home/chaminade/.nuget/packages/microsoft.extensions.configuration.fileextensions/10.0.12/microsoft.extensions.configuration.fileextensions.10.0.12.nupkg.sha512",
+    "/home/chaminade/.nuget/packages/microsoft.extensions.configuration.json/10.0.12/microsoft.extensions.configuration.json.10.0.12.nupkg.sha512",
     "/home/chaminade/.nuget/packages/microsoft.extensions.dependencyinjection/10.0.12/microsoft.extensions.dependencyinjection.10.0.12.nupkg.sha512",
     "/home/chaminade/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/10.0.12/microsoft.extensions.dependencyinjection.abstractions.10.0.12.nupkg.sha512",
     "/home/chaminade/.nuget/packages/microsoft.extensions.dependencymodel/6.0.2/microsoft.extensions.dependencymodel.6.0.2.nupkg.sha512",
+    "/home/chaminade/.nuget/packages/microsoft.extensions.fileproviders.abstractions/10.0.12/microsoft.extensions.fileproviders.abstractions.10.0.12.nupkg.sha512",
+    "/home/chaminade/.nuget/packages/microsoft.extensions.fileproviders.physical/10.0.12/microsoft.extensions.fileproviders.physical.10.0.12.nupkg.sha512",
+    "/home/chaminade/.nuget/packages/microsoft.extensions.filesystemglobbing/10.0.12/microsoft.extensions.filesystemglobbing.10.0.12.nupkg.sha512",
     "/home/chaminade/.nuget/packages/microsoft.extensions.logging/10.0.12/microsoft.extensions.logging.10.0.12.nupkg.sha512",
     "/home/chaminade/.nuget/packages/microsoft.extensions.logging.abstractions/10.0.12/microsoft.extensions.logging.abstractions.10.0.12.nupkg.sha512",
     "/home/chaminade/.nuget/packages/microsoft.extensions.logging.configuration/10.0.12/microsoft.extensions.logging.configuration.10.0.12.nupkg.sha512",

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HRDAL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+08773e943b6aadc0d88a4bec8732bb83a3bf836a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+24d8ac74d9fd668e8c540a6c0b9402ba08722e29")]
 [assembly: System.Reflection.AssemblyProductAttribute("HRDAL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HRDAL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
