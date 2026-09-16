@@ -1,5 +1,7 @@
 ﻿using CantineInterfaces.Tests.Models;
 using CantineServiceFromBDD.Models;
+using HRDAL;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace CantineInterfaces.Tests
@@ -52,6 +54,31 @@ namespace CantineInterfaces.Tests
             Assert.IsNotNull(resultat);
 
 
+        }
+
+        [TestMethod]
+        public async Task ConsommerArticleAsyncTests()
+        {
+            using var scope = DI.Services.CreateScope();
+            ICantineService instance = scope.ServiceProvider.GetRequiredService<ICantineService>();
+
+            // Steak à 15, deux parts pour AA001 => 30 débités sur les 100 de crédit
+            var achat = await instance.ConsommerArticleAsync("AA001", "S0001", 2);
+
+            Assert.AreEqual("AA001", achat.MatriculeEmploye);
+            Assert.AreEqual("S0001", achat.ReferenceArticle);
+            Assert.AreEqual(2, achat.Quantite);
+            Assert.AreEqual(30m, achat.Prix);
+
+            // Purée à 12, une part pour AA002
+            await instance.ConsommerArticleAsync("AA002", "P0001");
+
+            // La ligne est bien écrite en base et le crédit suivi
+            var db = scope.ServiceProvider.GetRequiredService<CantineContext>();
+            var employe = await db.Employes.FirstAsync(c => c.PublicId == "AA001");
+
+            Assert.AreEqual(70m, employe.CreditRepas);
+            Assert.AreEqual(1, await db.Achats.CountAsync(c => c.IdEmploye == employe.Id));
         }
     }
 }

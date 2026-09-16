@@ -1,0 +1,25 @@
+# Résultats de build
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+[Ll]og/
+[Ll]ogs/
+
+# Fichiers utilisateur des IDE
+.vs/
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.DotSettings.user
+
+# Résultats de tests
+[Tt]est[Rr]esult*/
+*.coverage
+*.trx
+
+# NuGet
+*.nupkg
+packages/
