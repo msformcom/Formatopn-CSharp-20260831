@@ -1,20 +1,50 @@
 ﻿using AutoMapper;
 using CantineInterfaces;
+using CantineServiceFromBDD.Mappings;
 using CantineServiceFromBDD.Models;
 using HRDAL;
+using HRDAL.DAO;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 
 namespace CantineServiceFromBDD
 {
     public class CantineServiceBDD : ICantineService
     {
-        private readonly CantineContext db;
-        private readonly IMapper mapper;
 
-        public CantineServiceBDD(CantineContext db, IMapper mapper)
+
+        protected static IMapper mapper = null;
+        
+
+
+        static CantineServiceBDD()
         {
+            // Configuration du mapping DAO <=> Interfaces
+            var configMapping = new MapperConfiguration(config =>
+            {
+                // Configuration de l'objet mapper pour mapper de IArticle vers ArticleDAO
+                config.AddArticleMapping();
+                config.AddEmployeMapping();
+            }, LoggerFactory.Create(o => { }));
+            mapper = configMapping.CreateMapper();    
+        }
+
+        private readonly CantineContext db;
+        private readonly IServiceProvider services;
+  
+
+        public CantineServiceBDD(CantineContext db, 
+                // Référence vers l'injection de dépendance,
+                //ILogger<CantineServiceBDD> logger,
+                IServiceProvider services)
+        {
+            // logger typé pour besoins de suivi
+            
             this.db = db;
-            this.mapper = mapper;
+            this.services = services;
+       
+
         }
 
         public Task ConsommerArticleAsync(string matricule, string referenceArticle)
@@ -27,20 +57,33 @@ namespace CantineServiceFromBDD
 
         public Task IncrementerCreditEmployeAsync(string matricule, decimal montant)
         {
+            var db=services.GetRequiredService<CantineContext>();
             throw new NotImplementedException();
         }
 
         public async Task<IEmploye> LireEmployeInfosAsync(string matricule)
         {
+         
+            // Journalisation
+            var logger=services.GetRequiredService<ILogger<CantineServiceBDD>>();
+            logger.LogInformation("Selection d'un employé par matricule");
+
+
             var employeDAO= await db.Employes.FirstOrDefaultAsync(c=>c.PublicId== matricule);
             if (employeDAO == null)
             {
                 throw new Exception("Matricule non trouvé");
             }
 
-            // Les règles de conversion sont décrites dans CantineMapping
             return mapper.Map<IEmploye>(employeDAO);
-           
+
+            //return new Employe()
+            //{
+            //    DateNaissance = employeDAO.BirthDate,
+            //    Matricule = employeDAO.PublicId,
+            //    Nom = employeDAO.Name,
+            //    Prenom = employeDAO.Surname
+            //};
         }
 
         public async Task<IEnumerable<IArticle>> ListeArticlesAsync(IArticleSearch search)
@@ -48,7 +91,7 @@ namespace CantineServiceFromBDD
             // Accéder à la BDD via le CantineContext pour obtenir la liste des éléments à renvoyer
             // Le CantineContext est fourni par DI lors de la construction
 
-           // var listeDesDAOs = db.Articles; //.Where(c=>c.Price<10);
+            // var listeDesDAOs = db.Articles; //.Where(c=>c.Price<10);
 
             // db.Vecteurs; // Vecteur => X, Y
             // SELECT * FROM TBL_Vecteurs
@@ -69,10 +112,23 @@ namespace CantineServiceFromBDD
             // SELECT X,Y FROM TBL_Vecteurs => 100 premiers enregistre => Filtre appliqué 1 par 1 => Take => 10 => Arreter la lecture
 
 
-            // AutoMapper travaille sur des objets déjà chargés
-            // La requête est donc matérialisée avant le mapping
-            var listeDesDAOs = await db.Articles.ToListAsync(); // SELECT * FROM TBL_Articles
-            var listedesIarticles = mapper.Map<List<IArticle>>(listeDesDAOs);
+            var listedesIarticlesDAO = db.Articles; // SELECT * FROM TBL_Articles
+                                                 //.Where(c => c.Price > 1000)  SELECT * FROM TBL_Articles WHERE Price> 1000
+                                                 //
+              var listedesIarticles=listedesIarticlesDAO.ToList()
+                                    .Select(dao => 
+                                    mapper.Map<IArticle>(dao)
+                                    );
+                                    // mapper.map<ArticleDAO>(art)
+                                    //.Select(dao => new Article()
+            //{
+            //    Reference = dao.Reference,
+            //    Libelle = dao.Label,
+            //    Photo = dao.Photo,
+            //    Prix = dao.Price,
+            //    Allergenes = dao.Allergens.Split(',').ToList()
+            //}); // SELECT Reference, Label, Photo,Price, Allergens FROM TBL_Articles
+            // Puis new Article()
 
             //SELECT Reference, Label, Photo, Price, Allergens FROM TBL_Articles
 

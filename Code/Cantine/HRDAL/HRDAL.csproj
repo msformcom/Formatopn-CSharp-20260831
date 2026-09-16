@@ -9,8 +9,9 @@
 
   <ItemGroup>
 	
-	  <InternalsVisibleTo  Include="CantineServiceFromBDD"/>
+	  <InternalsVisibleTo Include="CantineServiceFromBDD" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="10.0.12" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="10.0.12" />
   </ItemGroup>
 
 
