@@ -21,7 +21,7 @@ namespace CodeTests
     {
         public static T GetProperty<T>(this object o,string name)
         {
-            var t = typeof(T);
+            var t = o.GetType();
             var property= t.GetProperty(name, System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.NonPublic);
             var value = (T)property.GetValue(o);
             return value;

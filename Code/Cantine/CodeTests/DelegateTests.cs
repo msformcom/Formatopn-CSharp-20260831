@@ -5,7 +5,7 @@ using System.Text;
 namespace CodeTests
 {
     [TestClass]
-    internal class DelegateTests
+    public class DelegateTests
     {
         [TestMethod]
         public void VariablesDeTypeFonctionTests()

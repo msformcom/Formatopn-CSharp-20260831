@@ -30,6 +30,12 @@ namespace CantineServiceFromBDD.Mappings
                           //    }
                           //})
                           ;
+
+            // Map vers le type concret : ProjectTo a besoin d'une destination instanciable
+            config.CreateMap<ArticleDAO, Article>()
+                  .ForMember(c => c.Prix, o => o.MapFrom(c => c.Price))
+                  .ForMember(c => c.Libelle, o => o.MapFrom(c => c.Label))
+                  .ForMember(c => c.Allergenes, o => o.MapFrom(c => c.Allergens.Split(",", StringSplitOptions.RemoveEmptyEntries)));
         }
     }
 }

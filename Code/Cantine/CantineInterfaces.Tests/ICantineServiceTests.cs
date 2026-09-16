@@ -19,7 +19,7 @@ namespace CantineInterfaces.Tests
             ICantineService instance = scope.ServiceProvider.GetService<ICantineService>();
             Assert.IsNotNull(instance);
 
-            var search = new ArticleSearch() { SearchText = "u", PrixMax = 1000 };
+            var search = new ArticleSearch() { SearchText = "a", PrixMax = 1000 };
 
             var resultat = await instance.ListeArticlesAsync(search);
 
