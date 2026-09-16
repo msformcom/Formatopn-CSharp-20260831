@@ -13,7 +13,10 @@ namespace CantineInterfaces.Tests
             // Arrange
             // Avoir l'instance de ICantineService à tester
             // Ici on ne sait pas quel est le type précis que l'on va tester
-            ICantineService instance=DI.Services.GetService<ICantineService>();
+            // Le CantineContext est Scoped : un scope par test evite de le partager
+            // entre les methodes executees en parallele
+            using var scope = DI.Services.CreateScope();
+            ICantineService instance=scope.ServiceProvider.GetService<ICantineService>();
             Assert.IsNotNull(instance);
 
             var search = new ArticleSearch() { SearchText = "u", PrixMax = 1000 };
@@ -38,7 +41,8 @@ namespace CantineInterfaces.Tests
         [TestMethod]
         public async Task LireEmployeInfosTest()
         {
-            ICantineService instance = DI.Services.GetRequiredService<ICantineService>();
+            using var scope = DI.Services.CreateScope();
+            ICantineService instance = scope.ServiceProvider.GetRequiredService<ICantineService>();
             var resultat=await instance.LireEmployeInfosAsync("AA001");
 
             Assert.IsNotNull(resultat);
@@ -49,7 +53,8 @@ namespace CantineInterfaces.Tests
         [TestMethod]
         public async Task Achat()
         {
-            ICantineService instance = DI.Services.GetRequiredService<ICantineService>();
+            using var scope = DI.Services.CreateScope();
+            ICantineService instance = scope.ServiceProvider.GetRequiredService<ICantineService>();
             
            
             await instance.ConsommerArticleAsync("AA001", "P0001", 2);

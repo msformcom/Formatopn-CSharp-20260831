@@ -57,6 +57,7 @@ namespace HRDAL
             {
                 if(e.State== EntityState.Modified && e.Entity is IGestionData g)
                 {
+                   // g.Property(c => c.DateModification).IsModified = false ;
                     g.DateModification=DateTime.Now;
                 }
                 if (e.State == EntityState.Added && e.Entity is IGestionData g2)
@@ -65,24 +66,6 @@ namespace HRDAL
                     g2.DateCreation = DateTime.Now;
                 }
             }
-        }
-
-        public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
-        {
-            foreach (var e in this.ChangeTracker.Entries())
-            {
-                if (e.State == EntityState.Modified && e.Entity is IGestionData g)
-                {
-                   // g.Property(c => c.DateModification).IsModified = false ;
-                    g.DateModification = DateTime.Now;
-                }
-                if (e.State == EntityState.Added && e.Entity is IGestionData g2)
-                {
-                    g2.DateModification = DateTime.Now;
-                    g2.DateCreation = DateTime.Now;
-                }
-            }
-            return base.SaveChangesAsync(cancellationToken);
         }
 
         // Ce context saura interroger la BDD pour la table des articles
