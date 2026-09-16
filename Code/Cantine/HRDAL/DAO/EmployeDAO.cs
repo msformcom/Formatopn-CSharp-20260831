@@ -24,6 +24,6 @@ namespace HRDAL.DAO
 
         // Propriété de navigation => permet en code d'accéder aux enregistrements associés dans la tables des achats
         // Indique également la cardinalité de la relation 1 Employe => 0-n achats
-        public ICollection<AchatDAO> Achats { get; set; } = new HashSet<AchatDAO>();
+        public virtual ICollection<AchatDAO> Achats { get; set; } = new HashSet<AchatDAO>();
     }
 }
