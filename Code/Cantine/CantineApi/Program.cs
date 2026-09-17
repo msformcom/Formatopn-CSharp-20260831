@@ -1,11 +1,13 @@
 using System.Diagnostics;
 using System.Reflection.Emit;
+using CantineApi.CustomAttributes;
 using CantineInterfaces;
 using CantineServiceFromBDD;
 using HRDAL;
 using HRDAL.DAO;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Identity.Client;
 
 var builder = WebApplication.CreateBuilder(args);
 // L'injecteur de dépendance est déjà présent dans ce système
@@ -14,8 +16,15 @@ var builder = WebApplication.CreateBuilder(args);
 
 // recherche toutes les classes de controller de mon assembly
 // et les mets à disposition dans l'injecteur de dépendance
-builder.Services.AddControllers();
+builder.Services.AddControllers(options =>
+{
+    // reponse personnalisée à un model non valid
+    // options.Filters.Add<ValidateModelAttribute>();
+});
 // Add services to the container.
+
+//
+builder.Logging.AddDebug();
 
 var dbDataModel = builder.Configuration.GetSection("metadata").Get<DbDataModel>()!;
 builder.Services.AddSingleton<DbDataModel>(dbDataModel);
@@ -87,30 +96,55 @@ builder.Services.AddKeyedSingleton<Action<ModelBuilder>>("Builder1", modelBuilde
 
 
 
-var app=builder.Build(); // Créer un serveur Web
+var app = builder.Build(); // Créer un serveur Web
 
-app.Use(async (HttpContext context, Func<Task> next) => {
+
+// Log
+app.Use(async (HttpContext context, Func<Task> next) =>
+{
     // context = Objet me permettant d'avoir le contexte de la requete
     // url, body, headers, cookies..
     // Response => méthodes pour répondre
     // next => Fonction a exécuter pour passer la main aux middleware suivants
-    Debug.WriteLine($"Entrée de la requète {context.Request.Path}");
-   var watch=Stopwatch.StartNew();
+    var logger = app.Services.GetRequiredService<ILogger<ApplicationBase>>();
+    logger.LogInformation($"Entrée de la requète {context.Request.Path}");
+    var watch = Stopwatch.StartNew();
     // Passage de la requète aux middleware suivants
     await next();
-    Debug.WriteLine($"Sortie de la requète {context.Request.Path} en {watch.ElapsedMilliseconds}");
+    if (context.Response.StatusCode == 500)
+    {
+        logger.LogError("Une erreur c'est produite");
+    }
+    logger.LogInformation($"Sortie de la requète {context.Request.Path} en {watch.ElapsedMilliseconds}");
+});
+// Gestion de l'erreur
+app.Use(async (HttpContext context, Func<Task> next) =>
+{
+    try
+    {
+        await next();
+    }
+    catch (Exception)
+    {
+
+        context.Response.StatusCode = 500;
+        //context.Response.WriteAsync()
+
+    }
+
 });
 
 // C'est une méthode qui recherce des controller 
 // cad Classe qui contient des méthodes à mettre à disposition des requetes
 app.MapControllers();
 
-app.MapGet("/Addition/{a:int}/{b:int}", (int a,int b, [FromServices] IConfiguration config) =>
+app.MapGet("/Addition/{a:int}/{b:int}", (int a, int b, [FromServices] IConfiguration config) =>
 {
+    throw new Exception("Erreur volontaire");
     return a + b;
 });
 
 
- 
+
 
 app.Run(); // Démarrer
