@@ -1,0 +1,20 @@
+﻿<UserControl x:Class="CantineUI.NewAchat"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CantineUI"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.DataContext>
+        <local:NewAchatVM></local:NewAchatVM>
+    </UserControl.DataContext>
+    <StackPanel>
+        <TextBox Text="{Binding Formulaire.Matricule}"></TextBox>
+        <TextBox Text="{Binding Formulaire.Quantite}"></TextBox>
+        <ComboBox SelectedValuePath="Reference" SelectedValue="{Binding Formulaire.ReferenceArticle}" ItemsSource="{Binding ListeDesArticles}"></ComboBox>
+        <Button Command="{Binding AjouterAchatCommand}">Ok</Button>
+        <TextBlock Text="{Binding MessageSuccess}" Foreground="DarkGreen"></TextBlock>
+        <TextBlock Text="{Binding MessageFail}" Foreground="DarkRed"></TextBlock>
+    </StackPanel>
+</UserControl>

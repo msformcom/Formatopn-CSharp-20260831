@@ -87,3 +87,4 @@ C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260
 C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\Cantine\CantineApi\bin\Debug\net10.0\CantineInterfaces.pdb
 C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\Cantine\CantineApi\bin\Debug\net10.0\CantineServiceFromBDD.pdb
 C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\Cantine\CantineApi\bin\Debug\net10.0\HRDAL.pdb
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\Cantine\CantineApi\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt

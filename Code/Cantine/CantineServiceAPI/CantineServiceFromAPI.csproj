@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CantineApi\CantineApi.csproj" />
     <ProjectReference Include="..\CantineInterfaces\CantineInterfaces.csproj" />
   </ItemGroup>
 

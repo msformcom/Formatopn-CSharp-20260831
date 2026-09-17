@@ -85,6 +85,28 @@
           }
         }
       },
+      "Microsoft.AspNetCore.OpenApi/10.0.12": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.OpenApi": "[2.12.0, 3.0.0)"
+        },
+        "compile": {
+          "lib/net10.0/Microsoft.AspNetCore.OpenApi.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.AspNetCore.OpenApi.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ],
+        "build": {
+          "build/_._": {}
+        }
+      },
       "Microsoft.Bcl.AsyncInterfaces/8.0.0": {
         "type": "package",
         "compile": {
@@ -860,6 +882,19 @@
         "build": {
           "build/net8.0/Microsoft.NET.Test.Sdk.props": {},
           "build/net8.0/Microsoft.NET.Test.Sdk.targets": {}
+        }
+      },
+      "Microsoft.OpenApi/2.12.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Microsoft.OpenApi.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.OpenApi.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "Microsoft.SqlServer.Server/1.0.0": {
@@ -2013,6 +2048,25 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
+      "CantineApi/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "CantineInterfaces": "1.0.0",
+          "CantineServiceFromBDD": "1.0.0",
+          "Microsoft.AspNetCore.OpenApi": "10.0.12",
+          "Microsoft.EntityFrameworkCore.SqlServer": "10.0.12"
+        },
+        "compile": {
+          "bin/placeholder/CantineApi.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CantineApi.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "CantineInterfaces/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
@@ -2027,6 +2081,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
+          "CantineApi": "1.0.0",
           "CantineInterfaces": "1.0.0"
         },
         "compile": {
@@ -2175,6 +2230,24 @@
         "lib/netstandard2.0/Microsoft.ApplicationInsights.xml",
         "microsoft.applicationinsights.2.23.0.nupkg.sha512",
         "microsoft.applicationinsights.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.OpenApi/10.0.12": {
+      "sha512": "7RnQ/UKn+kK3JDLmTpW+vVqNErWthGPAVAy1aIiBzv4ucQ6g9NFvOJUuT0PHcpvcJxGVxctMxj6t+NESWMrgHQ==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.openapi/10.0.12",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "analyzers/dotnet/cs/Microsoft.AspNetCore.OpenApi.SourceGenerators.dll",
+        "build/Microsoft.AspNetCore.OpenApi.targets",
+        "lib/net10.0/Microsoft.AspNetCore.OpenApi.dll",
+        "lib/net10.0/Microsoft.AspNetCore.OpenApi.xml",
+        "microsoft.aspnetcore.openapi.10.0.12.nupkg.sha512",
+        "microsoft.aspnetcore.openapi.nuspec"
       ]
     },
     "Microsoft.Bcl.AsyncInterfaces/8.0.0": {
@@ -3320,6 +3393,24 @@
         "lib/net8.0/_._",
         "microsoft.net.test.sdk.18.0.1.nupkg.sha512",
         "microsoft.net.test.sdk.nuspec"
+      ]
+    },
+    "Microsoft.OpenApi/2.12.0": {
+      "sha512": "0xB/be+f6qYOhvQPUrVsLrau+fkowYv6gt9RIkajMhwT7sZnqtcA797yW3bS5kgSje+AQW4xZgyLnW641YFioQ==",
+      "type": "package",
+      "path": "microsoft.openapi/2.12.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net8.0/Microsoft.OpenApi.dll",
+        "lib/net8.0/Microsoft.OpenApi.pdb",
+        "lib/net8.0/Microsoft.OpenApi.xml",
+        "lib/netstandard2.0/Microsoft.OpenApi.dll",
+        "lib/netstandard2.0/Microsoft.OpenApi.pdb",
+        "lib/netstandard2.0/Microsoft.OpenApi.xml",
+        "microsoft.openapi.2.12.0.nupkg.sha512",
+        "microsoft.openapi.nuspec"
       ]
     },
     "Microsoft.SqlServer.Server/1.0.0": {
@@ -4563,6 +4654,11 @@
         "system.security.cryptography.protecteddata.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "CantineApi/1.0.0": {
+      "type": "project",
+      "path": "../CantineApi/CantineApi.csproj",
+      "msbuildProject": "../CantineApi/CantineApi.csproj"
     },
     "CantineInterfaces/1.0.0": {
       "type": "project",

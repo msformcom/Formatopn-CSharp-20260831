@@ -14,3 +14,15 @@ C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260
 C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\Cantine\CantineServiceAPI\obj\Debug\net10.0\refint\CantineServiceFromAPI.dll
 C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\Cantine\CantineServiceAPI\obj\Debug\net10.0\CantineServiceFromAPI.pdb
 C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\Cantine\CantineServiceAPI\obj\Debug\net10.0\ref\CantineServiceFromAPI.dll
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\Cantine\CantineServiceAPI\bin\Debug\net10.0\CantineApi.deps.json
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\Cantine\CantineServiceAPI\bin\Debug\net10.0\CantineApi.runtimeconfig.json
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\Cantine\CantineServiceAPI\bin\Debug\net10.0\appsettings.Development.json
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\Cantine\CantineServiceAPI\bin\Debug\net10.0\appsettings.json
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\Cantine\CantineServiceAPI\bin\Debug\net10.0\CantineApi.staticwebassets.endpoints.json
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\Cantine\CantineServiceAPI\bin\Debug\net10.0\CantineApi.exe
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\Cantine\CantineServiceAPI\bin\Debug\net10.0\CantineApi.dll
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\Cantine\CantineServiceAPI\bin\Debug\net10.0\CantineServiceFromBDD.dll
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\Cantine\CantineServiceAPI\bin\Debug\net10.0\HRDAL.dll
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\Cantine\CantineServiceAPI\bin\Debug\net10.0\CantineApi.pdb
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\Cantine\CantineServiceAPI\bin\Debug\net10.0\CantineServiceFromBDD.pdb
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\Cantine\CantineServiceAPI\bin\Debug\net10.0\HRDAL.pdb

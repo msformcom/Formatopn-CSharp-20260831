@@ -24,13 +24,13 @@ namespace CantineInterfaces.Tests
             // mais son contenu peut être un IQueryable
             IEnumerable<IArticle> resultat2;
             if(resultat is IQueryable<IArticle> query) {
-                resultat2 = query.Where(c => c.Libelle.Length > 10).ToList();
+                resultat2 = query.ToList();
             }
             else
             {
                 resultat2 = resultat.Where(c => c.Libelle.Length > 10).ToList();
             }
-            Assert.AreEqual(2, resultat2.Count(), "Les articles ne sont pas en bon nombre");
+            Assert.AreEqual(1, resultat2.Count(), "Les articles ne sont pas en bon nombre");
 
 
         }

@@ -1,4 +1,5 @@
-﻿using CantineApi.CustomAttributes;
+﻿using AutoMapper.Configuration.Annotations;
+using CantineApi.CustomAttributes;
 using CantineApi.Models;
 using CantineInterfaces;
 using Microsoft.AspNetCore.Http;
@@ -46,12 +47,13 @@ namespace CantineApi.Controllers
         }
 
         // GET : /Cantine/Articles + body avec objet ArticleSearch
-        [HttpGet("Articles")]
-        //[HttpPost("Articles")]
+        //[HttpGet("Articles")]
+        [HttpPost("Articles/ListeArticles")]
+        //[Mapping(typeof(IEnumerable<ArticleDTO>)]
         //[ValidateModel]
         // ActionFilter => en MVC l'équivalent des middleware
         // Ajouter par attribut un actionfilter qui va valider le modele
-        public async Task<IEnumerable<IArticle>> ListeArticlesAsync([FromQuery]ArticleSearch search)
+        public async Task<IEnumerable<IArticle>> ListeArticlesAsync([FromBody]ArticleSearchDTO search)
         {
             if (!ModelState.IsValid)
             {
@@ -60,6 +62,7 @@ namespace CantineApi.Controllers
             }
 
             var resultat= await service.ListeArticlesAsync(search);
+            
             if(resultat is IQueryable<IArticle> query)
             {
                 resultat=query.Skip((search.PageNumber-1)*search.NbItemPerPage).Take(search.NbItemPerPage);
@@ -69,7 +72,18 @@ namespace CantineApi.Controllers
                 resultat = resultat.Skip((search.PageNumber - 1) * search.NbItemPerPage).Take(search.NbItemPerPage);
 
             }
-            return resultat; // Envoye au serializer json => lire les enregistrement au fur et à mesure que le client http lit le flux réseau
+            // Je retourne les résultats dans un DTO
+            // car sinon, je passe l'objet provenant du service (ICantineServiceBDD)
+            // directement au client => problème car le service peut ajouter dans la classe 
+            // qu'il utilise des information
+            return resultat.Select(model=>new ArticleDTO()
+            {
+                Allergenes = model.Allergenes,
+                Libelle =   model.Libelle,
+                Prix=   model.Prix,
+                Photo= model.Photo,
+                Reference    =model.Reference
+            }); // Envoye au serializer json => lire les enregistrement au fur et à mesure que le client http lit le flux réseau
         }
 
         public Task SupprimerArticleAsync(string referenceArticle)

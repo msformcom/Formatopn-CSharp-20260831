@@ -1,4 +1,6 @@
 ﻿using System.Net;
+using System.Net.Http.Json;
+using CantineApi.Models;
 using CantineInterfaces;
 
 namespace CantineServiceFromAPI
@@ -42,9 +44,24 @@ namespace CantineServiceFromAPI
             throw new NotImplementedException();
         }
 
-        public Task<IEnumerable<IArticle>> ListeArticlesAsync(IArticleSearch search)
+        public async Task<IEnumerable<IArticle>> ListeArticlesAsync(IArticleSearch search)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var reponseServer = await httpClient.PostAsJsonAsync($"/Cantine/Articles/ListeArticles",search);
+                if (reponseServer.StatusCode != HttpStatusCode.OK)
+                {
+                    throw new Exception("L'opération a échoué");
+                }
+                var resultat = await reponseServer.Content.ReadFromJsonAsync<IEnumerable<ArticleDTO>>();
+                // Envoyer une requete http correcte au serveur et attendre les résultat
+                return resultat!;
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception("L'opération a échoué");
+            }
         }
 
         public Task SupprimerArticleAsync(string referenceArticle)
