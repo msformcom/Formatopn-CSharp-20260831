@@ -1,0 +1,16 @@
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\Cantine\CantineServiceAPI\obj\Debug\net10.0\CantineServiceFromAPI.csproj.AssemblyReference.cache
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\Cantine\CantineServiceAPI\obj\Debug\net10.0\CantineServiceFromAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\Cantine\CantineServiceAPI\obj\Debug\net10.0\CantineServiceFromAPI.AssemblyInfoInputs.cache
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\Cantine\CantineServiceAPI\obj\Debug\net10.0\CantineServiceFromAPI.AssemblyInfo.cs
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\Cantine\CantineServiceAPI\obj\Debug\net10.0\CantineServiceFromAPI.csproj.CoreCompileInputs.cache
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\Cantine\CantineServiceAPI\obj\Debug\net10.0\CantineServiceFromAPI.sourcelink.json
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\Cantine\CantineServiceAPI\bin\Debug\net10.0\CantineServiceFromAPI.deps.json
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\Cantine\CantineServiceAPI\bin\Debug\net10.0\CantineServiceFromAPI.dll
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\Cantine\CantineServiceAPI\bin\Debug\net10.0\CantineServiceFromAPI.pdb
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\Cantine\CantineServiceAPI\bin\Debug\net10.0\CantineInterfaces.dll
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\Cantine\CantineServiceAPI\bin\Debug\net10.0\CantineInterfaces.pdb
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\Cantine\CantineServiceAPI\obj\Debug\net10.0\CantineS.BBB9FF40.Up2Date
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\Cantine\CantineServiceAPI\obj\Debug\net10.0\CantineServiceFromAPI.dll
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\Cantine\CantineServiceAPI\obj\Debug\net10.0\refint\CantineServiceFromAPI.dll
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\Cantine\CantineServiceAPI\obj\Debug\net10.0\CantineServiceFromAPI.pdb
+C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\Cantine\CantineServiceAPI\obj\Debug\net10.0\ref\CantineServiceFromAPI.dll

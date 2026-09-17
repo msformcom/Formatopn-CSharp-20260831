@@ -3,38 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\Cantine\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B3F21966-61FE-4374-8762-9C56A363F608}|CantineInterfaces.Tests\\CantineInterfaces.Tests.csproj|c:\\users\\dom\\desktop\\formations\\formatopn csharp 20260831\\formatopn csharp 20260831\\code\\cantine\\cantineinterfaces.tests\\icantineservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3F21966-61FE-4374-8762-9C56A363F608}|CantineInterfaces.Tests\\CantineInterfaces.Tests.csproj|solutionrelative:cantineinterfaces.tests\\icantineservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2219CC6-EBCB-4925-9885-DEE265E3D457}|CantineApi\\CantineApi.csproj|c:\\users\\dom\\desktop\\formations\\formatopn csharp 20260831\\formatopn csharp 20260831\\code\\cantine\\cantineapi\\controllers\\cantinecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2219CC6-EBCB-4925-9885-DEE265E3D457}|CantineApi\\CantineApi.csproj|solutionrelative:cantineapi\\controllers\\cantinecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3CB6389E-DB0E-49E1-895D-01245A0A72C1}|CantineServiceFromBDD\\CantineServiceFromBDD.csproj|c:\\users\\dom\\desktop\\formations\\formatopn csharp 20260831\\formatopn csharp 20260831\\code\\cantine\\cantineservicefrombdd\\cantineservicebdd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3CB6389E-DB0E-49E1-895D-01245A0A72C1}|CantineServiceFromBDD\\CantineServiceFromBDD.csproj|solutionrelative:cantineservicefrombdd\\cantineservicebdd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C18920AD-A144-49C5-A590-CA29D35FBCF3}|CantineServiceAPI\\CantineServiceFromAPI.csproj|c:\\users\\dom\\desktop\\formations\\formatopn csharp 20260831\\formatopn csharp 20260831\\code\\cantine\\cantineserviceapi\\cantineserviceapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C18920AD-A144-49C5-A590-CA29D35FBCF3}|CantineServiceAPI\\CantineServiceFromAPI.csproj|solutionrelative:cantineserviceapi\\cantineserviceapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2219CC6-EBCB-4925-9885-DEE265E3D457}|CantineApi\\CantineApi.csproj|c:\\users\\dom\\desktop\\formations\\formatopn csharp 20260831\\formatopn csharp 20260831\\code\\cantine\\cantineapi\\customattributes\\antiinjectionattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2219CC6-EBCB-4925-9885-DEE265E3D457}|CantineApi\\CantineApi.csproj|solutionrelative:cantineapi\\customattributes\\antiinjectionattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2219CC6-EBCB-4925-9885-DEE265E3D457}|CantineApi\\CantineApi.csproj|c:\\users\\dom\\desktop\\formations\\formatopn csharp 20260831\\formatopn csharp 20260831\\code\\cantine\\cantineapi\\models\\articlesearch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2219CC6-EBCB-4925-9885-DEE265E3D457}|CantineApi\\CantineApi.csproj|solutionrelative:cantineapi\\models\\articlesearch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B3F21966-61FE-4374-8762-9C56A363F608}|CantineInterfaces.Tests\\CantineInterfaces.Tests.csproj|c:\\users\\dom\\desktop\\formations\\formatopn csharp 20260831\\formatopn csharp 20260831\\code\\cantine\\cantineinterfaces.tests\\di.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3F21966-61FE-4374-8762-9C56A363F608}|CantineInterfaces.Tests\\CantineInterfaces.Tests.csproj|solutionrelative:cantineinterfaces.tests\\di.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2219CC6-EBCB-4925-9885-DEE265E3D457}|CantineApi\\CantineApi.csproj|c:\\users\\dom\\desktop\\formations\\formatopn csharp 20260831\\formatopn csharp 20260831\\code\\cantine\\cantineapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2219CC6-EBCB-4925-9885-DEE265E3D457}|CantineApi\\CantineApi.csproj|solutionrelative:cantineapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CFAA82DA-31B5-459C-AA4E-0289E7910377}|HRDAL\\HRDAL.csproj|c:\\users\\dom\\desktop\\formations\\formatopn csharp 20260831\\formatopn csharp 20260831\\code\\cantine\\hrdal\\cantinecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CFAA82DA-31B5-459C-AA4E-0289E7910377}|HRDAL\\HRDAL.csproj|solutionrelative:hrdal\\cantinecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/CantineDB/True/SqlTable/dbo.TBL_Achats.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/CantineDB/True/SqlTable/dbo.TBL_Articles.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2219CC6-EBCB-4925-9885-DEE265E3D457}|CantineApi\\CantineApi.csproj|c:\\users\\dom\\desktop\\formations\\formatopn csharp 20260831\\formatopn csharp 20260831\\code\\cantine\\cantineapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A2219CC6-EBCB-4925-9885-DEE265E3D457}|CantineApi\\CantineApi.csproj|solutionrelative:cantineapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B3F21966-61FE-4374-8762-9C56A363F608}|CantineInterfaces.Tests\\CantineInterfaces.Tests.csproj|c:\\users\\dom\\desktop\\formations\\formatopn csharp 20260831\\formatopn csharp 20260831\\code\\cantine\\cantineinterfaces.tests\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -48,113 +34,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "AntiInjectionAttribute.cs",
-              "DocumentMoniker": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\Cantine\\CantineApi\\CustomAttributes\\AntiInjectionAttribute.cs",
-              "RelativeDocumentMoniker": "CantineApi\\CustomAttributes\\AntiInjectionAttribute.cs",
-              "ToolTip": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\Cantine\\CantineApi\\CustomAttributes\\AntiInjectionAttribute.cs",
-              "RelativeToolTip": "CantineApi\\CustomAttributes\\AntiInjectionAttribute.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAIwA4AAAAAAAAAAAAAAA==",
+              "Title": "CantineServiceAPI.cs",
+              "DocumentMoniker": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\Cantine\\CantineServiceAPI\\CantineServiceAPI.cs",
+              "RelativeDocumentMoniker": "CantineServiceAPI\\CantineServiceAPI.cs",
+              "ToolTip": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\Cantine\\CantineServiceAPI\\CantineServiceAPI.cs",
+              "RelativeToolTip": "CantineServiceAPI\\CantineServiceAPI.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAiwB0AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-17T08:12:15.897Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ArticleSearch.cs",
-              "DocumentMoniker": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\Cantine\\CantineApi\\Models\\ArticleSearch.cs",
-              "RelativeDocumentMoniker": "CantineApi\\Models\\ArticleSearch.cs",
-              "ToolTip": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\Cantine\\CantineApi\\Models\\ArticleSearch.cs",
-              "RelativeToolTip": "CantineApi\\Models\\ArticleSearch.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAoAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-17T07:28:08.538Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "dbo.TBL_Achats.sql",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/CantineDB/True/SqlTable/dbo.TBL_Achats.sql",
-              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/CantineDB/True/SqlTable/dbo.TBL_Achats.sql",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2026-09-16T15:08:20.764Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "dbo.TBL_Articles.sql",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/CantineDB/True/SqlTable/dbo.TBL_Articles.sql",
-              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/CantineDB/True/SqlTable/dbo.TBL_Articles.sql",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2026-09-16T15:08:04.624Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CantineServiceBDD.cs",
-              "DocumentMoniker": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\Cantine\\CantineServiceFromBDD\\CantineServiceBDD.cs",
-              "RelativeDocumentMoniker": "CantineServiceFromBDD\\CantineServiceBDD.cs",
-              "ToolTip": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\Cantine\\CantineServiceFromBDD\\CantineServiceBDD.cs",
-              "RelativeToolTip": "CantineServiceFromBDD\\CantineServiceBDD.cs",
-              "ViewState": "AgIAANcAAAAAAAAAAAAMwOAAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-16T15:03:54.076Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CantineContext.cs",
-              "DocumentMoniker": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\Cantine\\HRDAL\\CantineContext.cs",
-              "RelativeDocumentMoniker": "HRDAL\\CantineContext.cs",
-              "ToolTip": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\Cantine\\HRDAL\\CantineContext.cs",
-              "RelativeToolTip": "HRDAL\\CantineContext.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAD4vzsAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-16T15:03:54.103Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\Cantine\\CantineApi\\appsettings.json",
-              "RelativeDocumentMoniker": "CantineApi\\appsettings.json",
-              "ToolTip": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\Cantine\\CantineApi\\appsettings.json",
-              "RelativeToolTip": "CantineApi\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-09-16T14:48:55.179Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\Cantine\\CantineInterfaces.Tests\\appsettings.json",
-              "RelativeDocumentMoniker": "CantineInterfaces.Tests\\appsettings.json",
-              "ToolTip": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\Cantine\\CantineInterfaces.Tests\\appsettings.json",
-              "RelativeToolTip": "CantineInterfaces.Tests\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-09-16T15:02:18.922Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CantineController.cs",
-              "DocumentMoniker": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\Cantine\\CantineApi\\Controllers\\CantineController.cs",
-              "RelativeDocumentMoniker": "CantineApi\\Controllers\\CantineController.cs",
-              "ToolTip": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\Cantine\\CantineApi\\Controllers\\CantineController.cs",
-              "RelativeToolTip": "CantineApi\\Controllers\\CantineController.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAcwEcAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-16T14:44:05.815Z",
+              "WhenOpened": "2026-09-17T09:36:47.318Z",
               "EditorCaption": ""
             },
             {
@@ -165,9 +57,61 @@
               "RelativeDocumentMoniker": "CantineApi\\Program.cs",
               "ToolTip": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\Cantine\\CantineApi\\Program.cs",
               "RelativeToolTip": "CantineApi\\Program.cs",
-              "ViewState": "AgIAAGUAAAAAAAAAAAAMwHEAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAG0AAAAAAAAAAAAAAHgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-16T14:04:07.397Z",
+              "WhenOpened": "2026-09-17T09:36:23.118Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ICantineServiceTests.cs",
+              "DocumentMoniker": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\Cantine\\CantineInterfaces.Tests\\ICantineServiceTests.cs",
+              "RelativeDocumentMoniker": "CantineInterfaces.Tests\\ICantineServiceTests.cs",
+              "ToolTip": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\Cantine\\CantineInterfaces.Tests\\ICantineServiceTests.cs",
+              "RelativeToolTip": "CantineInterfaces.Tests\\ICantineServiceTests.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwCAAAABcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-17T09:35:11.995Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\Cantine\\CantineInterfaces.Tests\\appsettings.json",
+              "RelativeDocumentMoniker": "CantineInterfaces.Tests\\appsettings.json",
+              "ToolTip": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\Cantine\\CantineInterfaces.Tests\\appsettings.json",
+              "RelativeToolTip": "CantineInterfaces.Tests\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-09-17T09:31:04.844Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DI.cs",
+              "DocumentMoniker": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\Cantine\\CantineInterfaces.Tests\\DI.cs",
+              "RelativeDocumentMoniker": "CantineInterfaces.Tests\\DI.cs",
+              "ToolTip": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\Cantine\\CantineInterfaces.Tests\\DI.cs",
+              "RelativeToolTip": "CantineInterfaces.Tests\\DI.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAYwEIAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-17T09:22:06.036Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CantineController.cs",
+              "DocumentMoniker": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\Cantine\\CantineApi\\Controllers\\CantineController.cs",
+              "RelativeDocumentMoniker": "CantineApi\\Controllers\\CantineController.cs",
+              "ToolTip": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\Cantine\\CantineApi\\Controllers\\CantineController.cs",
+              "RelativeToolTip": "CantineApi\\Controllers\\CantineController.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAowDUAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-17T09:15:24.943Z",
               "EditorCaption": ""
             }
           ]

@@ -26,10 +26,10 @@ namespace CantineApi.Controllers
             {
                 await service.ConsommerArticleAsync(matriculeEmploye, referenceArticle, quantite);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
 
-                throw new HttpRequestException("Sorry");
+                throw new HttpRequestException(ex.Message);
             }
             
         }

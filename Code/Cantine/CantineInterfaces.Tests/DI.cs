@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using System.Security.Authentication.ExtendedProtection;
 using System.Text;
+using CantineServiceFromAPI;
 using CantineServiceFromBDD;
 using HRDAL;
 using HRDAL.DAO;
@@ -57,7 +58,19 @@ namespace CantineInterfaces.Tests
             // Devra être défini dans un fichier de config
 
             // Le constructeur de CantineServiceBDD nécessite la fourniture d'un CantineContext
-            collection.AddTransient<ICantineService, CantineServiceBDD>();
+            collection.AddTransient<ICantineService, CantineServiceAPI>();
+
+            // Pour chaque demande de HttpClient, exécution de la fonction
+
+            collection.AddTransient<HttpClient>(s =>
+            {
+                var client = new HttpClient();
+                // J'obtiens la confi à partir des servicess
+                var config = s.GetRequiredService<IConfiguration>();
+                var adresseApi = config.GetSection("serviceUrl").Value;
+                client.BaseAddress = new Uri(adresseApi);
+                return client;
+            });
 
             // J'ajoute le CantineContext aux classes connues de ma collection
             collection.AddDbContext<CantineContext>(options =>

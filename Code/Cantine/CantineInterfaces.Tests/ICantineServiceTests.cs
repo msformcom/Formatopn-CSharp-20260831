@@ -30,7 +30,7 @@ namespace CantineInterfaces.Tests
             {
                 resultat2 = resultat.Where(c => c.Libelle.Length > 10).ToList();
             }
-
+            Assert.AreEqual(2, resultat2.Count(), "Les articles ne sont pas en bon nombre");
 
 
         }

@@ -2023,6 +2023,19 @@
           "bin/placeholder/CantineInterfaces.dll": {}
         }
       },
+      "CantineServiceFromAPI/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "CantineInterfaces": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CantineServiceFromAPI.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CantineServiceFromAPI.dll": {}
+        }
+      },
       "CantineServiceFromBDD/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
@@ -4556,6 +4569,11 @@
       "path": "../CantineInterfaces/CantineInterfaces.csproj",
       "msbuildProject": "../CantineInterfaces/CantineInterfaces.csproj"
     },
+    "CantineServiceFromAPI/1.0.0": {
+      "type": "project",
+      "path": "../CantineServiceAPI/CantineServiceFromAPI.csproj",
+      "msbuildProject": "../CantineServiceAPI/CantineServiceFromAPI.csproj"
+    },
     "CantineServiceFromBDD/1.0.0": {
       "type": "project",
       "path": "../CantineServiceFromBDD/CantineServiceFromBDD.csproj",
@@ -4569,6 +4587,7 @@
   },
   "projectFileDependencyGroups": {
     "net10.0": [
+      "CantineServiceFromAPI >= 1.0.0",
       "CantineServiceFromBDD >= 1.0.0",
       "MSTest >= 4.0.2",
       "Microsoft.EntityFrameworkCore.Proxies >= 10.0.12",
@@ -4613,6 +4632,9 @@
           "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {
+            "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\Cantine\\CantineServiceAPI\\CantineServiceFromAPI.csproj": {
+              "projectPath": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\Cantine\\CantineServiceAPI\\CantineServiceFromAPI.csproj"
+            },
             "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\Cantine\\CantineServiceFromBDD\\CantineServiceFromBDD.csproj": {
               "projectPath": "C:\\Users\\Dom\\Desktop\\Formations\\Formatopn CSharp 20260831\\Formatopn CSharp 20260831\\Code\\Cantine\\CantineServiceFromBDD\\CantineServiceFromBDD.csproj"
             }

@@ -26,7 +26,6 @@ C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260
 C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\Cantine\CantineApi\obj\Debug\net10.0\staticwebassets.development.json
 C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\Cantine\CantineApi\obj\Debug\net10.0\staticwebassets.build.endpoints.json
 C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\Cantine\CantineApi\obj\Debug\net10.0\swae.build.ex.cache
-C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\Cantine\CantineApi\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
 C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\Cantine\CantineApi\obj\Debug\net10.0\CantineApi.csproj.Up2Date
 C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\Cantine\CantineApi\obj\Debug\net10.0\CantineApi.dll
 C:\Users\Dom\Desktop\Formations\Formatopn CSharp 20260831\Formatopn CSharp 20260831\Code\Cantine\CantineApi\obj\Debug\net10.0\refint\CantineApi.dll

@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v10.0": {
       "CantineInterfaces.Tests/1.0.0": {
         "dependencies": {
+          "CantineServiceFromAPI": "1.0.0",
           "CantineServiceFromBDD": "1.0.0",
           "MSTest": "4.0.2",
           "Microsoft.EntityFrameworkCore.Proxies": "10.0.12",
@@ -1667,6 +1668,17 @@
           }
         }
       },
+      "CantineServiceFromAPI/1.0.0": {
+        "dependencies": {
+          "CantineInterfaces": "1.0.0"
+        },
+        "runtime": {
+          "CantineServiceFromAPI.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "CantineServiceFromBDD/1.0.0": {
         "dependencies": {
           "AutoMapper": "16.2.0",
@@ -2164,6 +2176,11 @@
       "hashPath": "system.security.cryptography.protecteddata.9.0.11.nupkg.sha512"
     },
     "CantineInterfaces/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CantineServiceFromAPI/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

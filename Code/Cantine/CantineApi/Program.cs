@@ -111,9 +111,14 @@ app.Use(async (HttpContext context, Func<Task> next) =>
     var watch = Stopwatch.StartNew();
     // Passage de la requète aux middleware suivants
     await next();
-    if (context.Response.StatusCode == 500)
+    if (context.Response.StatusCode != 200)
     {
-        logger.LogError("Une erreur c'est produite");
+        if (context.Items.ContainsKey("Erreur"))
+        {
+            var ex = (Exception)context.Items["Erreur"];
+            logger.LogError(ex.Message);
+        }
+
     }
     logger.LogInformation($"Sortie de la requète {context.Request.Path} en {watch.ElapsedMilliseconds}");
 });
@@ -124,9 +129,9 @@ app.Use(async (HttpContext context, Func<Task> next) =>
     {
         await next();
     }
-    catch (Exception)
+    catch (Exception ex)
     {
-
+        context.Items["Erreur"] = ex;
         context.Response.StatusCode = 500;
         //context.Response.WriteAsync()
 

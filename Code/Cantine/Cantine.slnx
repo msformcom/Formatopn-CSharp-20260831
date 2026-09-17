@@ -2,6 +2,7 @@
   <Project Path="CantineApi/CantineApi.csproj" Id="a2219cc6-ebcb-4925-9885-dee265e3d457" />
   <Project Path="CantineInterfaces.Tests/CantineInterfaces.Tests.csproj" Id="b3f21966-61fe-4374-8762-9c56a363f608" />
   <Project Path="CantineInterfaces/CantineInterfaces.csproj" />
+  <Project Path="CantineServiceAPI/CantineServiceFromAPI.csproj" Id="c18920ad-a144-49c5-a590-ca29d35fbcf3" />
   <Project Path="CantineServiceFromBDD/CantineServiceFromBDD.csproj" Id="3cb6389e-db0e-49e1-895d-01245a0a72c1" />
   <Project Path="CodeTests/CodeTests.csproj" Id="5a5680ca-47c2-44cc-a97f-e4421de7b985" />
   <Project Path="HRDAL/HRDAL.csproj" Id="cfaa82da-31b5-459c-aa4e-0289e7910377" />
