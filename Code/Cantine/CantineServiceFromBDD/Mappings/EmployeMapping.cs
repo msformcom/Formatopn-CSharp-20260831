@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using AutoMapper;
+﻿using AutoMapper;
 using CantineInterfaces;
 using CantineServiceFromBDD.Models;
 using HRDAL.DAO;

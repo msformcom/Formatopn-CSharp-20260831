@@ -1,4 +1,4 @@
-using CantineAPI.Models;
+using CantineApiContracts;
 using CantineInterfaces;
 using Microsoft.AspNetCore.Mvc;
 
@@ -17,7 +17,7 @@ namespace CantineAPI.Controllers
 
         // POST api/achats
         [HttpPost]
-        public async Task<IActionResult> Consommer([FromBody] ConsommationRequest consommation)
+        public async Task<ActionResult<ResponseWrapper>> Consommer([FromBody] ConsommationRequest consommation)
         {
             try
             {
@@ -29,11 +29,11 @@ namespace CantineAPI.Controllers
             catch (ArgumentException ex)
             {
                 // Erreurs metier du service : reference inconnue, stock ou credit insuffisant
-                // Le message part en text/plain, tel que le lit le client
-                return BadRequest(ex.Message);
+                // Le message voyage dans l'enveloppe, le code HTTP reste un 400
+                return BadRequest(new ResponseWrapper() { Success = false, Message = ex.Message });
             }
 
-            return NoContent();
+            return Ok(new ResponseWrapper() { Success = true });
         }
     }
 }

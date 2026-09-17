@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace CantineInterfaces.Tests.Models
+﻿namespace CantineInterfaces.Tests.Models
 {
     public class ArticleSearch : IArticleSearch
     {

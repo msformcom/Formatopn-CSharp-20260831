@@ -2,7 +2,6 @@ using System.Diagnostics;
 using CantineInterfaces;
 using CantineServiceFromBDD;
 using HRDAL;
-using HRDAL.DAO;
 using Microsoft.EntityFrameworkCore;
 using Scalar.AspNetCore;
 
@@ -26,30 +25,9 @@ builder.Services.AddDbContext<CantineContext>(options =>
 });
 
 // Nommage des tables, propre a cette application
-builder.Services.AddKeyedSingleton<Action<ModelBuilder>>("Builder1", (_, _) => (ModelBuilder modelBuilder) =>
-{
-    modelBuilder.Entity<ArticleDAO>(options =>
-    {
-        options.ToTable("TBL_Articles");
-        options.Property(c => c.Id).HasColumnName("PK_Article");
-        options.Property(c => c.Reference).IsRequired().HasMaxLength(5).IsFixedLength();
-    });
-
-    modelBuilder.Entity<AchatDAO>(options =>
-    {
-        options.ToTable("TBL_Achats");
-        options.Property(c => c.Id).HasColumnName("PK_Achat");
-        options.Property(c => c.IdEmploye).HasColumnName("FK_Employe");
-        options.Property(c => c.IdArticle).HasColumnName("FK_Article");
-    });
-
-    modelBuilder.Entity<EmployeDAO>(options =>
-    {
-        options.ToTable("TBL_Employes");
-        options.Property(c => c.Id).HasColumnName("PK_Employe");
-        options.Property(c => c.PublicId).IsRequired().HasMaxLength(5).IsFixedLength();
-    });
-});
+// Les regles sont partagees avec le projet de tests via CantineTables
+builder.Services.AddKeyedSingleton<Action<ModelBuilder>>("Builder1",
+    (_, _) => CantineTables.Configure);
 
 var app = builder.Build();
 

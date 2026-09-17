@@ -1,3 +1,5 @@
+using CantineApiContracts;
+using CantineAPI.Models;
 using CantineInterfaces;
 using Microsoft.AspNetCore.Mvc;
 
@@ -16,9 +18,11 @@ namespace CantineAPI.Controllers
 
         // GET api/employes/AA001
         [HttpGet("{matricule}")]
-        public async Task<IEmploye> Lire(string matricule)
+        public async Task<ResponseWrapper<EmployeDto>> Lire(string matricule)
         {
-            return await service.LireEmployeInfosAsync(matricule);
+            var employe = await service.LireEmployeInfosAsync(matricule);
+
+            return new ResponseWrapper<EmployeDto>() { Success = true, Data = EmployeDto.Depuis(employe) };
         }
     }
 }

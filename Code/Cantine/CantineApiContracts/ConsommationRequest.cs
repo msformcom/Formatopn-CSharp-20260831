@@ -1,8 +1,9 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace CantineAPI.Models
+namespace CantineApiContracts
 {
     // Corps de la requete POST api/achats
+    // Les annotations servent a la validation cote API, le client les ignore
     public class ConsommationRequest
     {
         [Display(Name = "Matricule employe")]

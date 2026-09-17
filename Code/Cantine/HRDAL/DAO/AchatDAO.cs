@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace HRDAL.DAO
+﻿namespace HRDAL.DAO
 {
     public class AchatDAO : IGestionData
     {

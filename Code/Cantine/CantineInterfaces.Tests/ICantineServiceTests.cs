@@ -1,5 +1,4 @@
 ﻿using CantineInterfaces.Tests.Models;
-using CantineServiceFromBDD.Models;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace CantineInterfaces.Tests

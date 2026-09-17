@@ -1,8 +1,6 @@
 ﻿using AutoMapper;
-using System.Transactions;
 using AutoMapper.QueryableExtensions;
 using CantineInterfaces;
-using CantineServiceFromBDD.Mappings;
 using CantineServiceFromBDD.Models;
 using HRDAL;
 using HRDAL.DAO;
@@ -23,12 +21,9 @@ namespace CantineServiceFromBDD
         static CantineServiceBDD()
         {
             // Configuration du mapping DAO <=> Interfaces
-            var configMapping = new MapperConfiguration(config =>
-            {
-                // Configuration de l'objet mapper pour mapper de IArticle vers ArticleDAO
-                config.AddArticleMapping();
-                config.AddEmployeMapping();
-            }, LoggerFactory.Create(o => { }));
+            // Les regles sont regroupees dans CantineMapping
+            var configMapping = new MapperConfiguration(CantineMapping.Configure,
+                LoggerFactory.Create(o => { }));
             mapper = configMapping.CreateMapper();
         }
 

@@ -1,6 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Text;
 using CantineInterfaces;
 
 namespace CantineServiceFromAPI.Models
@@ -10,10 +7,10 @@ namespace CantineServiceFromAPI.Models
     // Les setters sont publics car la desserialisation JSON les alimente
     public class Article : IArticle
     {
-        public string Reference { get; set; }
-        public string Libelle { get; set; }
+        public string Reference { get; set; } = string.Empty;
+        public string Libelle { get; set; } = string.Empty;
         public decimal Prix { get; set; }
-        public byte[] Photo { get; set; }
+        public byte[] Photo { get; set; } = Array.Empty<byte>();
         public ICollection<string> Allergenes { get; set; } = new List<string>();
     }
 }
