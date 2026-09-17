@@ -208,13 +208,6 @@ namespace CantineServiceFromBDD
                     // J'ajoute la condition si PrixMax est non null
                     listedesIarticlesDAO = listedesIarticlesDAO.Where(c => c.Price <= search.PrixMax);
                 }
-
-                // Pagination : SQL Server exige un ORDER BY pour OFFSET / FETCH,
-                // sinon la repartition entre les pages n'est pas reproductible
-                listedesIarticlesDAO = listedesIarticlesDAO
-                    .OrderBy(c => c.Reference)
-                    .Skip((search.Page - 1) * search.TaillePage)
-                    .Take(search.TaillePage);
             }
 
 

@@ -9,7 +9,5 @@ namespace CantineInterfaces.Tests.Models
         public string? SearchText { get ; set ; }
         public decimal? PrixMin { get ; set ; }
         public decimal? PrixMax { get ; set ; }
-        public int Page { get ; set ; } = 1;
-        public int TaillePage { get ; set ; } = 20;
     }
 }

@@ -20,9 +20,13 @@ namespace CantineAPI.Controllers
         public async Task<IEnumerable<IArticle>> Search([FromBody] ArticleSearch search)
         {
             var articles = await service.ListeArticlesAsync(search);
-            // Le resultat peut etre un IQueryable : on le materialise avant
-            // que le CantineContext de la requete ne soit libere
-            return articles.ToList();
+
+            // Pagination cote API : le service et la couche d'acces aux donnees
+            // restent inchanges
+            return articles
+                .Skip((search.Page - 1) * search.TaillePage)
+                .Take(search.TaillePage)
+                .ToList();
         }
     }
 }
