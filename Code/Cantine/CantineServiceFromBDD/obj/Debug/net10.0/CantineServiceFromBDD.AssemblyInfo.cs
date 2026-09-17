@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CantineServiceFromBDD")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f512787c023fa46f2e9b653765bd19acee8e82c2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+318ba0bbccb6a4c5ecc36a8ebc3ddc13b1e10c3b")]
 [assembly: System.Reflection.AssemblyProductAttribute("CantineServiceFromBDD")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CantineServiceFromBDD")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

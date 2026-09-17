@@ -15,9 +15,9 @@ namespace CantineAPI.Controllers
             this.service = service;
         }
 
-        // GET api/articles?searchText=steak&prixMax=20
-        [HttpGet]
-        public async Task<IEnumerable<IArticle>> Get([FromQuery] ArticleSearch search)
+        // POST api/articles/search
+        [HttpPost("search")]
+        public async Task<IEnumerable<IArticle>> Search([FromBody] ArticleSearch search)
         {
             var articles = await service.ListeArticlesAsync(search);
             // Le resultat peut etre un IQueryable : on le materialise avant
